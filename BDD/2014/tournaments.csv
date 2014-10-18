@@ -1,0 +1,5 @@
+IDTournament|Tournament|Indoor|TournamentType|Surface|Country|TournamentPrize|Draw|TournamentStart|TournamentEnd|e|y
+0|Australian Open|0|{'y': 2014, 'e': 580}|Hard|Australia|A$14982200|128|13.01.2014|26.01.2014|580|2014
+1|Roland Garros|0|{'y': 2014, 'e': 520}|Clay|France|€11552000|128|26.05.2014|08.06.2014|520|2014
+2|Wimbledon|0|{'y': 2014, 'e': 540}|Grass|Great Britain|£11715000|128|23.06.2014|06.07.2014|540|2014
+3|US Open|0|{'y': 2014, 'e': 560}|Hard|NY, U.S.A.|$17851868|128|25.08.2014|07.09.2014|560|2014

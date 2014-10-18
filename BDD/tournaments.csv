@@ -1,0 +1,1047 @@
+IDTournament|Tournament|Indoor|TournamentType|Surface|Country|TournamentPrize|Draw|TournamentStart|TournamentEnd|e|y
+0|Australian Open|0|{'y': 2010, 'e': 580}|Hard|Australia|A$11048640|128|18.01.2010|31.01.2010|580|2010
+1|Roland Garros|0|{'y': 2010, 'e': 520}|Clay|France|Ç7580800|128|24.05.2010|06.06.2010|520|2010
+2|Wimbledon|0|{'y': 2010, 'e': 540}|Grass|Great Britain|ú6196000|128|21.06.2010|04.07.2010|540|2010
+3|US Open|0|{'y': 2010, 'e': 560}|Hard|NY, U.S.A.|$10508000|128|30.08.2010|12.09.2010|560|2010
+4|Australian Open|0|{'y': 2011, 'e': 580}|Hard|Australia|A$11414950|128|17.01.2011|30.01.2011|580|2011
+5|Roland Garros|0|{'y': 2011, 'e': 520}|Clay|France|Ç7884000|128|23.05.2011|05.06.2011|520|2011
+6|Wimbledon|0|{'y': 2011, 'e': 540}|Grass|Great Britain|ú6631000|128|20.06.2011|03.07.2011|540|2011
+7|US Open|0|{'y': 2011, 'e': 560}|Hard|NY, U.S.A.|$10768000|128|29.08.2011|11.09.2011|560|2011
+8|Australian Open|0|{'y': 2012, 'e': 580}|Hard|Australia|A$11806550|128|16.01.2012|29.01.2012|580|2012
+9|Roland Garros|0|{'y': 2012, 'e': 520}|Clay|France|Ç8487000|128|28.05.2012|10.06.2012|520|2012
+10|Wimbledon|0|{'y': 2012, 'e': 540}|Grass|Great Britain|ú7285200|128|25.06.2012|08.07.2012|540|2012
+11|US Open|0|{'y': 2012, 'e': 560}|Hard|NY, U.S.A.|$11777000|128|27.08.2012|09.09.2012|560|2012
+12|Australian Open|0|{'y': 2013, 'e': 580}|Hard|Australia|A$13803160|128|14.01.2013|27.01.2013|580|2013
+13|Roland Garros|0|{'y': 2013, 'e': 520}|Clay|France|€10104000|128|27.05.2013|09.06.2013|520|2013
+14|Wimbledon|0|{'y': 2013, 'e': 540}|Grass|Great Britain|£10514000|128|24.06.2013|07.07.2013|540|2013
+15|US Open|0|{'y': 2013, 'e': 560}|Hard|NY, U.S.A.|$16102000|128|26.08.2013|08.09.2013|560|2013
+16|Australian Open|0|{'y': 2014, 'e': 580}|Hard|Australia|A$14982200|128|13.01.2014|26.01.2014|580|2014
+17|Roland Garros|0|{'y': 2014, 'e': 520}|Clay|France|€11552000|128|26.05.2014|08.06.2014|520|2014
+18|Wimbledon|0|{'y': 2014, 'e': 540}|Grass|Great Britain|£11715000|128|23.06.2014|06.07.2014|540|2014
+19|US Open|0|{'y': 2014, 'e': 560}|Hard|NY, U.S.A.|$17851868|128|25.08.2014|07.09.2014|560|2014
+20|Brisbane International presented by Suncorp|0|{'y': 2010, 'e': 339}|Hard|Australia|$372500|32|04.01.2010|10.01.2010|339|2010
+21|Aircel Chennai Open|0|{'y': 2010, 'e': 891}|Hard|India|$398250|32|04.01.2010|10.01.2010|891|2010
+22|Qatar ExxonMobil Open|0|{'y': 2010, 'e': 451}|Hard|Qatar|$1024000|32|04.01.2010|10.01.2010|451|2010
+23|Heineken Open|0|{'y': 2010, 'e': 301}|Hard|New Zealand|$355500|32|11.01.2010|17.01.2010|301|2010
+24|Apia International Sydney|0|{'y': 2010, 'e': 338}|Hard|Australia|$372500|32|11.01.2010|17.01.2010|338|2010
+25|SA Tennis Open|0|{'y': 2010, 'e': 5012}|Hard|South Africa|$442500|32|01.02.2010|07.02.2010|5012|2010
+26|Royal Guard Open Chile |0|{'y': 2010, 'e': 505}|Clay|Chile|$398250|32|01.02.2010|07.02.2010|505|2010
+27|PBZ Zagreb Indoors|1|{'y': 2010, 'e': 2276}|Hard|Croatia|Ç398250|32|01.02.2010|07.02.2010|2276|2010
+28|Brasil Open 2014|0|{'y': 2010, 'e': 533}|Clay|Brazil|$442500|32|08.02.2010|14.02.2010|533|2010
+29|ABN AMRO World Tennis Tournament|1|{'y': 2010, 'e': 407}|Hard|The Netherlands|Ç1150000|32|08.02.2010|14.02.2010|407|2010
+30|SAP Open|1|{'y': 2010, 'e': 424}|Hard|CA, U.S.A.|$531000|32|08.02.2010|14.02.2010|424|2010
+31|Copa Claro|0|{'y': 2010, 'e': 506}|Clay|Argentina|$475300|32|15.02.2010|21.02.2010|506|2010
+32|Open 13|1|{'y': 2010, 'e': 496}|Hard|France|Ç512750|32|15.02.2010|21.02.2010|496|2010
+33|U.S. National Indoor Tennis Championships|1|{'y': 2010, 'e': 402}|Hard|TN, U.S.A.|$1100000|32|15.02.2010|21.02.2010|402|2010
+34|Abierto Mexicano Telcel|0|{'y': 2010, 'e': 807}|Clay|Mexico|$955000|32|22.02.2010|28.02.2010|807|2010
+35|Delray Beach Open by The  Venetian® Las Vegas|0|{'y': 2010, 'e': 499}|Hard|FL, U.S.A.|$442500|32|22.02.2010|28.02.2010|499|2010
+36|Dubai Duty Free Tennis Championships|0|{'y': 2010, 'e': 495}|Hard|U.A.E.|$1619500|32|22.02.2010|28.02.2010|495|2010
+37|BNP Paribas Open|0|{'y': 2010, 'e': 404}|Hard|CA, U.S.A.|$3645000|128|08.03.2010|21.03.2010|404|2010
+38|Miami Open, presented by Itau|0|{'y': 2010, 'e': 403}|Hard|FL, U.S.A.|$3645000|128|22.03.2010|04.04.2010|403|2010
+39|Grand Prix Hassan II|0|{'y': 2010, 'e': 360}|Clay|Morocco|Ç398250|32|05.04.2010|11.04.2010|360|2010
+40|Fayez Sarofim & Co. U.S. Men's Clay Court Championship|0|{'y': 2010, 'e': 717}|Clay|TX, U.S.A.|$442500|32|05.04.2010|11.04.2010|717|2010
+41|Monte-Carlo Rolex Masters|0|{'y': 2010, 'e': 410}|Clay|Monaco|Ç2227500|64|12.04.2010|18.04.2010|410|2010
+42|Barcelona Open Banc Sabadell|0|{'y': 2010, 'e': 425}|Clay|Spain|Ç1550000|64|19.04.2010|25.04.2010|425|2010
+43|Internazionali BNL d'Italia|0|{'y': 2010, 'e': 416}|Clay|Italy|Ç2227500|64|26.04.2010|02.05.2010|416|2010
+44|BMW Open by FWU AG|0|{'y': 2010, 'e': 308}|Clay|Germany|Ç398250|32|03.05.2010|09.05.2010|308|2010
+45|Serbia Open|0|{'y': 2010, 'e': 5053}|Clay|Serbia|Ç373200|32|03.05.2010|09.05.2010|5053|2010
+46|Portugal Open|0|{'y': 2010, 'e': 468}|Clay|Portugal|Ç398250|32|03.05.2010|09.05.2010|468|2010
+47|Mutua Madrid Open|0|{'y': 2010, 'e': 1536}|Clay|Spain|Ç2835000|64|10.05.2010|16.05.2010|1536|2010
+48|Open de Nice Côte d’Azur|0|{'y': 2010, 'e': 6120}|Clay|France|Ç398250|32|17.05.2010|23.05.2010|6120|2010
+49|Dnsseldorf World Team Cup|0|{'y': 2010, 'e': 615}|Clay|Dnsseldorf|Ç750000|12|17.05.2010|23.05.2010|615|2010
+50|Gerry Weber Open |0|{'y': 2010, 'e': 500}|Grass|Germany|Ç663750|32|07.06.2010|13.06.2010|500|2010
+51|Aegon Championships|0|{'y': 2010, 'e': 311}|Grass|Great Britain|Ç627700|64|07.06.2010|13.06.2010|311|2010
+52|Aegon International|0|{'y': 2010, 'e': 741}|Grass|Great Britain|Ç405000|32|14.06.2010|20.06.2010|741|2010
+53|Topshelf Open|0|{'y': 2010, 'e': 440}|Grass|The Netherlands|Ç398250|32|14.06.2010|20.06.2010|440|2010
+54|Hall of Fame Tennis Championships|0|{'y': 2010, 'e': 315}|Grass|RI, U.S.A.|$442500|32|05.07.2010|11.07.2010|315|2010
+55|SkiStar Swedish Open|0|{'y': 2010, 'e': 316}|Clay|Sweden|Ç398250|32|12.07.2010|18.07.2010|316|2010
+56|MercedesCup|0|{'y': 2010, 'e': 321}|Clay|Germany|Ç398250|32|12.07.2010|18.07.2010|321|2010
+57|BB&T Atlanta Open|0|{'y': 2010, 'e': 6116}|Hard|GA, USA|$531000|32|19.07.2010|25.07.2010|6116|2010
+58|bet-at-home Open|0|{'y': 2010, 'e': 414}|Clay|Germany|Ç1000000|64|19.07.2010|25.07.2010|414|2010
+59|Crédit Agricole Suisse Open Gstaad|0|{'y': 2010, 'e': 314}|Clay|Switzerland|Ç398250|32|26.07.2010|01.08.2010|314|2010
+60|Farmers Classic|0|{'y': 2010, 'e': 423}|Hard|CA, U.S.A.|$619500|32|26.07.2010|01.08.2010|423|2010
+61|Vegeta Croatia Open Umag|0|{'y': 2010, 'e': 439}|Clay|Croatia|Ç398250|32|26.07.2010|01.08.2010|439|2010
+62|Citi Open|0|{'y': 2010, 'e': 418}|Hard|DC, USA|$1165500|64|02.08.2010|08.08.2010|418|2010
+63|Rogers Cup|0|{'y': 2010, 'e': 421}|Hard|Toronto, Canada|$2430000|64|09.08.2010|15.08.2010|421|2010
+64|Western & Southern Open - Cincinnati|0|{'y': 2010, 'e': 422}|Hard|OH, U.S.A.|$2430000|64|16.08.2010|22.08.2010|422|2010
+65|Pilot Pen Tennis|0|{'y': 2010, 'e': 3348}|Hard|CT, U.S.A.|$663750|64|23.08.2010|29.08.2010|3348|2010
+66|BRD Nastase Tiriac Trophy|0|{'y': 2010, 'e': 773}|Clay|Romania|Ç368450|32|20.09.2010|26.09.2010|773|2010
+67|Moselle Open|1|{'y': 2010, 'e': 341}|Hard|France|Ç398250|32|20.09.2010|26.09.2010|341|2010
+68|Thailand Open|1|{'y': 2010, 'e': 1720}|Hard|Thailand|$551000|32|27.09.2010|03.10.2010|1720|2010
+69|Malaysian Open, Kuala Lumpur|1|{'y': 2010, 'e': 6003}|Hard|Malaysia|$850000|32|27.09.2010|03.10.2010|6003|2010
+70|China Open|0|{'y': 2010, 'e': 747}|Hard|China|$2100000|32|04.10.2010|10.10.2010|747|2010
+71|Rakuten Japan Open Tennis Championships|0|{'y': 2010, 'e': 329}|Hard|Japan|$1100000|32|04.10.2010|10.10.2010|329|2010
+72|Shanghai Rolex Masters|0|{'y': 2010, 'e': 5014}|Hard|China|$3240000|64|11.10.2010|17.10.2010|5014|2010
+73|Kremlin Cup by Bank of Moscow|1|{'y': 2010, 'e': 438}|Hard|Russia|$1000000|32|18.10.2010|24.10.2010|438|2010
+74|If Stockholm Open|1|{'y': 2010, 'e': 429}|Hard|Sweden|Ç531000|32|18.10.2010|24.10.2010|429|2010
+75|Open Sud de France|1|{'y': 2010, 'e': 375}|Hard|France|Ç575250|32|25.10.2010|31.10.2010|375|2010
+76|Negev Israel Open|1|{'y': 2010, 'e': 568}|Hard|Russia|$663750|32|25.10.2010|31.10.2010|568|2010
+77|Erste Bank Open|1|{'y': 2010, 'e': 337}|Hard|Austria|Ç575250|32|25.10.2010|31.10.2010|337|2010
+78|Valencia Open 500|1|{'y': 2010, 'e': 573}|Hard|Spain|Ç1357000|32|01.11.2010|07.11.2010|573|2010
+79|Swiss Indoors Basel|1|{'y': 2010, 'e': 328}|Hard|Switzerland|Ç1225000|32|01.11.2010|07.11.2010|328|2010
+80|BNP Paribas Masters|1|{'y': 2010, 'e': 352}|Hard|France|Ç2227500|64|08.11.2010|14.11.2010|352|2010
+81|Barclays ATP World Tour Finals|1|{'y': 2010, 'e': 605}|Hard|London, England|$5070000|4|22.11.2010|28.11.2010|605|2010
+82|Brisbane International presented by Suncorp|0|{'y': 2011, 'e': 339}|Hard|Australia|$422300|32|03.01.2011|09.01.2011|339|2011
+83|Aircel Chennai Open|0|{'y': 2011, 'e': 891}|Hard|India|$398250|32|03.01.2011|09.01.2011|891|2011
+84|Qatar ExxonMobil Open|0|{'y': 2011, 'e': 451}|Hard|Qatar|$1024000|32|03.01.2011|09.01.2011|451|2011
+85|Heineken Open|0|{'y': 2011, 'e': 301}|Hard|New Zealand|$398250|32|10.01.2011|16.01.2011|301|2011
+86|Apia International Sydney|0|{'y': 2011, 'e': 338}|Hard|Australia|$422300|32|10.01.2011|16.01.2011|338|2011
+87|SA Tennis Open|0|{'y': 2011, 'e': 5012}|Hard|South Africa|$442500|32|31.01.2011|06.02.2011|5012|2011
+88|Royal Guard Open Chile |0|{'y': 2011, 'e': 505}|Clay|Chile|$398250|32|31.01.2011|06.02.2011|505|2011
+89|PBZ Zagreb Indoors|1|{'y': 2011, 'e': 2276}|Hard|Croatia|Ç398250|32|31.01.2011|06.02.2011|2276|2011
+90|Brasil Open 2014|0|{'y': 2011, 'e': 533}|Clay|Brazil|$470200|32|07.02.2011|13.02.2011|533|2011
+91|ABN AMRO World Tennis Tournament|1|{'y': 2011, 'e': 407}|Hard|The Netherlands|Ç1150000|32|07.02.2011|13.02.2011|407|2011
+92|SAP Open|1|{'y': 2011, 'e': 424}|Hard|CA, U.S.A.|$531000|32|07.02.2011|13.02.2011|424|2011
+93|Copa Claro|0|{'y': 2011, 'e': 506}|Clay|Argentina|$478900|32|14.02.2011|20.02.2011|506|2011
+94|Open 13|1|{'y': 2011, 'e': 496}|Hard|France|Ç512750|32|14.02.2011|20.02.2011|496|2011
+95|U.S. National Indoor Tennis Championships|1|{'y': 2011, 'e': 402}|Hard|TN, U.S.A.|$1100000|32|14.02.2011|20.02.2011|402|2011
+96|Abierto Mexicano Telcel|0|{'y': 2011, 'e': 807}|Clay|Mexico|$1100000|32|21.02.2011|27.02.2011|807|2011
+97|Delray Beach Open by The  Venetian® Las Vegas|0|{'y': 2011, 'e': 499}|Hard|FL, U.S.A.|$442500|32|21.02.2011|27.02.2011|499|2011
+98|Dubai Duty Free Tennis Championships|0|{'y': 2011, 'e': 495}|Hard|U.A.E.|$1619500|32|21.02.2011|27.02.2011|495|2011
+99|BNP Paribas Open|0|{'y': 2011, 'e': 404}|Hard|CA, U.S.A.|$3645000|128|07.03.2011|20.03.2011|404|2011
+100|Miami Open, presented by Itau|0|{'y': 2011, 'e': 403}|Hard|FL, U.S.A.|$3645000|128|21.03.2011|03.04.2011|403|2011
+101|Grand Prix Hassan II|0|{'y': 2011, 'e': 360}|Clay|Morocco|Ç398250|32|04.04.2011|10.04.2011|360|2011
+102|Fayez Sarofim & Co. U.S. Men's Clay Court Championship|0|{'y': 2011, 'e': 717}|Clay|TX, U.S.A.|$442500|32|04.04.2011|10.04.2011|717|2011
+103|Monte-Carlo Rolex Masters|0|{'y': 2011, 'e': 410}|Clay|Monaco|Ç2227500|64|11.04.2011|17.04.2011|410|2011
+104|Barcelona Open Banc Sabadell|0|{'y': 2011, 'e': 425}|Clay|Spain|Ç1550000|64|18.04.2011|24.04.2011|425|2011
+105|BMW Open by FWU AG|0|{'y': 2011, 'e': 308}|Clay|Germany|Ç398250|32|25.04.2011|01.05.2011|308|2011
+106|Serbia Open|0|{'y': 2011, 'e': 5053}|Clay|Serbia|Ç364900|32|25.04.2011|01.05.2011|5053|2011
+107|Portugal Open|0|{'y': 2011, 'e': 468}|Clay|Portugal|Ç398250|32|25.04.2011|01.05.2011|468|2011
+108|Mutua Madrid Open|0|{'y': 2011, 'e': 1536}|Clay|Spain|Ç2835000|64|02.05.2011|08.05.2011|1536|2011
+109|Internazionali BNL d'Italia|0|{'y': 2011, 'e': 416}|Clay|Italy|Ç2227500|64|09.05.2011|15.05.2011|416|2011
+110|Open de Nice Côte d’Azur|0|{'y': 2011, 'e': 6120}|Clay|France|Ç398250|32|16.05.2011|22.05.2011|6120|2011
+111|Power Horse World Team Cup|0|{'y': 2011, 'e': 615}|Clay|Dnsseldorf|Ç800000|8|16.05.2011|22.05.2011|615|2011
+112|Gerry Weber Open |0|{'y': 2011, 'e': 500}|Grass|Germany|Ç663750|32|06.06.2011|12.06.2011|500|2011
+113|Aegon Championships|0|{'y': 2011, 'e': 311}|Grass|Great Britain|Ç608000|64|06.06.2011|12.06.2011|311|2011
+114|Aegon International|0|{'y': 2011, 'e': 741}|Grass|Great Britain|Ç410925|32|13.06.2011|19.06.2011|741|2011
+115|Topshelf Open|0|{'y': 2011, 'e': 440}|Grass|The Netherlands|Ç398250|32|13.06.2011|19.06.2011|440|2011
+116|Hall of Fame Tennis Championships|0|{'y': 2011, 'e': 315}|Grass|RI, U.S.A.|$442500|32|04.07.2011|10.07.2011|315|2011
+117|SkiStar Swedish Open|0|{'y': 2011, 'e': 316}|Clay|Sweden|Ç398250|32|11.07.2011|17.07.2011|316|2011
+118|MercedesCup|0|{'y': 2011, 'e': 321}|Clay|Germany|Ç398250|32|11.07.2011|17.07.2011|321|2011
+119|BB&T Atlanta Open|0|{'y': 2011, 'e': 6116}|Hard|GA, USA|$531000|32|18.07.2011|24.07.2011|6116|2011
+120|bet-at-home Open|0|{'y': 2011, 'e': 414}|Clay|Germany|Ç1000000|64|18.07.2011|24.07.2011|414|2011
+121|Crédit Agricole Suisse Open Gstaad|0|{'y': 2011, 'e': 314}|Clay|Switzerland|Ç398250|32|25.07.2011|31.07.2011|314|2011
+122|Farmers Classic|0|{'y': 2011, 'e': 423}|Hard|CA, U.S.A.|$619500|32|25.07.2011|31.07.2011|423|2011
+123|Vegeta Croatia Open Umag|0|{'y': 2011, 'e': 439}|Clay|Croatia|Ç398250|32|25.07.2011|31.07.2011|439|2011
+124|bet-at-home Cup Kitzbühel|0|{'y': 2011, 'e': 319}|Clay|Austria|Ç398250|32|01.08.2011|07.08.2011|319|2011
+125|Citi Open|0|{'y': 2011, 'e': 418}|Hard|DC, USA|$1166400|64|01.08.2011|07.08.2011|418|2011
+126|Rogers Cup|0|{'y': 2011, 'e': 421}|Hard|Montreal, Canada|$2430000|64|08.08.2011|14.08.2011|421|2011
+127|Western & Southern Open - Cincinnati|0|{'y': 2011, 'e': 422}|Hard|OH, U.S.A.|$2592000|64|15.08.2011|21.08.2011|422|2011
+128|Winston-Salem Open|0|{'y': 2011, 'e': 6242}|Hard|NC, U.S.A.|$553125|64|22.08.2011|28.08.2011|6242|2011
+129|BRD Nastase Tiriac Trophy|0|{'y': 2011, 'e': 773}|Clay|Romania|Ç371200|32|19.09.2011|25.09.2011|773|2011
+130|Moselle Open|1|{'y': 2011, 'e': 341}|Hard|France|Ç398250|32|19.09.2011|25.09.2011|341|2011
+131|PTT Thailand Open|1|{'y': 2011, 'e': 1720}|Hard|Thailand|$587000|32|26.09.2011|02.10.2011|1720|2011
+132|Malaysian Open, Kuala Lumpur|1|{'y': 2011, 'e': 6003}|Hard|Malaysia|$850000|32|26.09.2011|02.10.2011|6003|2011
+133|China Open|0|{'y': 2011, 'e': 747}|Hard|China|$2100000|32|03.10.2011|09.10.2011|747|2011
+134|Rakuten Japan Open Tennis Championships|0|{'y': 2011, 'e': 329}|Hard|Japan|$1214500|32|03.10.2011|09.10.2011|329|2011
+135|Shanghai Rolex Masters|0|{'y': 2011, 'e': 5014}|Hard|Shanghai, China|$3240000|64|10.10.2011|16.10.2011|5014|2011
+136|Kremlin Cup by Bank of Moscow|1|{'y': 2011, 'e': 438}|Hard|Russia|$725000|32|17.10.2011|23.10.2011|438|2011
+137|If Stockholm Open|1|{'y': 2011, 'e': 429}|Hard|Sweden|Ç531000|32|17.10.2011|23.10.2011|429|2011
+138|Negev Israel Open|1|{'y': 2011, 'e': 568}|Hard|Russia|$663750|32|24.10.2011|30.10.2011|568|2011
+139|Erste Bank Open|1|{'y': 2011, 'e': 337}|Hard|Austria|Ç575250|32|24.10.2011|30.10.2011|337|2011
+140|Swiss Indoors Basel|1|{'y': 2011, 'e': 328}|Hard|Switzerland|Ç1308100|32|31.10.2011|06.11.2011|328|2011
+141|Valencia Open 500|1|{'y': 2011, 'e': 573}|Hard|Spain|Ç1357000|32|31.10.2011|06.11.2011|573|2011
+142|BNP Paribas Masters|1|{'y': 2011, 'e': 352}|Hard|France|Ç2227500|64|07.11.2011|13.11.2011|352|2011
+143|Barclays ATP World Tour Finals|1|{'y': 2011, 'e': 605}|Hard|Great Britain|$5070000|4|21.11.2011|27.11.2011|605|2011
+144|Brisbane International presented by Suncorp|0|{'y': 2012, 'e': 339}|Hard|Australia|$434250|32|02.01.2012|08.01.2012|339|2012
+145|Aircel Chennai Open|0|{'y': 2012, 'e': 891}|Hard|India|$398250|32|02.01.2012|08.01.2012|891|2012
+146|Qatar ExxonMobil Open|0|{'y': 2012, 'e': 451}|Hard|Qatar|$1024000|32|02.01.2012|08.01.2012|451|2012
+147|Heineken Open|0|{'y': 2012, 'e': 301}|Hard|New Zealand|$398250|32|09.01.2012|15.01.2012|301|2012
+148|Apia International Sydney|0|{'y': 2012, 'e': 338}|Hard|Australia|$434250|32|09.01.2012|15.01.2012|338|2012
+149|Open Sud de France|1|{'y': 2012, 'e': 375}|Hard|France|Ç398250|32|30.01.2012|05.02.2012|375|2012
+150|Royal Guard Open Chile |0|{'y': 2012, 'e': 505}|Clay|Chile|$398250|32|30.01.2012|05.02.2012|505|2012
+151|PBZ Zagreb Indoors|1|{'y': 2012, 'e': 2276}|Hard|Croatia|Ç398250|32|30.01.2012|05.02.2012|2276|2012
+152|ABN AMRO World Tennis Tournament|1|{'y': 2012, 'e': 407}|Hard|The Netherlands|Ç1207500|32|13.02.2012|19.02.2012|407|2012
+153|SAP Open|1|{'y': 2012, 'e': 424}|Hard|CA, U.S.A.|$531000|32|13.02.2012|19.02.2012|424|2012
+154|Brasil Open 2014|1|{'y': 2012, 'e': 533}|Clay|Brazil|$475300|32|13.02.2012|19.02.2012|533|2012
+155|Copa Claro|0|{'y': 2012, 'e': 506}|Clay|Argentina|$484100|32|20.02.2012|26.02.2012|506|2012
+156|Open 13|1|{'y': 2012, 'e': 496}|Hard|France|Ç512750|32|20.02.2012|26.02.2012|496|2012
+157|U.S. National Indoor Tennis Championships|1|{'y': 2012, 'e': 402}|Hard|TN, U.S.A.|$1155000|32|20.02.2012|26.02.2012|402|2012
+158|Abierto Mexicano Telcel|0|{'y': 2012, 'e': 807}|Clay|Mexico|$1155000|32|27.02.2012|04.03.2012|807|2012
+159|Delray Beach Open by The  Venetian® Las Vegas|0|{'y': 2012, 'e': 499}|Hard|FL, U.S.A.|$442500|32|27.02.2012|04.03.2012|499|2012
+160|Dubai Duty Free Tennis Championships|0|{'y': 2012, 'e': 495}|Hard|U.A.E.|$1700475|32|27.02.2012|04.03.2012|495|2012
+161|BNP Paribas Open|0|{'y': 2012, 'e': 404}|Hard|CA, U.S.A.|$4694969|128|05.03.2012|18.03.2012|404|2012
+162|Miami Open, presented by Itau|0|{'y': 2012, 'e': 403}|Hard|FL, U.S.A.|$3973050|128|19.03.2012|01.04.2012|403|2012
+163|Grand Prix Hassan II|0|{'y': 2012, 'e': 360}|Clay|Morocco|Ç398250|32|09.04.2012|15.04.2012|360|2012
+164|Fayez Sarofim & Co. U.S. Men's Clay Court Championship|0|{'y': 2012, 'e': 717}|Clay|TX, U.S.A.|$442500|32|09.04.2012|15.04.2012|717|2012
+165|Monte-Carlo Rolex Masters|0|{'y': 2012, 'e': 410}|Clay|Monaco|Ç2427975|64|16.04.2012|22.04.2012|410|2012
+166|Barcelona Open Banc Sabadell|0|{'y': 2012, 'e': 425}|Clay|Spain|Ç1627500|64|23.04.2012|29.04.2012|425|2012
+167|BRD Nastase Tiriac Trophy|0|{'y': 2012, 'e': 773}|Clay|Romania|Ç398250|32|23.04.2012|29.04.2012|773|2012
+168|Serbia Open|0|{'y': 2012, 'e': 5053}|Clay|Serbia|Ç366950|32|30.04.2012|06.05.2012|5053|2012
+169|Portugal Open|0|{'y': 2012, 'e': 468}|Clay|Portugal|Ç398250|32|30.04.2012|06.05.2012|468|2012
+170|BMW Open by FWU AG|0|{'y': 2012, 'e': 308}|Clay|Germany|Ç398250|32|30.04.2012|06.05.2012|308|2012
+171|Mutua Madrid Open|0|{'y': 2012, 'e': 1536}|Clay|Spain|Ç3090150|64|07.05.2012|13.05.2012|1536|2012
+172|Internazionali BNL d'Italia|0|{'y': 2012, 'e': 416}|Clay|Italy|Ç2427975|64|14.05.2012|20.05.2012|416|2012
+173|Open de Nice Côte d’Azur|0|{'y': 2012, 'e': 6120}|Clay|France|Ç398250|32|21.05.2012|27.05.2012|6120|2012
+174|Gerry Weber Open |0|{'y': 2012, 'e': 500}|Grass|Germany|Ç663750|32|11.06.2012|17.06.2012|500|2012
+175|Aegon Championships|0|{'y': 2012, 'e': 311}|Grass|Great Britain|Ç625300|64|11.06.2012|17.06.2012|311|2012
+176|Topshelf Open|0|{'y': 2012, 'e': 440}|Grass|The Netherlands|Ç398250|32|18.06.2012|24.06.2012|440|2012
+177|Aegon International|0|{'y': 2012, 'e': 741}|Grass|Great Britain|Ç403950|32|18.06.2012|24.06.2012|741|2012
+178|SkiStar Swedish Open|0|{'y': 2012, 'e': 316}|Clay|Sweden|Ç358425|32|09.07.2012|15.07.2012|316|2012
+179|Hall of Fame Tennis Championships|0|{'y': 2012, 'e': 315}|Grass|RI, U.S.A.|$398250|32|09.07.2012|15.07.2012|315|2012
+180|MercedesCup|0|{'y': 2012, 'e': 321}|Clay|Germany|Ç358425|32|09.07.2012|15.07.2012|321|2012
+181|Vegeta Croatia Open Umag|0|{'y': 2012, 'e': 439}|Clay|Croatia|Ç358425|32|09.07.2012|15.07.2012|439|2012
+182|BB&T Atlanta Open|0|{'y': 2012, 'e': 6116}|Hard|GA, USA|$477900|32|16.07.2012|22.07.2012|6116|2012
+183|Crédit Agricole Suisse Open Gstaad|0|{'y': 2012, 'e': 314}|Clay|Switzerland|Ç358425|32|16.07.2012|22.07.2012|314|2012
+184|bet-at-home Open|0|{'y': 2012, 'e': 414}|Clay|Germany|Ç900000|32|16.07.2012|22.07.2012|414|2012
+185|bet-at-home Cup Kitzbühel|0|{'y': 2012, 'e': 319}|Clay|Austria|Ç358425|32|23.07.2012|29.07.2012|319|2012
+186|Farmers Classic|0|{'y': 2012, 'e': 423}|Hard|CA, U.S.A.|$557550|32|23.07.2012|29.07.2012|423|2012
+187|London Olympics|0|{'y': 2012, 'e': 96}|Grass|Great Britain|ú0|64|30.07.2012|05.08.2012|96|2012
+188|Citi Open|0|{'y': 2012, 'e': 418}|Hard|DC, USA|$1049760|32|30.07.2012|05.08.2012|418|2012
+189|Rogers Cup|0|{'y': 2012, 'e': 421}|Hard|Toronto, Ontario|$2648700|64|06.08.2012|12.08.2012|421|2012
+190|Western & Southern Open - Cincinnati|0|{'y': 2012, 'e': 422}|Hard|OH, U.S.A.|$2825280|64|13.08.2012|19.08.2012|422|2012
+191|Winston-Salem Open|0|{'y': 2012, 'e': 6242}|Hard|NC, U.S.A.|$553125|64|20.08.2012|26.08.2012|6242|2012
+192|Moselle Open|1|{'y': 2012, 'e': 341}|Hard|France|Ç398250|32|17.09.2012|23.09.2012|341|2012
+193|Negev Israel Open|1|{'y': 2012, 'e': 568}|Hard|Russia|$410850|32|17.09.2012|23.09.2012|568|2012
+194|Thailand Open|1|{'y': 2012, 'e': 1720}|Hard|Thailand|$551000|32|24.09.2012|30.09.2012|1720|2012
+195|Malaysian Open, Kuala Lumpur|1|{'y': 2012, 'e': 6003}|Hard|Malaysia|$850000|32|24.09.2012|30.09.2012|6003|2012
+196|China Open|0|{'y': 2012, 'e': 747}|Hard|China|$2205000|32|01.10.2012|07.10.2012|747|2012
+197|Rakuten Japan Open Tennis Championships|0|{'y': 2012, 'e': 329}|Hard|Japan|$1280565|32|01.10.2012|07.10.2012|329|2012
+198|Shanghai Rolex Masters|0|{'y': 2012, 'e': 5014}|Hard|Shanghai, China|$3531600|64|08.10.2012|14.10.2012|5014|2012
+199|Kremlin Cup by Bank of Moscow|1|{'y': 2012, 'e': 438}|Hard|Russia|$673150|32|15.10.2012|21.10.2012|438|2012
+200|If Stockholm Open|1|{'y': 2012, 'e': 429}|Hard|Sweden|Ç486750|32|15.10.2012|21.10.2012|429|2012
+201|Erste Bank Open|1|{'y': 2012, 'e': 337}|Hard|Austria|Ç486750|32|15.10.2012|21.10.2012|337|2012
+202|Valencia Open 500|1|{'y': 2012, 'e': 573}|Hard|Spain|Ç1424850|32|22.10.2012|28.10.2012|573|2012
+203|Swiss Indoors Basel|1|{'y': 2012, 'e': 328}|Hard|Switzerland|Ç1404300|32|22.10.2012|28.10.2012|328|2012
+204|BNP Paribas Masters|1|{'y': 2012, 'e': 352}|Hard|France|Ç2427975|64|29.10.2012|04.11.2012|352|2012
+205|Barclays ATP World Tour Finals|1|{'y': 2012, 'e': 605}|Hard|Great Britain|$5500000|4|05.11.2012|11.11.2012|605|2012
+206|Brisbane International presented by Suncorp|0|{'y': 2013, 'e': 339}|Hard|Australia|$436630|32|31.12.2012|06.01.2013|339|2013
+207|Aircel Chennai Open|0|{'y': 2013, 'e': 891}|Hard|India|$385150|32|31.12.2012|06.01.2013|891|2013
+208|Qatar ExxonMobil Open|0|{'y': 2013, 'e': 451}|Hard|Qatar|$1054720|32|31.12.2012|06.01.2013|451|2013
+209|Heineken Open|0|{'y': 2013, 'e': 301}|Hard|New Zealand|$433400|32|07.01.2013|13.01.2013|301|2013
+210|Apia International Sydney|0|{'y': 2013, 'e': 338}|Hard|Australia|$436630|32|07.01.2013|13.01.2013|338|2013
+211|Open Sud de France|1|{'y': 2013, 'e': 375}|Hard|France|€410200|32|04.02.2013|10.02.2013|375|2013
+212|Royal Guard Open Chile |0|{'y': 2013, 'e': 505}|Clay|Chile|$410200|32|04.02.2013|10.02.2013|505|2013
+213|PBZ Zagreb Indoors|1|{'y': 2013, 'e': 2276}|Hard|Croatia|€410200|32|04.02.2013|10.02.2013|2276|2013
+214|ABN AMRO World Tennis Tournament|1|{'y': 2013, 'e': 407}|Hard|The Netherlands|€1267875|32|11.02.2013|17.02.2013|407|2013
+215|SAP Open|1|{'y': 2013, 'e': 424}|Hard|CA, U.S.A.|$546930|32|11.02.2013|17.02.2013|424|2013
+216|Brasil Open 2014|1|{'y': 2013, 'e': 533}|Clay|Brazil|$455775|32|11.02.2013|17.02.2013|533|2013
+217|Copa Claro|0|{'y': 2013, 'e': 506}|Clay|Argentina|$493670|32|18.02.2013|24.02.2013|506|2013
+218|Open 13|1|{'y': 2013, 'e': 496}|Hard|France|€528135|32|18.02.2013|24.02.2013|496|2013
+219|U.S. National Indoor Tennis Championships|1|{'y': 2013, 'e': 402}|Hard|TN, U.S.A.|$1212750|32|18.02.2013|24.02.2013|402|2013
+220|Abierto Mexicano Telcel|0|{'y': 2013, 'e': 807}|Clay|Mexico|$1212750|32|25.02.2013|03.03.2013|807|2013
+221|Delray Beach Open by The  Venetian® Las Vegas|0|{'y': 2013, 'e': 499}|Hard|FL, U.S.A.|$455775|32|25.02.2013|03.03.2013|499|2013
+222|Dubai Duty Free Tennis Championships|0|{'y': 2013, 'e': 495}|Hard|U.A.E.|$1785500|32|25.02.2013|03.03.2013|495|2013
+223|BNP Paribas Open|0|{'y': 2013, 'e': 404}|Hard|CA, U.S.A.|$5191943|128|04.03.2013|17.03.2013|404|2013
+224|Miami Open, presented by Itau|0|{'y': 2013, 'e': 403}|Hard|FL, U.S.A.|$4330625|128|18.03.2013|31.03.2013|403|2013
+225|Grand Prix Hassan II|0|{'y': 2013, 'e': 360}|Clay|Morocco|€410200|32|08.04.2013|14.04.2013|360|2013
+226|Fayez Sarofim & Co. U.S. Men's Clay Court Championship|0|{'y': 2013, 'e': 717}|Clay|TX, U.S.A.|$455775|32|08.04.2013|14.04.2013|717|2013
+227|Monte-Carlo Rolex Masters|0|{'y': 2013, 'e': 410}|Clay|Monaco|€2646495|64|15.04.2013|21.04.2013|410|2013
+228|Barcelona Open Banc Sabadell|0|{'y': 2013, 'e': 425}|Clay|Spain|€1708875|64|22.04.2013|28.04.2013|425|2013
+229|BRD Nastase Tiriac Trophy|0|{'y': 2013, 'e': 773}|Clay|Romania|€410200|32|22.04.2013|28.04.2013|773|2013
+230|BMW Open by FWU AG|0|{'y': 2013, 'e': 308}|Clay|Germany|€410200|32|29.04.2013|05.05.2013|308|2013
+231|Portugal Open|0|{'y': 2013, 'e': 468}|Clay|Portugal|€410200|32|29.04.2013|05.05.2013|468|2013
+232|Mutua Madrid Open|0|{'y': 2013, 'e': 1536}|Clay|Spain|€3368265|64|06.05.2013|12.05.2013|1536|2013
+233|Internazionali BNL d'Italia|0|{'y': 2013, 'e': 416}|Clay|Italy|€2646495|64|13.05.2013|19.05.2013|416|2013
+234|Düsseldorf Open|0|{'y': 2013, 'e': 6710}|Clay|Germany|€410200|32|20.05.2013|26.05.2013|6710|2013
+235|Open de Nice Côte d’Azur|0|{'y': 2013, 'e': 6120}|Clay|France|€410200|32|20.05.2013|26.05.2013|6120|2013
+236|Gerry Weber Open |0|{'y': 2013, 'e': 500}|Grass|Germany|€683665|32|10.06.2013|16.06.2013|500|2013
+237|Aegon Championships|0|{'y': 2013, 'e': 311}|Grass|Great Britain|€683665|64|10.06.2013|16.06.2013|311|2013
+238|Topshelf Open|0|{'y': 2013, 'e': 440}|Grass|The Netherlands|€410200|32|17.06.2013|23.06.2013|440|2013
+239|Aegon International|0|{'y': 2013, 'e': 741}|Grass|Great Britain|€468460|32|17.06.2013|23.06.2013|741|2013
+240|SkiStar Swedish Open|0|{'y': 2013, 'e': 316}|Clay|Sweden|€433770|32|08.07.2013|14.07.2013|316|2013
+241|Hall of Fame Tennis Championships|0|{'y': 2013, 'e': 315}|Grass|RI, U.S.A.|$455775|32|08.07.2013|14.07.2013|315|2013
+242|MercedesCup|0|{'y': 2013, 'e': 321}|Clay|Germany|€410200|32|08.07.2013|14.07.2013|321|2013
+243|Claro Open Colombia|0|{'y': 2013, 'e': 6718}|Hard|Colombia|$638085|32|15.07.2013|21.07.2013|6718|2013
+244|bet-at-home Open|0|{'y': 2013, 'e': 414}|Clay|Germany|€1102500|64|15.07.2013|21.07.2013|414|2013
+245|BB&T Atlanta Open|0|{'y': 2013, 'e': 6116}|Hard|GA, USA|$546930|32|22.07.2013|28.07.2013|6116|2013
+246|Crédit Agricole Suisse Open Gstaad|0|{'y': 2013, 'e': 314}|Clay|Switzerland|€410200|32|22.07.2013|28.07.2013|314|2013
+247|Vegeta Croatia Open Umag|0|{'y': 2013, 'e': 439}|Clay|Croatia|€410200|32|22.07.2013|28.07.2013|439|2013
+248|bet-at-home Cup Kitzbühel|0|{'y': 2013, 'e': 319}|Clay|Austria|€410200|32|29.07.2013|04.08.2013|319|2013
+249|Citi Open|0|{'y': 2013, 'e': 418}|Hard|DC, USA|$1295790|64|29.07.2013|04.08.2013|418|2013
+250|Rogers Cup|0|{'y': 2013, 'e': 421}|Hard|Montreal, Canada|$2887085|64|05.08.2013|11.08.2013|421|2013
+251|Western & Southern Open - Cincinnati|0|{'y': 2013, 'e': 422}|Hard|OH, U.S.A.|$3079555|64|12.08.2013|18.08.2013|422|2013
+252|Winston-Salem Open|0|{'y': 2013, 'e': 6242}|Hard|NC, U.S.A.|$575250|64|19.08.2013|25.08.2013|6242|2013
+253|Moselle Open|1|{'y': 2013, 'e': 341}|Hard|France|€410200|32|16.09.2013|22.09.2013|341|2013
+254|Negev Israel Open|1|{'y': 2013, 'e': 568}|Hard|Russia|$455775|32|16.09.2013|22.09.2013|568|2013
+255|Thailand Open|1|{'y': 2013, 'e': 1720}|Hard|Thailand|$567530|32|23.09.2013|29.09.2013|1720|2013
+256|Malaysian Open, Kuala Lumpur|1|{'y': 2013, 'e': 6003}|Hard|Malaysia|$875500|32|23.09.2013|29.09.2013|6003|2013
+257|China Open|0|{'y': 2013, 'e': 747}|Hard|China|$2315250|32|30.09.2013|06.10.2013|747|2013
+258|Rakuten Japan Open Tennis Championships|0|{'y': 2013, 'e': 329}|Hard|Japan|$1297000|32|30.09.2013|06.10.2013|329|2013
+259|Shanghai Rolex Masters|0|{'y': 2013, 'e': 5014}|Hard|Shanghai, China|$3849445|64|07.10.2013|13.10.2013|5014|2013
+260|Kremlin Cup by Bank of Moscow|1|{'y': 2013, 'e': 438}|Hard|Russia|$746750|32|14.10.2013|20.10.2013|438|2013
+261|If Stockholm Open|1|{'y': 2013, 'e': 429}|Hard|Sweden|€530165|32|14.10.2013|20.10.2013|429|2013
+262|Erste Bank Open|1|{'y': 2013, 'e': 337}|Hard|Austria|€501355|32|14.10.2013|20.10.2013|337|2013
+263|Swiss Indoors Basel|1|{'y': 2013, 'e': 328}|Hard|Switzerland|€1445835|32|21.10.2013|27.10.2013|328|2013
+264|Valencia Open 500|1|{'y': 2013, 'e': 573}|Hard|Spain|€1496095|32|21.10.2013|27.10.2013|573|2013
+265|BNP Paribas Masters|1|{'y': 2013, 'e': 352}|Hard|France|€2646495|64|28.10.2013|03.11.2013|352|2013
+266|Barclays ATP World Tour Finals|1|{'y': 2013, 'e': 605}|Hard|Great Britain|$6000000|4|04.11.2013|10.11.2013|605|2013
+267|Brisbane International presented by Suncorp|0|{'y': 2014, 'e': 339}|Hard|Australia|$452670|32|30.12.2013|05.01.2014|339|2014
+268|Aircel Chennai Open|0|{'y': 2014, 'e': 891}|Hard|India|$399985|32|30.12.2013|05.01.2014|891|2014
+269|Qatar ExxonMobil Open|0|{'y': 2014, 'e': 451}|Hard|Qatar|$1096910|32|30.12.2013|05.01.2014|451|2014
+270|Heineken Open|0|{'y': 2014, 'e': 301}|Hard|New Zealand|$455190|32|06.01.2014|12.01.2014|301|2014
+271|Apia International Sydney|0|{'y': 2014, 'e': 338}|Hard|Australia|$452670|32|06.01.2014|12.01.2014|338|2014
+272|Open Sud de France|1|{'y': 2014, 'e': 375}|Hard|France|€426605|32|03.02.2014|09.02.2014|375|2014
+273|Royal Guard Open Chile |0|{'y': 2014, 'e': 505}|Clay|Chile|$426605|32|03.02.2014|09.02.2014|505|2014
+274|PBZ Zagreb Indoors|1|{'y': 2014, 'e': 2276}|Hard|Croatia|€426605|32|03.02.2014|09.02.2014|2276|2014
+275|Copa Claro|0|{'y': 2014, 'e': 506}|Clay|Argentina|$488890|32|10.02.2014|16.02.2014|506|2014
+276|U.S. National Indoor Tennis Championships|1|{'y': 2014, 'e': 402}|Hard|TN, U.S.A.|$568805|32|10.02.2014|16.02.2014|402|2014
+277|ABN AMRO World Tennis Tournament|1|{'y': 2014, 'e': 407}|Hard|The Netherlands|€1369305|32|10.02.2014|16.02.2014|407|2014
+278|Delray Beach Open by The  Venetian® Las Vegas|0|{'y': 2014, 'e': 499}|Hard|FL, U.S.A.|$474005|32|17.02.2014|23.02.2014|499|2014
+279|Open 13|1|{'y': 2014, 'e': 496}|Hard|France|€549260|32|17.02.2014|23.02.2014|496|2014
+280|Rio Open presented by Claro hdtv|0|{'y': 2014, 'e': 6932}|Clay|Brazil|$1309770|32|17.02.2014|23.02.2014|6932|2014
+281|Abierto Mexicano Telcel|0|{'y': 2014, 'e': 807}|Hard|Mexico|$1309770|32|24.02.2014|02.03.2014|807|2014
+282|Dubai Duty Free Tennis Championships|0|{'y': 2014, 'e': 495}|Hard|U.A.E.|$1928340|32|24.02.2014|02.03.2014|495|2014
+283|Brasil Open 2014|1|{'y': 2014, 'e': 533}|Clay|Brazil|$474005|32|24.02.2014|02.03.2014|533|2014
+284|BNP Paribas Open|0|{'y': 2014, 'e': 404}|Hard|CA, U.S.A.|$5240015|128|03.03.2014|16.03.2014|404|2014
+285|Miami Open, presented by Itau|0|{'y': 2014, 'e': 403}|Hard|FL, U.S.A.|$4720380|128|17.03.2014|30.03.2014|403|2014
+286|Grand Prix Hassan II|0|{'y': 2014, 'e': 360}|Clay|Morocco|€426605|32|07.04.2014|13.04.2014|360|2014
+287|Fayez Sarofim & Co. U.S. Men's Clay Court Championship|0|{'y': 2014, 'e': 717}|Clay|TX, U.S.A.|$474005|32|07.04.2014|13.04.2014|717|2014
+288|Monte-Carlo Rolex Masters|0|{'y': 2014, 'e': 410}|Clay|Monaco|€2884675|64|14.04.2014|20.04.2014|410|2014
+289|Barcelona Open Banc Sabadell|0|{'y': 2014, 'e': 425}|Clay|Spain|€1845585|64|21.04.2014|27.04.2014|425|2014
+290|BRD Nastase Tiriac Trophy|0|{'y': 2014, 'e': 773}|Clay|Romania|€426605|32|21.04.2014|27.04.2014|773|2014
+291|BMW Open by FWU AG|0|{'y': 2014, 'e': 308}|Clay|Germany|€426605|32|28.04.2014|04.05.2014|308|2014
+292|Portugal Open|0|{'y': 2014, 'e': 468}|Clay|Portugal|€426605|32|28.04.2014|04.05.2014|468|2014
+293|Mutua Madrid Open|0|{'y': 2014, 'e': 1536}|Clay|Spain|€3671405|64|05.05.2014|11.05.2014|1536|2014
+294|Internazionali BNL d'Italia|0|{'y': 2014, 'e': 416}|Clay|Italy|€2884675|64|12.05.2014|18.05.2014|416|2014
+295|Düsseldorf Open|0|{'y': 2014, 'e': 6710}|Clay|Germany|€426605|32|19.05.2014|25.05.2014|6710|2014
+296|Open de Nice Côte d’Azur|0|{'y': 2014, 'e': 6120}|Clay|France|€426605|32|19.05.2014|25.05.2014|6120|2014
+297|Gerry Weber Open |0|{'y': 2014, 'e': 500}|Grass|Germany|€711010|32|09.06.2014|15.06.2014|500|2014
+298|Aegon Championships|0|{'y': 2014, 'e': 311}|Grass|Great Britain|€711010|64|09.06.2014|15.06.2014|311|2014
+299|Topshelf Open|0|{'y': 2014, 'e': 440}|Grass|Netherlands|€426605|32|16.06.2014|22.06.2014|440|2014
+300|Aegon International|0|{'y': 2014, 'e': 741}|Grass|Great Britain|€503185|32|16.06.2014|22.06.2014|741|2014
+301|SkiStar Swedish Open|0|{'y': 2014, 'e': 316}|Clay|Sweden|€426605|32|07.07.2014|13.07.2014|316|2014
+302|Hall of Fame Tennis Championships|0|{'y': 2014, 'e': 315}|Grass|RI, U.S.A.|$474005|32|07.07.2014|13.07.2014|315|2014
+303|MercedesCup|0|{'y': 2014, 'e': 321}|Clay|Germany|€426605|32|07.07.2014|13.07.2014|321|2014
+304|Claro Open Colombia|0|{'y': 2014, 'e': 6718}|Hard|Colombia|$663610|32|14.07.2014|20.07.2014|6718|2014
+305|bet-at-home Open|0|{'y': 2014, 'e': 414}|Clay|Germany|€1190700|64|14.07.2014|20.07.2014|414|2014
+306|BB&T Atlanta Open|0|{'y': 2014, 'e': 6116}|Hard|GA, USA|$568805|32|21.07.2014|27.07.2014|6116|2014
+307|Crédit Agricole Suisse Open Gstaad|0|{'y': 2014, 'e': 314}|Clay|Switzerland|€426605|32|21.07.2014|27.07.2014|314|2014
+308|Vegeta Croatia Open Umag|0|{'y': 2014, 'e': 439}|Clay|Croatia|€426605|32|21.07.2014|27.07.2014|439|2014
+309|bet-at-home Cup Kitzbühel|0|{'y': 2014, 'e': 319}|Clay|Austria|€426605|32|28.07.2014|03.08.2014|319|2014
+310|Citi Open|0|{'y': 2014, 'e': 418}|Hard|DC, USA|$1399700|64|28.07.2014|03.08.2014|418|2014
+311|Rogers Cup|0|{'y': 2014, 'e': 421}|Hard|Toronto, Canada|$3146920|64|04.08.2014|10.08.2014|421|2014
+312|Western & Southern Open - Cincinnati|0|{'y': 2014, 'e': 422}|Hard|OH, U.S.A.|$3356715|64|11.08.2014|17.08.2014|422|2014
+313|Winston-Salem Open|0|{'y': 2014, 'e': 6242}|Hard|NC, U.S.A.|$598260|64|18.08.2014|24.08.2014|6242|2014
+314|Moselle Open|1|{'y': 2014, 'e': 341}|Hard|France|€426605|32|15.09.2014|21.09.2014|341|2014
+315|Malaysian Open, Kuala Lumpur|1|{'y': 2014, 'e': 6003}|Hard|Malaysia|$910520|32|22.09.2014|28.09.2014|6003|2014
+316|Shenzhen Open|0|{'y': 2014, 'e': 6967}|Hard|China|$590230|32|22.09.2014|28.09.2014|6967|2014
+317|China Open|0|{'y': 2014, 'e': 747}|Hard|China|$2500470|32|29.09.2014|05.10.2014|747|2014
+318|Rakuten Japan Open Tennis Championships|0|{'y': 2014, 'e': 329}|Hard|Japan|$1228825|32|29.09.2014|05.10.2014|329|2014
+319|Shanghai Rolex Masters|0|{'y': 2014, 'e': 5014}|Hard|Shanghai, China|$4195895|64|06.10.2014|12.10.2014|5014|2014
+320|Noumea|0|{'y': 2010, 'e': 2205}|Hard|New Caledonia|$75000|32|04.01.2010|10.01.2010|2205|2010
+321|Sao Paulo|0|{'y': 2010, 'e': 746}|Hard|Brazil|$125000|32|04.01.2010|10.01.2010|746|2010
+322|Salinas|0|{'y': 2010, 'e': 59}|Hard|Ecuador|$35000|32|11.01.2010|17.01.2010|59|2010
+323|Bucaramanga|0|{'y': 2010, 'e': 5016}|Clay|Colombia|$35000|32|25.01.2010|31.01.2010|5016|2010
+324|Heilbronn|1|{'y': 2010, 'e': 460}|Hard|Germany|Ç85000|32|25.01.2010|31.01.2010|460|2010
+325|Honolulu|0|{'y': 2010, 'e': 6112}|Hard|HI, USA|$50000|32|25.01.2010|31.01.2010|6112|2010
+326|Burnie|0|{'y': 2010, 'e': 5018}|Hard|Australia|$50000|32|01.02.2010|07.02.2010|5018|2010
+327|Dallas|1|{'y': 2010, 'e': 695}|Hard|TX, USA|$50000|32|01.02.2010|07.02.2010|695|2010
+328|Kazan|1|{'y': 2010, 'e': 6114}|Hard|Russia|$50000|32|01.02.2010|07.02.2010|6114|2010
+329|Bergamo|1|{'y': 2010, 'e': 854}|Hard|Italy|Ç42500|32|08.02.2010|14.02.2010|854|2010
+330|Belgrade|1|{'y': 2010, 'e': 835}|Carpet|Serbia|Ç106500|32|15.02.2010|21.02.2010|835|2010
+331|Tanger|0|{'y': 2010, 'e': 3769}|Clay|Morocco|Ç30000|32|15.02.2010|21.02.2010|3769|2010
+332|Meknes|0|{'y': 2010, 'e': 3767}|Clay|Morocco|Ç30000|32|22.02.2010|28.02.2010|3767|2010
+333|Cherbourg|1|{'y': 2010, 'e': 398}|Hard|France|Ç42500|32|01.03.2010|07.03.2010|398|2010
+334|Kyoto|1|{'y': 2010, 'e': 91}|Carpet|Japan|$35000|32|08.03.2010|21.03.2010|91|2010
+335|Rabat|0|{'y': 2010, 'e': 3566}|Clay|Morocco|Ç42500|32|08.03.2010|21.03.2010|3566|2010
+336|Sarajevo|1|{'y': 2010, 'e': 1683}|Hard|Bosnia & Herzegovina|Ç30000|32|08.03.2010|21.03.2010|1683|2010
+337|Caltanissetta|0|{'y': 2010, 'e': 5049}|Clay|Italy|Ç42500|32|15.03.2010|21.03.2010|5049|2010
+338|Marrakech|0|{'y': 2010, 'e': 3585}|Clay|Morocco|Ç106500|32|15.03.2010|21.03.2010|3585|2010
+339|Sunrise|0|{'y': 2010, 'e': 2207}|Hard|FL, USA|$125000|32|15.03.2010|21.03.2010|2207|2010
+340|Barletta|0|{'y': 2010, 'e': 60}|Clay|Italy|Ç30000|32|22.03.2010|04.04.2010|60|2010
+341|Jersey|1|{'y': 2010, 'e': 4040}|Hard|Great Britain|Ç42500|32|22.03.2010|04.04.2010|4040|2010
+342|Rimouski|1|{'y': 2010, 'e': 3535}|Hard|Canada|$35000|32|22.03.2010|04.04.2010|3535|2010
+343|Napoli|0|{'y': 2010, 'e': 443}|Clay|Italy|Ç30000|32|29.03.2010|04.04.2010|443|2010
+344|St. Brieuc|1|{'y': 2010, 'e': 1796}|Clay|France|Ç30000|32|29.03.2010|04.04.2010|1796|2010
+345|Bogota|0|{'y': 2010, 'e': 359}|Clay|Colombia|$125000|32|05.04.2010|11.04.2010|359|2010
+346|Monza|0|{'y': 2010, 'e': 2208}|Clay|Italy|Ç30000|32|05.04.2010|11.04.2010|2208|2010
+347|Baton Rouge|0|{'y': 2010, 'e': 3810}|Hard|LA, U.S.A.|$50000|32|12.04.2010|18.04.2010|3810|2010
+348|Blumenau|0|{'y': 2010, 'e': 3407}|Clay|Brazil|$35000|32|12.04.2010|18.04.2010|3407|2010
+349|Johannesburg|0|{'y': 2010, 'e': 5055}|Hard|South Africa|$100000|32|12.04.2010|18.04.2010|5055|2010
+350|Leon|0|{'y': 2010, 'e': 1539}|Hard|Mexico|$35000|32|12.04.2010|18.04.2010|1539|2010
+351|Pereira|0|{'y': 2010, 'e': 5063}|Clay|Colombia|$50000|32|12.04.2010|18.04.2010|5063|2010
+352|Rome|0|{'y': 2010, 'e': 2151}|Clay|Italy|Ç30000|32|12.04.2010|18.04.2010|2151|2010
+353|Athens|0|{'y': 2010, 'e': 3801}|Hard|Greece|Ç85000|32|19.04.2010|25.04.2010|3801|2010
+354|Curitiba|0|{'y': 2010, 'e': 5059}|Clay|Brazil|$35000|32|19.04.2010|25.04.2010|5059|2010
+355|Rome-2|0|{'y': 2010, 'e': 5057}|Clay|Italy|Ç30000|32|19.04.2010|25.04.2010|5057|2010
+356|Tallahassee|0|{'y': 2010, 'e': 692}|Hard|FL, U.S.A.|$50000|32|19.04.2010|25.04.2010|692|2010
+357|Manta|0|{'y': 2010, 'e': 2121}|Hard|Ecuador|$35000|32|26.04.2010|02.05.2010|2121|2010
+358|Ostrava|0|{'y': 2010, 'e': 1797}|Clay|Czech Republic|Ç42500|32|26.04.2010|02.05.2010|1797|2010
+359|Rhodes|0|{'y': 2010, 'e': 5061}|Hard|Greece|Ç30000|32|26.04.2010|02.05.2010|5061|2010
+360|Tunis|0|{'y': 2010, 'e': 1541}|Clay|Tunisia|$125000|32|26.04.2010|02.05.2010|1541|2010
+361|Cairo|0|{'y': 2010, 'e': 6123}|Clay|Egypt|$35000|32|03.05.2010|09.05.2010|6123|2010
+362|Ramat Hasharon|0|{'y': 2010, 'e': 3909}|Hard|Israel|$100000|32|03.05.2010|09.05.2010|3909|2010
+363|San Remo|0|{'y': 2010, 'e': 284}|Clay|Italy|Ç30000|32|03.05.2010|09.05.2010|284|2010
+364|Savannah|0|{'y': 2010, 'e': 5067}|Clay|GA, USA|$50000|32|03.05.2010|09.05.2010|5067|2010
+365|Biella|0|{'y': 2010, 'e': 6125}|Clay|Italy|Ç30000|32|10.05.2010|16.05.2010|6125|2010
+366|Bordeaux|0|{'y': 2010, 'e': 3824}|Clay|France|Ç85000|32|10.05.2010|16.05.2010|3824|2010
+367|Busan|0|{'y': 2010, 'e': 1741}|Hard|Korea|$75000|32|10.05.2010|16.05.2010|1741|2010
+368|Sarasota|0|{'y': 2010, 'e': 5069}|Clay|FL, USA|$50000|32|10.05.2010|16.05.2010|5069|2010
+369|Zagreb|0|{'y': 2010, 'e': 588}|Clay|Croatia|$50000|32|10.05.2010|16.05.2010|588|2010
+370|Cremona|0|{'y': 2010, 'e': 3812}|Hard|Italy|Ç30000|32|17.05.2010|23.05.2010|3812|2010
+371|Fergana|0|{'y': 2010, 'e': 603}|Hard|Uzbekistan|$35000|32|17.05.2010|23.05.2010|603|2010
+372|Alessandria|0|{'y': 2010, 'e': 3837}|Clay|Italy|Ç30000|32|24.05.2010|06.06.2010|3837|2010
+373|Carson|0|{'y': 2010, 'e': 3590}|Hard|CA, U.S.A.|$50000|32|24.05.2010|06.06.2010|3590|2010
+374|Furth|0|{'y': 2010, 'e': 396}|Clay|Germany|Ç42500|32|31.05.2010|06.06.2010|396|2010
+375|Nottingham|0|{'y': 2010, 'e': 1631}|Grass|Great Britain|Ç42500|32|31.05.2010|06.06.2010|1631|2010
+376|Ojai|0|{'y': 2010, 'e': 2212}|Hard|CA, U.S.A.|$50000|32|31.05.2010|06.06.2010|2212|2010
+377|Prostejov|0|{'y': 2010, 'e': 558}|Clay|Czech Republic|Ç106500|32|31.05.2010|06.06.2010|558|2010
+378|Rome-3|0|{'y': 2010, 'e': 6127}|Clay|Italy|Ç30000|32|31.05.2010|06.06.2010|6127|2010
+379|Kosice|0|{'y': 2010, 'e': 853}|Clay|Slovakia|Ç30000|32|07.06.2010|13.06.2010|853|2010
+380|Swiss Open|0|{'y': 2010, 'e': 469}|Clay|Switzerland|Ç85000|32|07.06.2010|13.06.2010|469|2010
+381|Bytom|0|{'y': 2010, 'e': 3591}|Clay|Poland|Ç30000|32|14.06.2010|20.06.2010|3591|2010
+382|Milan|0|{'y': 2010, 'e': 3463}|Clay|Italy|Ç30000|32|14.06.2010|20.06.2010|3463|2010
+383|Marburg|0|{'y': 2010, 'e': 6156}|Clay|Germany|Ç30000|32|21.06.2010|04.07.2010|6156|2010
+384|Reggio Emilia|0|{'y': 2010, 'e': 1738}|Clay|Italy|Ç42500|32|21.06.2010|04.07.2010|1738|2010
+385|Arad|0|{'y': 2010, 'e': 2119}|Clay|Romania|Ç30000|32|28.06.2010|04.07.2010|2119|2010
+386|Braunschweig|0|{'y': 2010, 'e': 526}|Clay|Germany|Ç106500|32|28.06.2010|04.07.2010|526|2010
+387|Turin|0|{'y': 2010, 'e': 1543}|Clay|Italy|Ç85000|32|28.06.2010|04.07.2010|1543|2010
+388|Winnetka|0|{'y': 2010, 'e': 228}|Hard|IL, U.S.A.|$50000|32|28.06.2010|04.07.2010|228|2010
+389|Oberstaufen|0|{'y': 2010, 'e': 833}|Clay|Germany|Ç30000|32|05.07.2010|11.07.2010|833|2010
+390|Pozoblanco|0|{'y': 2010, 'e': 472}|Hard|Spain|Ç85000|32|05.07.2010|11.07.2010|472|2010
+391|San Benedetto|0|{'y': 2010, 'e': 3945}|Clay|Italy|Ç30000|32|05.07.2010|11.07.2010|3945|2010
+392|Siemens Open|0|{'y': 2010, 'e': 686}|Clay|The Netherlands|Ç42500|32|05.07.2010|11.07.2010|686|2010
+393|Aptos|0|{'y': 2010, 'e': 467}|Hard|CA, U.S.A.|$75000|32|12.07.2010|18.07.2010|467|2010
+394|Bogota-2|0|{'y': 2010, 'e': 576}|Clay|Colombia|$125000|32|12.07.2010|18.07.2010|576|2010
+395|Rimini|0|{'y': 2010, 'e': 2117}|Clay|Italy|Ç42500|32|12.07.2010|18.07.2010|2117|2010
+396|Lexington|0|{'y': 2010, 'e': 586}|Hard|KY, U.S.A.|$50000|32|19.07.2010|25.07.2010|586|2010
+397|Orbetello|0|{'y': 2010, 'e': 6001}|Clay|Italy|Ç64000|32|19.07.2010|25.07.2010|6001|2010
+398|Penza|0|{'y': 2010, 'e': 3468}|Hard|Russia|$50000|32|19.07.2010|25.07.2010|3468|2010
+399|Porsche Open|0|{'y': 2010, 'e': 786}|Clay|Poland|Ç85000|32|19.07.2010|25.07.2010|786|2010
+400|Recanati|0|{'y': 2010, 'e': 1743}|Hard|Italy|Ç30000|32|19.07.2010|25.07.2010|1743|2010
+401|Cordenons|0|{'y': 2010, 'e': 2120}|Clay|Italy|Ç85000|32|26.07.2010|01.08.2010|2120|2010
+402|Granby|0|{'y': 2010, 'e': 877}|Hard|Canada|$50000|32|26.07.2010|01.08.2010|877|2010
+403|Saransk|0|{'y': 2010, 'e': 2118}|Clay|Russia|$50000|32|26.07.2010|01.08.2010|2118|2010
+404|Tampere|0|{'y': 2010, 'e': 221}|Clay|Finland|Ç42500|32|26.07.2010|01.08.2010|221|2010
+405|Beijing|0|{'y': 2010, 'e': 6167}|Hard|China|$75000|32|02.08.2010|08.08.2010|6167|2010
+406|Campos Do Jordao|0|{'y': 2010, 'e': 849}|Hard|Brazil|$50000|32|02.08.2010|08.08.2010|849|2010
+407|Kitzbuhel|0|{'y': 2010, 'e': 6169}|Clay|Austria|Ç64000|32|02.08.2010|08.08.2010|6169|2010
+408|San Marino CEPU Open|0|{'y': 2010, 'e': 841}|Clay|San Marino|Ç85000|32|02.08.2010|08.08.2010|841|2010
+409|ATP Open Castilla y Leon|0|{'y': 2010, 'e': 783}|Hard|Spain|Ç85000|32|02.08.2010|08.08.2010|783|2010
+410|Vancouver|0|{'y': 2010, 'e': 254}|Hard|Canada|$100000|32|02.08.2010|08.08.2010|254|2010
+411|Binghamton|0|{'y': 2010, 'e': 670}|Hard|NY, U.S.A.|$50000|32|09.08.2010|15.08.2010|670|2010
+412|Brasilia|0|{'y': 2010, 'e': 6171}|Hard|Brazil|$35000|32|09.08.2010|15.08.2010|6171|2010
+413|Istanbul|0|{'y': 2010, 'e': 226}|Hard|Turkey|$100000|32|09.08.2010|15.08.2010|226|2010
+414|Samarkand|0|{'y': 2010, 'e': 447}|Clay|Uzbekistan|$35000|32|09.08.2010|15.08.2010|447|2010
+415|Trani|0|{'y': 2010, 'e': 1604}|Clay|Italy|Ç30000|32|09.08.2010|15.08.2010|1604|2010
+416|Karshi|0|{'y': 2010, 'e': 3967}|Hard|Uzbekistan|$35000|32|16.08.2010|22.08.2010|3967|2010
+417|Salvador|0|{'y': 2010, 'e': 6173}|Hard|Brazil|$35000|32|16.08.2010|22.08.2010|6173|2010
+418|San Sebastian|0|{'y': 2010, 'e': 3957}|Clay|Spain|Ç30000|32|16.08.2010|22.08.2010|3957|2010
+419|Astana|0|{'y': 2010, 'e': 3618}|Hard|Kazakhstan|$50000|32|23.08.2010|29.08.2010|3618|2010
+420|Geneva|0|{'y': 2010, 'e': 471}|Clay|Switzerland|Ç30000|32|23.08.2010|29.08.2010|471|2010
+421|Manerbio|0|{'y': 2010, 'e': 486}|Clay|Italy|Ç64000|32|23.08.2010|29.08.2010|486|2010
+422|Como|0|{'y': 2010, 'e': 3473}|Clay|Italy|Ç30000|32|30.08.2010|12.09.2010|3473|2010
+423|Alphen aan den Rijn|0|{'y': 2010, 'e': 3626}|Clay|The Netherlands|Ç42500|32|06.09.2010|12.09.2010|3626|2010
+424|Brasov|0|{'y': 2010, 'e': 696}|Clay|Romania|Ç30000|32|06.09.2010|12.09.2010|696|2010
+425|Genova|0|{'y': 2010, 'e': 1763}|Clay|Italy|Ç85000|32|06.09.2010|12.09.2010|1763|2010
+426|Rijeka|0|{'y': 2010, 'e': 3586}|Clay|Croatia|Ç30000|32|06.09.2010|12.09.2010|3586|2010
+427|Seville|0|{'y': 2010, 'e': 784}|Clay|Spain|Ç42500|32|06.09.2010|12.09.2010|784|2010
+428|St. Remy|0|{'y': 2010, 'e': 6014}|Hard|France|Ç42500|32|06.09.2010|12.09.2010|6014|2010
+429|Bangkok|0|{'y': 2010, 'e': 5047}|Hard|Thailand|$35000|32|13.09.2010|19.09.2010|5047|2010
+430|Banja Luka|0|{'y': 2010, 'e': 1607}|Clay|Bosnia & Herzegovina|Ç64000|32|13.09.2010|19.09.2010|1607|2010
+431|Belo Horizonte-2|0|{'y': 2010, 'e': 6195}|Clay|Brazil|$35000|32|13.09.2010|19.09.2010|6195|2010
+432|Szczecin|0|{'y': 2010, 'e': 448}|Clay|Poland|Ç106500|32|13.09.2010|19.09.2010|448|2010
+433|Todi|0|{'y': 2010, 'e': 3627}|Clay|Italy|Ç30000|32|13.09.2010|19.09.2010|3627|2010
+434|Tulsa|0|{'y': 2010, 'e': 660}|Hard|OK, USA|$50000|32|13.09.2010|19.09.2010|660|2010
+435|Bangkok-2|0|{'y': 2010, 'e': 6197}|Hard|Thailand|$35000|32|20.09.2010|26.09.2010|6197|2010
+436|Bogota-3|0|{'y': 2010, 'e': 3352}|Clay|Colombia|$75000|32|20.09.2010|26.09.2010|3352|2010
+437|Izmir|0|{'y': 2010, 'e': 3834}|Hard|Turkey|Ç64000|32|20.09.2010|26.09.2010|3834|2010
+438|Ljubljana|0|{'y': 2010, 'e': 754}|Clay|Slovenia|Ç42500|32|20.09.2010|26.09.2010|754|2010
+439|Trnava|0|{'y': 2010, 'e': 3628}|Clay|Slovakia|Ç64000|32|20.09.2010|26.09.2010|3628|2010
+440|Cali|0|{'y': 2010, 'e': 3994}|Clay|Colombia|$75000|32|27.09.2010|03.10.2010|3994|2010
+441|Montevideo|0|{'y': 2010, 'e': 544}|Clay|Uruguay|$75000|32|27.09.2010|03.10.2010|544|2010
+442|Napoli-2|0|{'y': 2010, 'e': 3635}|Clay|Italy|Ç42500|32|27.09.2010|03.10.2010|3635|2010
+443|Buenos Aires|0|{'y': 2010, 'e': 722}|Clay|Argentina|$75000|32|04.10.2010|10.10.2010|722|2010
+444|Mons|1|{'y': 2010, 'e': 3350}|Hard|Belgium|Ç106500|32|04.10.2010|10.10.2010|3350|2010
+445|Palermo|0|{'y': 2010, 'e': 6016}|Clay|Italy|Ç42500|32|04.10.2010|10.10.2010|6016|2010
+446|Quito|0|{'y': 2010, 'e': 589}|Clay|Ecuador|$35000|32|04.10.2010|10.10.2010|589|2010
+447|Sacramento|0|{'y': 2010, 'e': 3351}|Hard|CA, U.S.A.|$50000|32|04.10.2010|10.10.2010|3351|2010
+448|Tarragona|0|{'y': 2010, 'e': 3476}|Clay|Spain|Ç30000|32|04.10.2010|10.10.2010|3476|2010
+449|Asuncion|0|{'y': 2010, 'e': 587}|Clay|Paraguay|$75000|32|11.10.2010|17.10.2010|587|2010
+450|Rennes|1|{'y': 2010, 'e': 3503}|Hard|France|Ç64000|32|11.10.2010|17.10.2010|3503|2010
+451|Tashkent|0|{'y': 2010, 'e': 4012}|Hard|Uzbekistan|$125000|32|11.10.2010|17.10.2010|4012|2010
+452|Tiburon|0|{'y': 2010, 'e': 1768}|Hard|CA, USA|$50000|32|11.10.2010|17.10.2010|1768|2010
+453|Calabasas|0|{'y': 2010, 'e': 656}|Hard|CA, U.S.A.|$50000|32|18.10.2010|24.10.2010|656|2010
+454|Orleans|1|{'y': 2010, 'e': 2273}|Hard|France|Ç106500|32|18.10.2010|24.10.2010|2273|2010
+455|Santiago-2|0|{'y': 2010, 'e': 6068}|Clay|Chile|$100000|32|18.10.2010|24.10.2010|6068|2010
+456|Seoul|0|{'y': 2010, 'e': 545}|Hard|Korea|$125000|32|18.10.2010|24.10.2010|545|2010
+457|Sao Paulo-2|0|{'y': 2010, 'e': 6066}|Clay|Brazil|$75000|32|25.10.2010|31.10.2010|6066|2010
+458|Astana-2|1|{'y': 2010, 'e': 6202}|Hard|Kazakhstan|$125000|32|01.11.2010|07.11.2010|6202|2010
+459|Charlottesville|1|{'y': 2010, 'e': 6055}|Hard|VA, USA|$50000|32|01.11.2010|07.11.2010|6055|2010
+460|Eckental|1|{'y': 2010, 'e': 83}|Carpet|Germany|Ç30000|32|01.11.2010|07.11.2010|83|2010
+461|Medellin|0|{'y': 2010, 'e': 252}|Clay|Colombia|$50000|32|01.11.2010|07.11.2010|252|2010
+462|Aachen|1|{'y': 2010, 'e': 824}|Carpet|Germany|Ç42500|32|08.11.2010|14.11.2010|824|2010
+463|Guayaquil|0|{'y': 2010, 'e': 543}|Clay|Ecuador|$50000|32|08.11.2010|14.11.2010|543|2010
+464|Knoxville|1|{'y': 2010, 'e': 363}|Hard|TN, USA|$50000|32|08.11.2010|14.11.2010|363|2010
+465|Loughborough|1|{'y': 2010, 'e': 6206}|Carpet|Great Britain|Ç42500|32|08.11.2010|14.11.2010|6206|2010
+466|Ortisei|1|{'y': 2010, 'e': 6204}|Carpet|Italy|Ç64000|32|08.11.2010|14.11.2010|6204|2010
+467|Bratislava|1|{'y': 2010, 'e': 444}|Hard|Slovakia|Ç106500|32|15.11.2010|21.11.2010|444|2010
+468|Cancun|0|{'y': 2010, 'e': 4041}|Clay|Mexico|$35000|32|15.11.2010|21.11.2010|4041|2010
+469|Champaign|1|{'y': 2010, 'e': 637}|Hard|IL, USA|$50000|32|15.11.2010|21.11.2010|637|2010
+470|Salzburg|1|{'y': 2010, 'e': 6059}|Hard|Austria|Ç42500|32|15.11.2010|21.11.2010|6059|2010
+471|Buenos Aires-2|0|{'y': 2010, 'e': 6208}|Clay|Argentina|$75000|32|22.11.2010|28.11.2010|6208|2010
+472|Helsinki|1|{'y': 2010, 'e': 305}|Hard|Finland|Ç106500|32|22.11.2010|28.11.2010|305|2010
+473|Toyota|1|{'y': 2010, 'e': 4042}|Carpet|Japan|$35000|32|22.11.2010|28.11.2010|4042|2010
+474|Noumea|0|{'y': 2011, 'e': 2205}|Hard|New Caledonia|$75000|32|03.01.2011|09.01.2011|2205|2011
+475|Sao Paulo|0|{'y': 2011, 'e': 746}|Hard|Brazil|$100000|32|03.01.2011|09.01.2011|746|2011
+476|Seguros Bolivar Open|0|{'y': 2011, 'e': 5016}|Clay|Colombia|$35000|32|24.01.2011|30.01.2011|5016|2011
+477|Heilbronn Open|1|{'y': 2011, 'e': 460}|Hard|Germany|Ç85000|32|24.01.2011|30.01.2011|460|2011
+478|The Honolulu Challenger Presented by American Savings Bank|0|{'y': 2011, 'e': 6112}|Hard|HI, USA|$50000|32|24.01.2011|30.01.2011|6112|2011
+479|Singapore|0|{'y': 2011, 'e': 6232}|Hard|Singapore|$50000|32|24.01.2011|30.01.2011|6232|2011
+480|McDonald's Burnie International|0|{'y': 2011, 'e': 5018}|Hard|Australia|$50000|32|31.01.2011|06.02.2011|5018|2011
+481|Valle D'Aosta Open|1|{'y': 2011, 'e': 6234}|Hard|Italy|Ç30000|32|31.01.2011|06.02.2011|6234|2011
+482|Kazan Kremlin Cup|1|{'y': 2011, 'e': 6114}|Hard|Russia|$75000|32|31.01.2011|06.02.2011|6114|2011
+483|Internationale Trismoka|1|{'y': 2011, 'e': 854}|Hard|Italy|Ç42500|32|07.02.2011|13.02.2011|854|2011
+484|Caloundra International|0|{'y': 2011, 'e': 2153}|Hard|Australia|$50000|32|07.02.2011|13.02.2011|2153|2011
+485|Open De Quimper|1|{'y': 2011, 'e': 6239}|Hard|France|Ç30000|32|07.02.2011|13.02.2011|6239|2011
+486|Meknes|0|{'y': 2011, 'e': 3767}|Clay|Morocco|Ç30000|32|14.02.2011|20.02.2011|3767|2011
+487|Casablanca|0|{'y': 2011, 'e': 3584}|Clay|Morocco|Ç30000|32|21.02.2011|27.02.2011|3584|2011
+488|7 Volkswagen Challenger|1|{'y': 2011, 'e': 504}|Carpet|Germany|Ç30000|32|21.02.2011|27.02.2011|504|2011
+489|Challenger DCNS De Cherbourg|1|{'y': 2011, 'e': 398}|Hard|France|Ç42500|32|28.02.2011|06.03.2011|398|2011
+490|Dallas|1|{'y': 2011, 'e': 695}|Hard|TX, USA|$50000|32|28.02.2011|06.03.2011|695|2011
+491|Salinas|0|{'y': 2011, 'e': 59}|Clay|Ecuador|$35000|32|28.02.2011|06.03.2011|59|2011
+492|All Japan Indoor Tennis Championships|1|{'y': 2011, 'e': 91}|Carpet|Japan|$35000|32|07.03.2011|20.03.2011|91|2011
+493|Challenger de Providencia|0|{'y': 2011, 'e': 3406}|Clay|Chile|$35000|32|07.03.2011|20.03.2011|3406|2011
+494|Sarajevo|1|{'y': 2011, 'e': 1683}|Hard|Bosnia & Herzegovina|Ç30000|32|07.03.2011|20.03.2011|1683|2011
+495|Guangzhou|0|{'y': 2011, 'e': 3766}|Hard|China|$35000|32|14.03.2011|20.03.2011|3766|2011
+496|Le Gosier|0|{'y': 2011, 'e': 6244}|Hard|Guadeloupe|$100000|32|14.03.2011|20.03.2011|6244|2011
+497|Rabat|0|{'y': 2011, 'e': 3566}|Clay|Morocco|Ç42500|32|14.03.2011|20.03.2011|3566|2011
+498|Rimouski|1|{'y': 2011, 'e': 3535}|Hard|Canada|$35000|32|14.03.2011|20.03.2011|3535|2011
+499|San Jose|0|{'y': 2011, 'e': 6199}|Hard|Costa Rica|$50000|32|14.03.2011|20.03.2011|6199|2011
+500|Aegon GB Pro Series Bath|1|{'y': 2011, 'e': 6246}|Hard|Great Britain|Ç42500|32|21.03.2011|03.04.2011|6246|2011
+501|Caltanissetta|0|{'y': 2011, 'e': 5049}|Clay|Italy|Ç30000|32|21.03.2011|03.04.2011|5049|2011
+502|Marrakech|0|{'y': 2011, 'e': 3585}|Clay|Morocco|Ç42500|32|21.03.2011|03.04.2011|3585|2011
+503|Pingguo|0|{'y': 2011, 'e': 6248}|Hard|China|$35000|32|21.03.2011|03.04.2011|6248|2011
+504|Barletta|0|{'y': 2011, 'e': 60}|Clay|Italy|Ç42500|32|28.03.2011|03.04.2011|60|2011
+505|Barranquilla|0|{'y': 2011, 'e': 6250}|Clay|Colombia|$35000|32|28.03.2011|03.04.2011|6250|2011
+506|St. Brieuc|1|{'y': 2011, 'e': 1796}|Clay|France|Ç30000|32|28.03.2011|03.04.2011|1796|2011
+507|Monza|0|{'y': 2011, 'e': 2208}|Clay|Italy|Ç30000|32|04.04.2011|10.04.2011|2208|2011
+508|Pereira|0|{'y': 2011, 'e': 5063}|Clay|Colombia|$50000|32|04.04.2011|10.04.2011|5063|2011
+509|Recife|0|{'y': 2011, 'e': 6254}|Hard|Brazil|$35000|32|04.04.2011|10.04.2011|6254|2011
+510|Athens|0|{'y': 2011, 'e': 3801}|Hard|Greece|Ç85000|32|11.04.2011|17.04.2011|3801|2011
+511|Blumenau|0|{'y': 2011, 'e': 3407}|Clay|Brazil|$35000|32|11.04.2011|17.04.2011|3407|2011
+512|Johannesburg|0|{'y': 2011, 'e': 5055}|Hard|South Africa|$100000|32|11.04.2011|17.04.2011|5055|2011
+513|Rome|0|{'y': 2011, 'e': 2151}|Clay|Italy|Ç30000|32|11.04.2011|17.04.2011|2151|2011
+514|Tallahassee|0|{'y': 2011, 'e': 692}|Hard|FL, U.S.A.|$50000|32|11.04.2011|17.04.2011|692|2011
+515|Napoli|0|{'y': 2011, 'e': 443}|Clay|Italy|Ç30000|32|18.04.2011|24.04.2011|443|2011
+516|Santos|0|{'y': 2011, 'e': 6256}|Clay|Brazil|$35000|32|18.04.2011|24.04.2011|6256|2011
+517|Leon|0|{'y': 2011, 'e': 1539}|Hard|Mexico|$35000|32|25.04.2011|01.05.2011|1539|2011
+518|Ostrava|0|{'y': 2011, 'e': 1797}|Clay|Czech Republic|Ç42500|32|25.04.2011|01.05.2011|1797|2011
+519|Sarasota|0|{'y': 2011, 'e': 5069}|Clay|FL, USA|$75000|32|25.04.2011|01.05.2011|5069|2011
+520|Prague|0|{'y': 2011, 'e': 600}|Clay|Czech Republic|Ç85000|32|02.05.2011|08.05.2011|600|2011
+521|Rome-2|0|{'y': 2011, 'e': 5057}|Clay|Italy|Ç30000|32|02.05.2011|08.05.2011|5057|2011
+522|Savannah|0|{'y': 2011, 'e': 5067}|Clay|GA, USA|$50000|32|02.05.2011|08.05.2011|5067|2011
+523|Bordeaux|0|{'y': 2011, 'e': 3824}|Clay|France|Ç85000|32|09.05.2011|15.05.2011|3824|2011
+524|Busan|0|{'y': 2011, 'e': 1741}|Hard|South Korea|$75000|32|09.05.2011|15.05.2011|1741|2011
+525|Zagreb|0|{'y': 2011, 'e': 588}|Clay|Croatia|$50000|32|09.05.2011|15.05.2011|588|2011
+526|Cremona|0|{'y': 2011, 'e': 3812}|Hard|Italy|Ç30000|32|16.05.2011|22.05.2011|3812|2011
+527|Fergana|0|{'y': 2011, 'e': 603}|Hard|Uzbekistan|$35000|32|16.05.2011|22.05.2011|603|2011
+528|Alessandria|0|{'y': 2011, 'e': 3837}|Clay|Italy|Ç30000|32|23.05.2011|05.06.2011|3837|2011
+529|Furth|0|{'y': 2011, 'e': 396}|Clay|Germany|Ç30000|32|30.05.2011|05.06.2011|396|2011
+530|Nottingham|0|{'y': 2011, 'e': 1631}|Grass|Great Britain|Ç64000|32|30.05.2011|05.06.2011|1631|2011
+531|Prostejov|0|{'y': 2011, 'e': 558}|Clay|Czech Republic|Ç106500|32|30.05.2011|05.06.2011|558|2011
+532|Rijeka|0|{'y': 2011, 'e': 3586}|Clay|Croatia|Ç30000|32|30.05.2011|05.06.2011|3586|2011
+533|Kosice|0|{'y': 2011, 'e': 853}|Clay|Slovak Republic|Ç30000|32|06.06.2011|12.06.2011|853|2011
+534|Nottingham-2|0|{'y': 2011, 'e': 6286}|Hard|Great Britain|Ç64000|32|06.06.2011|12.06.2011|6286|2011
+535|Milan|0|{'y': 2011, 'e': 3463}|Clay|Italy|Ç30000|32|13.06.2011|19.06.2011|3463|2011
+536|Guadalajara|0|{'y': 2011, 'e': 6284}|Hard|Mexico|$100000|32|20.06.2011|03.07.2011|6284|2011
+537|Marburg|0|{'y': 2011, 'e': 6156}|Clay|Germany|Ç30000|32|20.06.2011|03.07.2011|6156|2011
+538|Braunschweig|0|{'y': 2011, 'e': 526}|Clay|Germany|Ç106500|32|27.06.2011|03.07.2011|526|2011
+539|Turin|0|{'y': 2011, 'e': 1543}|Clay|Italy|Ç85000|32|27.06.2011|03.07.2011|1543|2011
+540|Winnetka|0|{'y': 2011, 'e': 228}|Hard|IL, U.S.A.|$50000|32|27.06.2011|03.07.2011|228|2011
+541|Oberstaufen|0|{'y': 2011, 'e': 833}|Clay|Germany|Ç30000|32|04.07.2011|10.07.2011|833|2011
+542|Pozoblanco|0|{'y': 2011, 'e': 472}|Hard|Spain|Ç85000|32|04.07.2011|10.07.2011|472|2011
+543|San Benedetto|0|{'y': 2011, 'e': 3945}|Clay|Italy|Ç30000|32|04.07.2011|10.07.2011|3945|2011
+544|Siemens Open|0|{'y': 2011, 'e': 686}|Clay|The Netherlands|Ç42500|32|04.07.2011|10.07.2011|686|2011
+545|Aptos|0|{'y': 2011, 'e': 467}|Hard|CA, U.S.A.|$100000|32|11.07.2011|17.07.2011|467|2011
+546|Bogota-2|0|{'y': 2011, 'e': 576}|Clay|Colombia|$125000|32|11.07.2011|17.07.2011|576|2011
+547|Granby|0|{'y': 2011, 'e': 877}|Hard|Canada|$50000|32|11.07.2011|17.07.2011|877|2011
+548|Sopot|0|{'y': 2011, 'e': 6158}|Clay|Poland|Ç106500|32|11.07.2011|17.07.2011|6158|2011
+549|Penza|0|{'y': 2011, 'e': 3468}|Hard|Russia|$50000|32|18.07.2011|24.07.2011|3468|2011
+550|Lexington|0|{'y': 2011, 'e': 586}|Hard|KY, U.S.A.|$50000|32|18.07.2011|24.07.2011|586|2011
+551|Manta|0|{'y': 2011, 'e': 2121}|Hard|Ecuador|$35000|32|18.07.2011|24.07.2011|2121|2011
+552|Orbetello|0|{'y': 2011, 'e': 6001}|Clay|Italy|Ç64000|32|18.07.2011|24.07.2011|6001|2011
+553|Porsche Open|0|{'y': 2011, 'e': 786}|Clay|Poland|Ç85000|32|18.07.2011|24.07.2011|786|2011
+554|Astana|0|{'y': 2011, 'e': 3618}|Hard|Kazakhstan|$125000|32|25.07.2011|31.07.2011|3618|2011
+555|Dortmund|0|{'y': 2011, 'e': 6290}|Clay|Germany|Ç30000|32|25.07.2011|31.07.2011|6290|2011
+556|Recanati|0|{'y': 2011, 'e': 1743}|Hard|Italy|Ç30000|32|25.07.2011|31.07.2011|1743|2011
+557|Tampere|0|{'y': 2011, 'e': 221}|Clay|Finland|Ç42500|32|25.07.2011|31.07.2011|221|2011
+558|Wuhai|0|{'y': 2011, 'e': 6300}|Hard|China|$35000|32|25.07.2011|31.07.2011|6300|2011
+559|Beijing|0|{'y': 2011, 'e': 6167}|Hard|China|$75000|32|01.08.2011|07.08.2011|6167|2011
+560|Campos Do Jordao|0|{'y': 2011, 'e': 849}|Hard|Brazil|$50000|32|01.08.2011|07.08.2011|849|2011
+561|ATP Open Castilla y Leon|0|{'y': 2011, 'e': 783}|Hard|Spain|Ç85000|32|01.08.2011|07.08.2011|783|2011
+562|Trani|0|{'y': 2011, 'e': 1604}|Clay|Italy|Ç30000|32|01.08.2011|07.08.2011|1604|2011
+563|Vancouver|0|{'y': 2011, 'e': 254}|Hard|Canada|$100000|32|01.08.2011|07.08.2011|254|2011
+564|Binghamton|0|{'y': 2011, 'e': 670}|Hard|NY, U.S.A.|$50000|32|08.08.2011|14.08.2011|670|2011
+565|Samarkand|0|{'y': 2011, 'e': 447}|Clay|Uzbekistan|$35000|32|08.08.2011|14.08.2011|447|2011
+566|San Marino CEPU Open|0|{'y': 2011, 'e': 841}|Clay|San Marino|Ç85000|32|08.08.2011|14.08.2011|841|2011
+567|Cordenons|0|{'y': 2011, 'e': 2120}|Clay|Italy|Ç85000|32|15.08.2011|21.08.2011|2120|2011
+568|Karshi|0|{'y': 2011, 'e': 3967}|Hard|Uzbekistan|$50000|32|15.08.2011|21.08.2011|3967|2011
+569|San Sebastian|0|{'y': 2011, 'e': 3957}|Clay|Spain|Ç30000|32|15.08.2011|21.08.2011|3957|2011
+570|Astana-2|0|{'y': 2011, 'e': 6202}|Hard|Kazakhstan|$50000|32|22.08.2011|28.08.2011|6202|2011
+571|Manerbio|0|{'y': 2011, 'e': 486}|Clay|Italy|Ç85000|32|22.08.2011|28.08.2011|486|2011
+572|Bangkok|0|{'y': 2011, 'e': 5047}|Hard|Thailand|$50000|32|29.08.2011|11.09.2011|5047|2011
+573|Como|0|{'y': 2011, 'e': 3473}|Clay|Italy|Ç30000|32|29.08.2011|11.09.2011|3473|2011
+574|Alphen aan den Rijn|0|{'y': 2011, 'e': 3626}|Clay|The Netherlands|Ç42500|32|05.09.2011|11.09.2011|3626|2011
+575|Brasov|0|{'y': 2011, 'e': 696}|Clay|Romania|Ç30000|32|05.09.2011|11.09.2011|696|2011
+576|Genova|0|{'y': 2011, 'e': 1763}|Clay|Italy|Ç85000|32|05.09.2011|11.09.2011|1763|2011
+577|Seville|0|{'y': 2011, 'e': 784}|Clay|Spain|Ç42500|32|05.09.2011|11.09.2011|784|2011
+578|Shanghai|0|{'y': 2011, 'e': 6313}|Hard|China|$50000|32|05.09.2011|11.09.2011|6313|2011
+579|St. Remy|0|{'y': 2011, 'e': 6014}|Hard|France|Ç42500|32|05.09.2011|11.09.2011|6014|2011
+580|Banja Luka|0|{'y': 2011, 'e': 1607}|Clay|Bosnia & Herzegovina|Ç64000|32|12.09.2011|18.09.2011|1607|2011
+581|Belo Horizonte|0|{'y': 2011, 'e': 234}|Clay|Brazil|$50000|32|12.09.2011|18.09.2011|234|2011
+582|Istanbul|0|{'y': 2011, 'e': 226}|Hard|Turkey|$100000|32|12.09.2011|18.09.2011|226|2011
+583|Ningbo|0|{'y': 2011, 'e': 6305}|Hard|China|$35000|32|12.09.2011|18.09.2011|6305|2011
+584|Szczecin|0|{'y': 2011, 'e': 448}|Clay|Poland|Ç106500|32|12.09.2011|18.09.2011|448|2011
+585|Todi|0|{'y': 2011, 'e': 3627}|Clay|Italy|Ç30000|32|12.09.2011|18.09.2011|3627|2011
+586|Tulsa|0|{'y': 2011, 'e': 660}|Hard|OK, USA|$50000|32|12.09.2011|18.09.2011|660|2011
+587|Cali|0|{'y': 2011, 'e': 3994}|Clay|Colombia|$75000|32|19.09.2011|25.09.2011|3994|2011
+588|Campinas|0|{'y': 2011, 'e': 6307}|Clay|Brazil|$35000|32|19.09.2011|25.09.2011|6307|2011
+589|Izmir|0|{'y': 2011, 'e': 3834}|Hard|Turkey|Ç64000|32|19.09.2011|25.09.2011|3834|2011
+590|Ljubljana|0|{'y': 2011, 'e': 754}|Clay|Slovenia|Ç42500|32|19.09.2011|25.09.2011|754|2011
+591|Tashkent|0|{'y': 2011, 'e': 4012}|Hard|Uzbekistan|$125000|32|19.09.2011|25.09.2011|4012|2011
+592|Trnava|0|{'y': 2011, 'e': 3628}|Clay|Slovakia|Ç64000|32|19.09.2011|25.09.2011|3628|2011
+593|Aguascalientes|0|{'y': 2011, 'e': 6309}|Clay|Mexico|$50000|32|26.09.2011|02.10.2011|6309|2011
+594|Madrid|0|{'y': 2011, 'e': 6050}|Clay|Spain|Ç42500|32|26.09.2011|02.10.2011|6050|2011
+595|Napoli-2|0|{'y': 2011, 'e': 3635}|Clay|Italy|Ç42500|32|26.09.2011|02.10.2011|3635|2011
+596|Recife 2|0|{'y': 2011, 'e': 6311}|Hard|Brazil|$50000|32|26.09.2011|02.10.2011|6311|2011
+597|Mons|1|{'y': 2011, 'e': 3350}|Hard|Belgium|Ç106500|32|03.10.2011|09.10.2011|3350|2011
+598|Palermo|0|{'y': 2011, 'e': 6016}|Clay|Italy|Ç42500|32|03.10.2011|09.10.2011|6016|2011
+599|Sacramento|0|{'y': 2011, 'e': 3351}|Hard|CA, U.S.A.|$100000|32|03.10.2011|09.10.2011|3351|2011
+600|Rennes|1|{'y': 2011, 'e': 3503}|Hard|France|Ç64000|32|10.10.2011|16.10.2011|3503|2011
+601|Tiburon|0|{'y': 2011, 'e': 1768}|Hard|CA, USA|$100000|32|10.10.2011|16.10.2011|1768|2011
+602|Orleans|1|{'y': 2011, 'e': 2273}|Hard|France|Ç106500|32|17.10.2011|23.10.2011|2273|2011
+603|Quito|0|{'y': 2011, 'e': 589}|Clay|Ecuador|$35000|32|17.10.2011|23.10.2011|589|2011
+604|Seoul|0|{'y': 2011, 'e': 545}|Hard|Korea|$100000|32|17.10.2011|23.10.2011|545|2011
+605|Sao Jose Do Rio Preto|0|{'y': 2011, 'e': 6342}|Clay|Brazil|$50000|32|24.10.2011|30.10.2011|6342|2011
+606|Charlottesville|1|{'y': 2011, 'e': 6055}|Hard|VA, USA|$75000|32|31.10.2011|06.11.2011|6055|2011
+607|Eckental|1|{'y': 2011, 'e': 83}|Carpet|Germany|Ç30000|32|31.10.2011|06.11.2011|83|2011
+608|Medellin|0|{'y': 2011, 'e': 252}|Clay|Colombia|$50000|32|31.10.2011|06.11.2011|252|2011
+609|Sao Leopoldo|0|{'y': 2011, 'e': 6344}|Clay|Brazil|$35000|32|31.10.2011|06.11.2011|6344|2011
+610|Buenos Aires|0|{'y': 2011, 'e': 722}|Clay|Argentina|$75000|32|07.11.2011|13.11.2011|722|2011
+611|Geneva|1|{'y': 2011, 'e': 471}|Hard|Switzerland|Ç64000|32|07.11.2011|13.11.2011|471|2011
+612|Knoxville|1|{'y': 2011, 'e': 363}|Hard|TN, USA|$50000|32|07.11.2011|13.11.2011|363|2011
+613|Loughborough|1|{'y': 2011, 'e': 6206}|Hard|Great Britain|Ç42500|32|07.11.2011|13.11.2011|6206|2011
+614|Ortisei|1|{'y': 2011, 'e': 6204}|Carpet|Italy|Ç64000|32|07.11.2011|13.11.2011|6204|2011
+615|ATP Challenger Tour Finals|1|{'y': 2011, 'e': 6406}|Hard|Brazil|$220000|8|14.11.2011|20.11.2011|6406|2011
+616|Bratislava|1|{'y': 2011, 'e': 444}|Hard|Slovakia|Ç85000|32|14.11.2011|20.11.2011|444|2011
+617|Champaign|1|{'y': 2011, 'e': 637}|Hard|IL, USA|$50000|32|14.11.2011|20.11.2011|637|2011
+618|Montevideo|0|{'y': 2011, 'e': 544}|Clay|Uruguay|$50000|32|14.11.2011|20.11.2011|544|2011
+619|Salzburg|1|{'y': 2011, 'e': 6059}|Hard|Austria|Ç42500|32|14.11.2011|20.11.2011|6059|2011
+620|Guayaquil|0|{'y': 2011, 'e': 543}|Clay|Ecuador|$50000|32|21.11.2011|27.11.2011|543|2011
+621|Helsinki|1|{'y': 2011, 'e': 305}|Hard|Finland|Ç106500|32|21.11.2011|27.11.2011|305|2011
+622|Toyota|1|{'y': 2011, 'e': 4042}|Carpet|Japan|$35000|32|21.11.2011|27.11.2011|4042|2011
+623|Noumea|0|{'y': 2012, 'e': 2205}|Hard|New Caledonia|$75000|32|02.01.2012|08.01.2012|2205|2012
+624|Sao Paulo|0|{'y': 2012, 'e': 746}|Hard|Brazil|$35000|32|02.01.2012|08.01.2012|746|2012
+625|Heilbronn Open|1|{'y': 2012, 'e': 460}|Hard|Germany|Ç85000|32|23.01.2012|29.01.2012|460|2012
+626|The Honolulu Challenger Presented by American Savings Bank|0|{'y': 2012, 'e': 6112}|Hard|HI, USA|$50000|32|23.01.2012|29.01.2012|6112|2012
+627|Seguros Bolivar Open|0|{'y': 2012, 'e': 5016}|Clay|Colombia|$35000|32|23.01.2012|29.01.2012|5016|2012
+628|McDonald's Burnie International|0|{'y': 2012, 'e': 5018}|Hard|Australia|$50000|32|30.01.2012|05.02.2012|5018|2012
+629|Kazan Kremlin Cup|1|{'y': 2012, 'e': 6114}|Hard|Russia|$75000|32|30.01.2012|05.02.2012|6114|2012
+630|Caloundra International|0|{'y': 2012, 'e': 2153}|Hard|Australia|$50000|32|06.02.2012|12.02.2012|2153|2012
+631|Dallas|1|{'y': 2012, 'e': 695}|Hard|TX, USA|$100000|32|06.02.2012|12.02.2012|695|2012
+632|Open De Quimper|1|{'y': 2012, 'e': 6239}|Hard|France|Ç42500|32|06.02.2012|12.02.2012|6239|2012
+633|Internationale Trismoka|1|{'y': 2012, 'e': 854}|Hard|Italy|Ç42500|32|13.02.2012|19.02.2012|854|2012
+634|Meknes|0|{'y': 2012, 'e': 3767}|Clay|Morocco|Ç30000|32|20.02.2012|26.02.2012|3767|2012
+635|7 Volkswagen Challenger|1|{'y': 2012, 'e': 504}|Carpet|Germany|Ç30000|32|20.02.2012|26.02.2012|504|2012
+636|Casablanca|0|{'y': 2012, 'e': 3584}|Clay|Morocco|Ç30000|32|27.02.2012|04.03.2012|3584|2012
+637|Challenger DCNS De Cherbourg|1|{'y': 2012, 'e': 398}|Hard|France|Ç42500|32|27.02.2012|04.03.2012|398|2012
+638|Florianopolis|0|{'y': 2012, 'e': 6479}|Clay|Brazil|$50000|32|27.02.2012|04.03.2012|6479|2012
+639|Salinas|0|{'y': 2012, 'e': 59}|Clay|Ecuador|$35000|32|27.02.2012|04.03.2012|59|2012
+640|Singapore|0|{'y': 2012, 'e': 6232}|Hard|Singapore|$50000|32|27.02.2012|04.03.2012|6232|2012
+641|All Japan Indoor Tennis Championships|1|{'y': 2012, 'e': 91}|Carpet|Japan|$35000|32|05.03.2012|18.03.2012|91|2012
+642|Challenger de Providencia|0|{'y': 2012, 'e': 3406}|Clay|Chile|$35000|32|05.03.2012|18.03.2012|3406|2012
+643|Guadalajara|0|{'y': 2012, 'e': 6284}|Hard|Mexico|$100000|32|12.03.2012|18.03.2012|6284|2012
+644|Pingguo|0|{'y': 2012, 'e': 6248}|Hard|China|$50000|32|12.03.2012|18.03.2012|6248|2012
+645|Rabat|0|{'y': 2012, 'e': 3566}|Clay|Morocco|Ç30000|32|12.03.2012|18.03.2012|3566|2012
+646|Sarajevo|1|{'y': 2012, 'e': 1683}|Hard|Bosnia & Herzegovina|Ç30000|32|12.03.2012|18.03.2012|1683|2012
+647|Dallas 2|0|{'y': 2012, 'e': 6486}|Hard|TX, U.S.A.|$125000|32|12.03.2012|18.03.2012|6486|2012
+648|Aegon GB Pro Series Bath|1|{'y': 2012, 'e': 6246}|Hard|Great Britain|Ç42500|32|19.03.2012|01.04.2012|6246|2012
+649|Marrakech|0|{'y': 2012, 'e': 3585}|Clay|Morocco|Ç30000|32|19.03.2012|01.04.2012|3585|2012
+650|Rimouski|1|{'y': 2012, 'e': 3535}|Hard|Canada|$35000|32|19.03.2012|01.04.2012|3535|2012
+651|Barranquilla|0|{'y': 2012, 'e': 6250}|Clay|Colombia|$50000|32|26.03.2012|01.04.2012|6250|2012
+652|Le Gosier|0|{'y': 2012, 'e': 6244}|Hard|Guadeloupe|$100000|32|26.03.2012|01.04.2012|6244|2012
+653|Barletta|0|{'y': 2012, 'e': 60}|Clay|Italy|Ç30000|32|02.04.2012|08.04.2012|60|2012
+654|San Luis Potosi|0|{'y': 2012, 'e': 213}|Clay|Mexico|$35000|32|02.04.2012|08.04.2012|213|2012
+655|St. Brieuc|1|{'y': 2012, 'e': 1796}|Clay|France|Ç30000|32|02.04.2012|08.04.2012|1796|2012
+656|Tallahassee|0|{'y': 2012, 'e': 692}|Hard|FL, U.S.A.|$50000|32|02.04.2012|08.04.2012|692|2012
+657|Blumenau|0|{'y': 2012, 'e': 3407}|Clay|Brazil|$35000|32|09.04.2012|15.04.2012|3407|2012
+658|Leon|0|{'y': 2012, 'e': 1539}|Hard|Mexico|$35000|32|09.04.2012|15.04.2012|1539|2012
+659|Mersin|0|{'y': 2012, 'e': 6488}|Clay|Turkey|Ç42500|32|09.04.2012|15.04.2012|6488|2012
+660|Pereira|0|{'y': 2012, 'e': 5063}|Clay|Colombia|$50000|32|09.04.2012|15.04.2012|5063|2012
+661|Rome|0|{'y': 2012, 'e': 2151}|Clay|Italy|Ç30000|32|16.04.2012|22.04.2012|2151|2012
+662|Santos|0|{'y': 2012, 'e': 6256}|Clay|Brazil|$35000|32|16.04.2012|22.04.2012|6256|2012
+663|Sarasota|0|{'y': 2012, 'e': 5069}|Clay|FL, USA|$100000|32|16.04.2012|22.04.2012|5069|2012
+664|Kaohsiung|0|{'y': 2012, 'e': 6490}|Hard|Taiwan|$125000|32|23.04.2012|29.04.2012|6490|2012
+665|Napoli|0|{'y': 2012, 'e': 443}|Clay|Italy|Ç30000|32|23.04.2012|29.04.2012|443|2012
+666|Sao Paulo 2|0|{'y': 2012, 'e': 6492}|Clay|Brazil|$35000|32|23.04.2012|29.04.2012|6492|2012
+667|Savannah|0|{'y': 2012, 'e': 5067}|Clay|GA, USA|$50000|32|23.04.2012|29.04.2012|5067|2012
+668|Ostrava|0|{'y': 2012, 'e': 1797}|Clay|Czech Republic|Ç42500|32|30.04.2012|06.05.2012|1797|2012
+669|Tunis|0|{'y': 2012, 'e': 1541}|Clay|Tunisia|$125000|32|30.04.2012|06.05.2012|1541|2012
+670|Athens|0|{'y': 2012, 'e': 3801}|Hard|Greece|Ç42500|32|07.05.2012|13.05.2012|3801|2012
+671|Busan|0|{'y': 2012, 'e': 1741}|Hard|South Korea|$75000|32|07.05.2012|13.05.2012|1741|2012
+672|Prague|0|{'y': 2012, 'e': 600}|Clay|Czech Republic|Ç85000|32|07.05.2012|13.05.2012|600|2012
+673|Rio Quente|0|{'y': 2012, 'e': 6532}|Hard|Brazil|$35000|32|07.05.2012|13.05.2012|6532|2012
+674|Rome-2|0|{'y': 2012, 'e': 5057}|Clay|Italy|Ç30000|32|07.05.2012|13.05.2012|5057|2012
+675|Bordeaux|0|{'y': 2012, 'e': 3824}|Clay|France|Ç85000|32|14.05.2012|20.05.2012|3824|2012
+676|Fergana|0|{'y': 2012, 'e': 603}|Hard|Uzbekistan|$35000|32|14.05.2012|20.05.2012|603|2012
+677|Prostejov|0|{'y': 2012, 'e': 558}|Clay|Czech Republic|Ç106500|32|04.06.2012|10.06.2012|558|2012
+678|Caltanissetta|0|{'y': 2012, 'e': 5049}|Clay|Italy|Ç64000|32|04.06.2012|10.06.2012|5049|2012
+679|Furth|0|{'y': 2012, 'e': 396}|Clay|Germany|Ç30000|32|04.06.2012|10.06.2012|396|2012
+680|Nottingham|0|{'y': 2012, 'e': 1631}|Grass|Great Britain|Ç64000|32|04.06.2012|10.06.2012|1631|2012
+681|Kosice|0|{'y': 2012, 'e': 853}|Clay|Slovak Republic|Ç30000|32|11.06.2012|17.06.2012|853|2012
+682|Monza|0|{'y': 2012, 'e': 2208}|Clay|Italy|Ç64000|32|11.06.2012|17.06.2012|2208|2012
+683|Nottingham-2|0|{'y': 2012, 'e': 6286}|Grass|Great Britain|Ç64000|32|11.06.2012|17.06.2012|6286|2012
+684|Marburg|0|{'y': 2012, 'e': 6156}|Clay|Germany|Ç30000|32|25.06.2012|08.07.2012|6156|2012
+685|Milan|0|{'y': 2012, 'e': 3463}|Clay|Italy|Ç30000|32|25.06.2012|08.07.2012|3463|2012
+686|Braunschweig|0|{'y': 2012, 'e': 526}|Clay|Germany|Ç106500|32|02.07.2012|08.07.2012|526|2012
+687|Lima|0|{'y': 2012, 'e': 6579}|Clay|Peru|$50000|32|02.07.2012|08.07.2012|6579|2012
+688|Winnetka|0|{'y': 2012, 'e': 228}|Hard|IL, U.S.A.|$50000|32|02.07.2012|08.07.2012|228|2012
+689|Arad|0|{'y': 2012, 'e': 6564}|Clay|Romania|Ç30000|32|02.07.2012|08.07.2012|6564|2012
+690|Panama City|0|{'y': 2012, 'e': 6566}|Clay|Panama|$35000|32|02.07.2012|08.07.2012|6566|2012
+691|Bogota|0|{'y': 2012, 'e': 576}|Clay|Colombia|$125000|32|09.07.2012|15.07.2012|576|2012
+692|San Benedetto|0|{'y': 2012, 'e': 3945}|Clay|Italy|Ç30000|32|09.07.2012|15.07.2012|3945|2012
+693|Siemens Open|0|{'y': 2012, 'e': 686}|Clay|The Netherlands|Ç42500|32|09.07.2012|15.07.2012|686|2012
+694|Timisoara|0|{'y': 2012, 'e': 6570}|Clay|Romania|Ç30000|32|09.07.2012|15.07.2012|6570|2012
+695|An-Ning|0|{'y': 2012, 'e': 6572}|Clay|China|$50000|32|16.07.2012|22.07.2012|6572|2012
+696|Bercuit|0|{'y': 2012, 'e': 6574}|Clay|Belgium|Ç42500|32|16.07.2012|22.07.2012|6574|2012
+697|Binghamton|0|{'y': 2012, 'e': 670}|Hard|NY, U.S.A.|$50000|32|16.07.2012|22.07.2012|670|2012
+698|Granby|0|{'y': 2012, 'e': 877}|Hard|Canada|$50000|32|16.07.2012|22.07.2012|877|2012
+699|Penza|0|{'y': 2012, 'e': 3468}|Hard|Russia|$50000|32|16.07.2012|22.07.2012|3468|2012
+700|Poznan|0|{'y': 2012, 'e': 786}|Clay|Poland|Ç30000|32|16.07.2012|22.07.2012|786|2012
+701|Recanati|0|{'y': 2012, 'e': 1743}|Hard|Italy|Ç30000|32|16.07.2012|22.07.2012|1743|2012
+702|Astana|0|{'y': 2012, 'e': 3618}|Hard|Kazakhstan|$125000|32|23.07.2012|29.07.2012|3618|2012
+703|Lexington|0|{'y': 2012, 'e': 586}|Hard|KY, U.S.A.|$50000|32|23.07.2012|29.07.2012|586|2012
+704|Oberstaufen|0|{'y': 2012, 'e': 833}|Clay|Germany|Ç30000|32|23.07.2012|29.07.2012|833|2012
+705|Orbetello|0|{'y': 2012, 'e': 6001}|Clay|Italy|Ç30000|32|23.07.2012|29.07.2012|6001|2012
+706|Tampere|0|{'y': 2012, 'e': 221}|Clay|Finland|Ç42500|32|23.07.2012|29.07.2012|221|2012
+707|Wuhan|0|{'y': 2012, 'e': 6576}|Hard|China|$50000|32|23.07.2012|29.07.2012|6576|2012
+708|Beijing|0|{'y': 2012, 'e': 6167}|Hard|China|$75000|32|30.07.2012|05.08.2012|6167|2012
+709|Manta|0|{'y': 2012, 'e': 2121}|Hard|Ecuador|$35000|32|30.07.2012|05.08.2012|2121|2012
+710|Vancouver|0|{'y': 2012, 'e': 254}|Hard|Canada|$100000|32|30.07.2012|05.08.2012|254|2012
+711|Aptos|0|{'y': 2012, 'e': 467}|Hard|CA, U.S.A.|$100000|32|06.08.2012|12.08.2012|467|2012
+712|Pozoblanco|0|{'y': 2012, 'e': 472}|Hard|Spain|Ç42500|32|06.08.2012|12.08.2012|472|2012
+713|Samarkand|0|{'y': 2012, 'e': 447}|Clay|Uzbekistan|$35000|32|06.08.2012|12.08.2012|447|2012
+714|San Marino CEPU Open|0|{'y': 2012, 'e': 841}|Clay|San Marino|Ç85000|32|06.08.2012|12.08.2012|841|2012
+715|Sibiu|0|{'y': 2012, 'e': 6590}|Clay|Romania|Ç30000|32|06.08.2012|12.08.2012|6590|2012
+716|Cordenons|0|{'y': 2012, 'e': 2120}|Clay|Italy|Ç85000|32|13.08.2012|19.08.2012|2120|2012
+717|Karshi|0|{'y': 2012, 'e': 3967}|Hard|Uzbekistan|$50000|32|13.08.2012|19.08.2012|3967|2012
+718|ATP Open Castilla y Leon|0|{'y': 2012, 'e': 783}|Hard|Spain|Ç42500|32|20.08.2012|26.08.2012|783|2012
+719|Bangkok1|0|{'y': 2012, 'e': 5047}|Hard|Thailand|$50000|32|27.08.2012|09.09.2012|5047|2012
+720|Como|0|{'y': 2012, 'e': 3473}|Clay|Italy|Ç30000|32|27.08.2012|09.09.2012|3473|2012
+721|Shanghai1|0|{'y': 2012, 'e': 6313}|Hard|China|$50000|32|03.09.2012|09.09.2012|6313|2012
+722|Alphen aan den Rijn|0|{'y': 2012, 'e': 3626}|Clay|The Netherlands|Ç42500|32|03.09.2012|09.09.2012|3626|2012
+723|Brasov|0|{'y': 2012, 'e': 696}|Clay|Romania|Ç30000|32|03.09.2012|09.09.2012|696|2012
+724|Genova|0|{'y': 2012, 'e': 1763}|Clay|Italy|Ç85000|32|03.09.2012|09.09.2012|1763|2012
+725|St. Remy|0|{'y': 2012, 'e': 6014}|Hard|France|Ç42500|32|03.09.2012|09.09.2012|6014|2012
+726|Banja Luka|0|{'y': 2012, 'e': 1607}|Clay|Bosnia & Herzegovina|Ç64000|32|10.09.2012|16.09.2012|1607|2012
+727|Cali|0|{'y': 2012, 'e': 3994}|Clay|Colombia|$75000|32|10.09.2012|16.09.2012|3994|2012
+728|Istanbul|0|{'y': 2012, 'e': 226}|Hard|Turkey|$75000|32|10.09.2012|16.09.2012|226|2012
+729|Ningbo|0|{'y': 2012, 'e': 6305}|Hard|China|$50000|32|10.09.2012|16.09.2012|6305|2012
+730|Petange|1|{'y': 2012, 'e': 6592}|Hard|Luxembourg|Ç64000|32|10.09.2012|16.09.2012|6592|2012
+731|Seville|0|{'y': 2012, 'e': 784}|Clay|Spain|Ç42500|32|10.09.2012|16.09.2012|784|2012
+732|Todi|0|{'y': 2012, 'e': 3627}|Clay|Italy|Ç30000|32|10.09.2012|16.09.2012|3627|2012
+733|Campinas|0|{'y': 2012, 'e': 6307}|Clay|Brazil|$50000|32|17.09.2012|23.09.2012|6307|2012
+734|Izmir|0|{'y': 2012, 'e': 3834}|Hard|Turkey|Ç64000|32|17.09.2012|23.09.2012|3834|2012
+735|Szczecin|0|{'y': 2012, 'e': 448}|Clay|Poland|Ç106500|32|17.09.2012|23.09.2012|448|2012
+736|Trnava|0|{'y': 2012, 'e': 3628}|Clay|Slovakia|Ç64000|32|17.09.2012|23.09.2012|3628|2012
+737|Lermontov|0|{'y': 2012, 'e': 6614}|Clay|Russia|$50000|32|24.09.2012|30.09.2012|6614|2012
+738|Madrid|0|{'y': 2012, 'e': 6050}|Clay|Spain|Ç42500|32|24.09.2012|30.09.2012|6050|2012
+739|Orleans|1|{'y': 2012, 'e': 2273}|Hard|France|Ç106500|32|24.09.2012|30.09.2012|2273|2012
+740|Belem|0|{'y': 2012, 'e': 6616}|Hard|Brazil|$35000|32|01.10.2012|07.10.2012|6616|2012
+741|Mons|1|{'y': 2012, 'e': 3350}|Hard|Belgium|Ç106500|32|01.10.2012|07.10.2012|3350|2012
+742|Quito|0|{'y': 2012, 'e': 589}|Clay|Ecuador|$35000|32|01.10.2012|07.10.2012|589|2012
+743|Sacramento|0|{'y': 2012, 'e': 3351}|Hard|CA, U.S.A.|$100000|32|01.10.2012|07.10.2012|3351|2012
+744|Rennes|1|{'y': 2012, 'e': 3503}|Hard|France|Ç42500|32|08.10.2012|14.10.2012|3503|2012
+745|San Juan|0|{'y': 2012, 'e': 6622}|Clay|Argentina|$35000|32|08.10.2012|14.10.2012|6622|2012
+746|Tashkent|0|{'y': 2012, 'e': 4012}|Hard|Uzbekistan|$125000|32|08.10.2012|14.10.2012|4012|2012
+747|Tiburon|0|{'y': 2012, 'e': 1768}|Hard|CA, USA|$100000|32|08.10.2012|14.10.2012|1768|2012
+748|Rio de Janeiro|0|{'y': 2012, 'e': 6618}|Clay|Brazil|$50000|32|15.10.2012|21.10.2012|6618|2012
+749|Villa Allende|0|{'y': 2012, 'e': 6624}|Clay|Argentina|$50000|32|15.10.2012|21.10.2012|6624|2012
+750|Buenos Aires|0|{'y': 2012, 'e': 722}|Clay|Argentina|$75000|32|22.10.2012|28.10.2012|722|2012
+751|Porto Alegre|0|{'y': 2012, 'e': 6620}|Clay|Brazil|$35000|32|22.10.2012|28.10.2012|6620|2012
+752|Seoul|0|{'y': 2012, 'e': 545}|Hard|Korea|$100000|32|22.10.2012|28.10.2012|545|2012
+753|Charlottesville|1|{'y': 2012, 'e': 6055}|Hard|VA, USA|$75000|32|29.10.2012|04.11.2012|6055|2012
+754|Eckental|1|{'y': 2012, 'e': 83}|Carpet|Germany|Ç30000|32|29.10.2012|04.11.2012|83|2012
+755|Geneva|1|{'y': 2012, 'e': 471}|Hard|Switzerland|Ç64000|32|29.10.2012|04.11.2012|471|2012
+756|Medellin|0|{'y': 2012, 'e': 252}|Clay|Colombia|$50000|32|29.10.2012|04.11.2012|252|2012
+757|Montevideo|0|{'y': 2012, 'e': 544}|Clay|Uruguay|$50000|32|29.10.2012|04.11.2012|544|2012
+758|Bratislava|1|{'y': 2012, 'e': 444}|Hard|Slovakia|Ç85000|32|05.11.2012|11.11.2012|444|2012
+759|Guayaquil|0|{'y': 2012, 'e': 543}|Clay|Ecuador|$50000|32|05.11.2012|11.11.2012|543|2012
+760|Knoxville|1|{'y': 2012, 'e': 363}|Hard|TN, USA|$50000|32|05.11.2012|11.11.2012|363|2012
+761|Loughborough|1|{'y': 2012, 'e': 6206}|Hard|Great Britain|Ç42500|32|05.11.2012|11.11.2012|6206|2012
+762|Ortisei|1|{'y': 2012, 'e': 6204}|Hard|Italy|Ç64000|32|05.11.2012|11.11.2012|6204|2012
+763|Sao Leopoldo|0|{'y': 2012, 'e': 6344}|Clay|Brazil|$35000|32|05.11.2012|11.11.2012|6344|2012
+764|Champaign|1|{'y': 2012, 'e': 637}|Hard|IL, USA|$50000|32|12.11.2012|18.11.2012|637|2012
+765|Helsinki|1|{'y': 2012, 'e': 305}|Hard|Finland|Ç106500|32|12.11.2012|18.11.2012|305|2012
+766|Marbella|0|{'y': 2012, 'e': 6628}|Clay|Spain|Ç30000|32|12.11.2012|18.11.2012|6628|2012
+767|Yokohama|0|{'y': 2012, 'e': 6626}|Hard|Japan|$50000|32|12.11.2012|18.11.2012|6626|2012
+768|Toyota|1|{'y': 2012, 'e': 4042}|Carpet|Japan|$35000|32|19.11.2012|25.11.2012|4042|2012
+769|Tyumen|1|{'y': 2012, 'e': 6630}|Hard|Russia|$35000|32|19.11.2012|25.11.2012|6630|2012
+770|ATP Challenger Tour Finals|1|{'y': 2012, 'e': 6406}|Hard|Brazil|$220000|8|26.11.2012|02.12.2012|6406|2012
+771|Noumea|0|{'y': 2013, 'e': 2205}|Hard|New Caledonia|$75000|32|31.12.2012|06.01.2013|2205|2013
+772|Sao Paulo1|0|{'y': 2013, 'e': 746}|Hard|Brazil|$125000|32|31.12.2012|06.01.2013|746|2013
+773|Heilbronn Open|1|{'y': 2013, 'e': 460}|Hard|Germany|€85000|32|21.01.2013|27.01.2013|460|2013
+774|Maui|0|{'y': 2013, 'e': 6708}|Hard|Hawaii, USA|$50000|32|21.01.2013|27.01.2013|6708|2013
+775|Seguros Bolivar Open|0|{'y': 2013, 'e': 5016}|Clay|Colombia|$35000|32|21.01.2013|27.01.2013|5016|2013
+776|McDonald's Burnie International|0|{'y': 2013, 'e': 5018}|Hard|Australia|$50000|32|28.01.2013|03.02.2013|5018|2013
+777|Internationale Trismoka|1|{'y': 2013, 'e': 854}|Hard|Italy|€42500|32|04.02.2013|10.02.2013|854|2013
+778|Dallas|1|{'y': 2013, 'e': 695}|Hard|TX, USA|$100000|32|04.02.2013|10.02.2013|695|2013
+779|West Lakes|0|{'y': 2013, 'e': 6714}|Hard|Adelaide, Australia|$50000|32|04.02.2013|10.02.2013|6714|2013
+780|Open De Quimper|1|{'y': 2013, 'e': 6239}|Hard|France|€42500|32|11.02.2013|17.02.2013|6239|2013
+781|Challenger DCNS De Cherbourg|1|{'y': 2013, 'e': 398}|Hard|France|€42500|32|25.02.2013|03.03.2013|398|2013
+782|Salinas|0|{'y': 2013, 'e': 59}|Clay|Ecuador|$35000|32|25.02.2013|03.03.2013|59|2013
+783|Sydney1|0|{'y': 2013, 'e': 6720}|Hard|Australia|$50000|32|25.02.2013|03.03.2013|6720|2013
+784|All Japan Indoor Tennis Championships|1|{'y': 2013, 'e': 91}|Carpet|Japan|$35000|32|04.03.2013|17.03.2013|91|2013
+785|Copa Cachantun|0|{'y': 2013, 'e': 3406}|Clay|Chile|$35000|32|04.03.2013|17.03.2013|3406|2013
+786|Dallas Tennis Classic|0|{'y': 2013, 'e': 6486}|Hard|TX, U.S.A.|$125000|32|11.03.2013|17.03.2013|6486|2013
+787|BH Telecom Indoors 2013|1|{'y': 2013, 'e': 1683}|Hard|Bosnia & Herzegovina|€30000|32|11.03.2013|17.03.2013|1683|2013
+788|National Bank Men's Rimouski Challenger|1|{'y': 2013, 'e': 3535}|Hard|Canada|$35000|32|18.03.2013|31.03.2013|3535|2013
+789|Orange Open Guadeloupe|0|{'y': 2013, 'e': 6244}|Hard|Guadeloupe|$100000|32|25.03.2013|31.03.2013|6244|2013
+790|Seguros Bolivar Open|0|{'y': 2013, 'e': 5063}|Clay|Colombia|$50000|32|25.03.2013|31.03.2013|5063|2013
+791|San Luis Open Challenger 2013|0|{'y': 2013, 'e': 213}|Clay|Mexico|$35000|32|25.03.2013|31.03.2013|213|2013
+792|Torneo Internacional Challenger|0|{'y': 2013, 'e': 1539}|Hard|Mexico|$35000|32|01.04.2013|07.04.2013|1539|2013
+793|Open Harmonie Mutuelle|1|{'y': 2013, 'e': 1796}|Hard|France|€30000|32|01.04.2013|07.04.2013|1796|2013
+794|Barranquilla|0|{'y': 2013, 'e': 6250}|Clay|Colombia|$50000|32|08.04.2013|14.04.2013|6250|2013
+795|Guadalajara|0|{'y': 2013, 'e': 6284}|Hard|Mexico|$100000|32|08.04.2013|14.04.2013|6284|2013
+796|Itajai|0|{'y': 2013, 'e': 3407}|Clay|Brazil|$35000|32|08.04.2013|14.04.2013|3407|2013
+797|Mersin|0|{'y': 2013, 'e': 6488}|Clay|Turkey|€42500|32|08.04.2013|14.04.2013|6488|2013
+798|Mexico City|0|{'y': 2013, 'e': 6724}|Hard|Mexico|$35000|32|15.04.2013|21.04.2013|6724|2013
+799|Panama City|0|{'y': 2013, 'e': 6566}|Clay|Panama|$35000|32|15.04.2013|21.04.2013|6566|2013
+800|Rome|0|{'y': 2013, 'e': 2151}|Clay|Italy|€30000|32|15.04.2013|21.04.2013|2151|2013
+801|Santos|0|{'y': 2013, 'e': 6256}|Clay|Brazil|$35000|32|15.04.2013|21.04.2013|6256|2013
+802|Sarasota|0|{'y': 2013, 'e': 5069}|Clay|FL, USA|$100000|32|15.04.2013|21.04.2013|5069|2013
+803|Sao Paulo 2|0|{'y': 2013, 'e': 6492}|Clay|Brazil|$50000|32|22.04.2013|28.04.2013|6492|2013
+804|Savannah|0|{'y': 2013, 'e': 5067}|Clay|GA, USA|$50000|32|22.04.2013|28.04.2013|5067|2013
+805|An-Ning|0|{'y': 2013, 'e': 6572}|Clay|China|$50000|32|29.04.2013|05.05.2013|6572|2013
+806|Johannesburg|0|{'y': 2013, 'e': 6722}|Hard|South Africa|$100000|32|29.04.2013|05.05.2013|6722|2013
+807|Napoli|0|{'y': 2013, 'e': 443}|Clay|Italy|€30000|32|29.04.2013|05.05.2013|443|2013
+808|Ostrava|0|{'y': 2013, 'e': 1797}|Clay|Czech Republic|€85000|32|29.04.2013|05.05.2013|1797|2013
+809|Tallahassee|0|{'y': 2013, 'e': 692}|Clay|FL, U.S.A.|$50000|32|29.04.2013|05.05.2013|692|2013
+810|Tunis|0|{'y': 2013, 'e': 1541}|Clay|Tunisia|$125000|32|29.04.2013|05.05.2013|1541|2013
+811|Karshi|0|{'y': 2013, 'e': 3967}|Hard|Uzbekistan|$50000|32|06.05.2013|12.05.2013|3967|2013
+812|Kun-Ming|0|{'y': 2013, 'e': 6726}|Hard|Kun-Ming|$125000|32|06.05.2013|12.05.2013|6726|2013
+813|Rio Quente|0|{'y': 2013, 'e': 6532}|Hard|Brazil|$35000|32|06.05.2013|12.05.2013|6532|2013
+814|Rome-2|0|{'y': 2013, 'e': 5057}|Clay|Italy|€30000|32|06.05.2013|12.05.2013|5057|2013
+815|Bordeaux|0|{'y': 2013, 'e': 3824}|Clay|France|€85000|32|13.05.2013|19.05.2013|3824|2013
+816|Busan|0|{'y': 2013, 'e': 1741}|Hard|South Korea|$75000|32|13.05.2013|19.05.2013|1741|2013
+817|Samarkand|0|{'y': 2013, 'e': 447}|Clay|Uzbekistan|$50000|32|13.05.2013|19.05.2013|447|2013
+818|Prostejov|0|{'y': 2013, 'e': 558}|Clay|Czech Republic|€106500|32|03.06.2013|09.06.2013|558|2013
+819|Arad|0|{'y': 2013, 'e': 6564}|Clay|Romania|€30000|32|03.06.2013|09.06.2013|6564|2013
+820|Caltanissetta|0|{'y': 2013, 'e': 5049}|Clay|Italy|€85000|32|03.06.2013|09.06.2013|5049|2013
+821|Furth|0|{'y': 2013, 'e': 396}|Clay|Germany|€30000|32|03.06.2013|09.06.2013|396|2013
+822|Nottingham|0|{'y': 2013, 'e': 1631}|Grass|Great Britain|€64000|32|03.06.2013|09.06.2013|1631|2013
+823|Blois|0|{'y': 2013, 'e': 6757}|Clay|France|€30000|32|10.06.2013|16.06.2013|6757|2013
+824|Kosice|0|{'y': 2013, 'e': 853}|Clay|Slovak Republic|€30000|32|10.06.2013|16.06.2013|853|2013
+825|Nottingham-2|0|{'y': 2013, 'e': 6286}|Grass|Great Britain|€64000|32|10.06.2013|16.06.2013|6286|2013
+826|Prague|0|{'y': 2013, 'e': 600}|Clay|Czech Republic|€42500|32|10.06.2013|16.06.2013|600|2013
+827|Milan|0|{'y': 2013, 'e': 3463}|Clay|Italy|€30000|32|17.06.2013|23.06.2013|3463|2013
+828|Tanger|0|{'y': 2013, 'e': 6759}|Clay|Morocco|€30000|32|17.06.2013|23.06.2013|6759|2013
+829|Marburg|0|{'y': 2013, 'e': 6156}|Clay|Germany|€30000|32|24.06.2013|07.07.2013|6156|2013
+830|Braunschweig|0|{'y': 2013, 'e': 526}|Clay|Germany|€106500|32|01.07.2013|07.07.2013|526|2013
+831|Manta|0|{'y': 2013, 'e': 2121}|Hard|Ecuador|$35000|32|01.07.2013|07.07.2013|2121|2013
+832|Portoroz|0|{'y': 2013, 'e': 6787}|Hard|Slovenia|€30000|32|01.07.2013|07.07.2013|6787|2013
+833|Timisoara|0|{'y': 2013, 'e': 6570}|Clay|Romania|€30000|32|01.07.2013|07.07.2013|6570|2013
+834|Todi|0|{'y': 2013, 'e': 3627}|Clay|Italy|€30000|32|01.07.2013|07.07.2013|3627|2013
+835|Winnetka|0|{'y': 2013, 'e': 228}|Hard|IL, U.S.A.|$50000|32|01.07.2013|07.07.2013|228|2013
+836|Beijing|0|{'y': 2013, 'e': 6167}|Hard|China|$75000|32|08.07.2013|14.07.2013|6167|2013
+837|Istanbul|0|{'y': 2013, 'e': 226}|Hard|Turkey|€42500|32|08.07.2013|14.07.2013|226|2013
+838|San Benedetto|0|{'y': 2013, 'e': 3945}|Clay|Italy|€30000|32|08.07.2013|14.07.2013|3945|2013
+839|Sport1 Open|0|{'y': 2013, 'e': 686}|Clay|The Netherlands|€42500|32|08.07.2013|14.07.2013|686|2013
+840|Binghamton|0|{'y': 2013, 'e': 670}|Hard|NY, U.S.A.|$50000|32|15.07.2013|21.07.2013|670|2013
+841|Eskisehir|0|{'y': 2013, 'e': 6791}|Hard|Turkey|€42500|32|15.07.2013|21.07.2013|6791|2013
+842|Granby|0|{'y': 2013, 'e': 877}|Hard|Canada|$50000|32|15.07.2013|21.07.2013|877|2013
+843|Poznan|0|{'y': 2013, 'e': 786}|Clay|Poland|€30000|32|15.07.2013|21.07.2013|786|2013
+844|Recanati|0|{'y': 2013, 'e': 1743}|Hard|Italy|€30000|32|15.07.2013|21.07.2013|1743|2013
+845|Astana|0|{'y': 2013, 'e': 3618}|Hard|Kazakhstan|$125000|32|22.07.2013|28.07.2013|3618|2013
+846|Guimaraes|0|{'y': 2013, 'e': 6793}|Hard|Portugal|€42500|32|22.07.2013|28.07.2013|6793|2013
+847|Lexington|0|{'y': 2013, 'e': 586}|Hard|KY, U.S.A.|$50000|32|22.07.2013|28.07.2013|586|2013
+848|Medellin|0|{'y': 2013, 'e': 252}|Clay|Colombia|$50000|32|22.07.2013|28.07.2013|252|2013
+849|Oberstaufen|0|{'y': 2013, 'e': 833}|Clay|Germany|€30000|32|22.07.2013|28.07.2013|833|2013
+850|Orbetello|0|{'y': 2013, 'e': 6001}|Clay|Italy|€30000|32|22.07.2013|28.07.2013|6001|2013
+851|Tampere|0|{'y': 2013, 'e': 221}|Clay|Finland|€42500|32|22.07.2013|28.07.2013|221|2013
+852|Liberec|0|{'y': 2013, 'e': 6795}|Clay|Czech Republic|€30000|32|29.07.2013|04.08.2013|6795|2013
+853|Sao Paulo 3|0|{'y': 2013, 'e': 6807}|Clay|Brazil|$50000|32|29.07.2013|04.08.2013|6807|2013
+854|ATP Open Castilla y Leon|0|{'y': 2013, 'e': 783}|Hard|Spain|€42500|32|29.07.2013|04.08.2013|783|2013
+855|Vancouver|0|{'y': 2013, 'e': 254}|Hard|Canada|$100000|32|29.07.2013|04.08.2013|254|2013
+856|Aptos|0|{'y': 2013, 'e': 467}|Hard|CA, U.S.A.|$100000|32|05.08.2013|11.08.2013|467|2013
+857|Rio de Janeiro|0|{'y': 2013, 'e': 6618}|Clay|Brazil|$50000|32|05.08.2013|11.08.2013|6618|2013
+858|San Marino CEPU Open|0|{'y': 2013, 'e': 841}|Clay|San Marino|€64000|32|05.08.2013|11.08.2013|841|2013
+859|Credit Agricole Tennis Cup|0|{'y': 2013, 'e': 2120}|Clay|Italy|€42500|32|12.08.2013|18.08.2013|2120|2013
+860|Kazan Summer Cup|1|{'y': 2013, 'e': 6114}|Hard|Russia|$50000|32|12.08.2013|18.08.2013|6114|2013
+861|Maserati Challenger|0|{'y': 2013, 'e': 6809}|Clay|Germany|€30000|32|12.08.2013|18.08.2013|6809|2013
+862|Chang-Sat Bangkok Open 2013|0|{'y': 2013, 'e': 5047}|Hard|Thailand|$50000|32|26.08.2013|08.09.2013|5047|2013
+863|Citta Di Como|0|{'y': 2013, 'e': 3473}|Clay|Italy|€30000|32|26.08.2013|08.09.2013|3473|2013
+864|Road to the Shanghai Rolex Masters|0|{'y': 2013, 'e': 6313}|Hard|China|$50000|32|02.09.2013|08.09.2013|6313|2013
+865|Tean International 2013|0|{'y': 2013, 'e': 3626}|Clay|The Netherlands|€42500|32|02.09.2013|08.09.2013|3626|2013
+866|BRD Brasov Challenger|0|{'y': 2013, 'e': 696}|Clay|Romania|€30000|32|02.09.2013|08.09.2013|696|2013
+867|AON Open Challenger|0|{'y': 2013, 'e': 1763}|Clay|Italy|€85000|32|02.09.2013|08.09.2013|1763|2013
+868|Trophee des Alpilles|0|{'y': 2013, 'e': 6014}|Hard|France|€42500|32|02.09.2013|08.09.2013|6014|2013
+869|Banja Luka 2013|0|{'y': 2013, 'e': 1607}|Clay|Bosnia & Herzegovina|€64000|32|09.09.2013|15.09.2013|1607|2013
+870|Seguros Bolivar Open Cali 2013|0|{'y': 2013, 'e': 3994}|Clay|Colombia|$50000|32|09.09.2013|15.09.2013|3994|2013
+871|Istanbul Challenger - American Express|0|{'y': 2013, 'e': 6837}|Hard|Turkey|$75000|32|09.09.2013|15.09.2013|6837|2013
+872|Moroco Tennis Tour|0|{'y': 2013, 'e': 3767}|Clay|Morocco|€30000|32|09.09.2013|15.09.2013|3767|2013
+873|ATP Roller Open Challenger|1|{'y': 2013, 'e': 6592}|Hard|Luxembourg|€64000|32|09.09.2013|15.09.2013|6592|2013
+874|Copa Sevilla|0|{'y': 2013, 'e': 784}|Clay|Spain|€42500|32|09.09.2013|15.09.2013|784|2013
+875|Campeonato Internacional de Tenis de Campinas|0|{'y': 2013, 'e': 6307}|Clay|Brazil|$35000|32|16.09.2013|22.09.2013|6307|2013
+876|Izmir Cup|0|{'y': 2013, 'e': 3834}|Hard|Turkey|€64000|32|16.09.2013|22.09.2013|3834|2013
+877|2013 OEC Kaohsiung ATP Challenger|0|{'y': 2013, 'e': 6490}|Hard|Taiwan|$125000|32|16.09.2013|22.09.2013|6490|2013
+878|Morocco Tennis Tour|0|{'y': 2013, 'e': 6839}|Clay|Kenitra|€30000|32|16.09.2013|22.09.2013|6839|2013
+879|XIX Challenger ATP Trofeo Ciudad de Quito|0|{'y': 2013, 'e': 589}|Clay|Ecuador|$35000|32|16.09.2013|22.09.2013|589|2013
+880|Pekao Szczecin Open|0|{'y': 2013, 'e': 448}|Clay|Poland|€106500|32|16.09.2013|22.09.2013|448|2013
+881|Arimex Challenger Trophy|0|{'y': 2013, 'e': 3628}|Clay|Slovakia|€42500|32|16.09.2013|22.09.2013|3628|2013
+882|Fergana Challenger|0|{'y': 2013, 'e': 603}|Hard|Uzbekistan|$50000|32|23.09.2013|29.09.2013|603|2013
+883|Napa Valley Challenger|0|{'y': 2013, 'e': 6841}|Hard|CA, U.S.A.|$50000|32|23.09.2013|29.09.2013|6841|2013
+884|Open d'Orleans|1|{'y': 2013, 'e': 2273}|Hard|France|€106500|32|23.09.2013|29.09.2013|2273|2013
+885|Aberto de Tenis do Rio Grande do Sul|0|{'y': 2013, 'e': 6620}|Clay|Brazil|$35000|32|23.09.2013|29.09.2013|6620|2013
+886|Sibiu Open 2013|0|{'y': 2013, 'e': 6590}|Clay|Romania|€64000|32|23.09.2013|29.09.2013|6590|2013
+887|Ethias Trophy|1|{'y': 2013, 'e': 3350}|Hard|Belgium|€106500|32|30.09.2013|06.10.2013|3350|2013
+888|Sacramento Pro Circiut Challenger|0|{'y': 2013, 'e': 3351}|Hard|CA, U.S.A.|$100000|32|30.09.2013|06.10.2013|3351|2013
+889|Motorola IS Open|0|{'y': 2013, 'e': 6867}|Clay|Brazil|$35000|32|30.09.2013|06.10.2013|6867|2013
+890|Open de Rennes|1|{'y': 2013, 'e': 3503}|Hard|France|€64000|32|07.10.2013|13.10.2013|3503|2013
+891|Copa San Juan Gobierno|0|{'y': 2013, 'e': 6622}|Clay|Argentina|$35000|32|07.10.2013|13.10.2013|6622|2013
+892|Aberto Rio Preto 2013|0|{'y': 2013, 'e': 6342}|Clay|Brazil|$50000|32|07.10.2013|13.10.2013|6342|2013
+893|Tashkent Challenger|0|{'y': 2013, 'e': 4012}|Hard|Uzbekistan|$125000|32|07.10.2013|13.10.2013|4012|2013
+894|First Republic Bank Tiburon Challenger|0|{'y': 2013, 'e': 1768}|Hard|CA, USA|$100000|32|07.10.2013|13.10.2013|1768|2013
+895|Internationaux de Tennis de Vendee|1|{'y': 2013, 'e': 6857}|Hard|France|€64000|32|14.10.2013|20.10.2013|6857|2013
+896|Copa Topper 2013|0|{'y': 2013, 'e': 722}|Clay|Argentina|$75000|32|21.10.2013|27.10.2013|722|2013
+897|Kazan Kremlin Cup|1|{'y': 2013, 'e': 6861}|Hard|Russia|$75000|32|21.10.2013|27.10.2013|6861|2013
+898|Melbourne Challenger|0|{'y': 2013, 'e': 6863}|Hard|Australia|$50000|32|21.10.2013|27.10.2013|6863|2013
+899|Morocco Tennis Tour|0|{'y': 2013, 'e': 3584}|Clay|Morocco|€30000|32|28.10.2013|03.11.2013|3584|2013
+900|Men's Tennis Championships|1|{'y': 2013, 'e': 6055}|Hard|VA, USA|$75000|32|28.10.2013|03.11.2013|6055|2013
+901|Bauer Watertechnology Cup 2013|1|{'y': 2013, 'e': 83}|Carpet|Germany|€30000|32|28.10.2013|03.11.2013|83|2013
+902|Geneva Open 2013|1|{'y': 2013, 'e': 471}|Hard|Switzerland|€64000|32|28.10.2013|03.11.2013|471|2013
+903|Uruguay Open|0|{'y': 2013, 'e': 544}|Clay|Uruguay|$50000|32|28.10.2013|03.11.2013|544|2013
+904|Samsung Securities Cup Challenger|0|{'y': 2013, 'e': 545}|Hard|Korea|$50000|32|28.10.2013|03.11.2013|545|2013
+905|Traralgon Challenger|0|{'y': 2013, 'e': 6865}|Hard|Australia|$50000|32|28.10.2013|03.11.2013|6865|2013
+906|Seguros Bolivar Open Bogota|0|{'y': 2013, 'e': 576}|Clay|Colombia|$125000|32|04.11.2013|10.11.2013|576|2013
+907|Slovak Open 2013|1|{'y': 2013, 'e': 444}|Hard|Slovakia|€64000|32|04.11.2013|10.11.2013|444|2013
+908|Knoxville 2013 Challenger|1|{'y': 2013, 'e': 363}|Hard|TN, USA|$50000|32|04.11.2013|10.11.2013|363|2013
+909|Sparkasse ATP Challenger|1|{'y': 2013, 'e': 6204}|Hard|Italy|€64000|32|04.11.2013|10.11.2013|6204|2013
+910|Yeongwol Challenger Tennis|0|{'y': 2013, 'e': 6881}|Hard|South Korea|$35000|32|04.11.2013|10.11.2013|6881|2013
+911|ATP Challenger Tour Finals|0|{'y': 2013, 'e': 6406}|Clay|Brazil|$220000|8|11.11.2013|17.11.2013|6406|2013
+912|JSM Challenger of Champaign-Urbana|1|{'y': 2013, 'e': 637}|Hard|IL, USA|$50000|32|11.11.2013|17.11.2013|637|2013
+913|Challenger Ciudad de Guayaquil|0|{'y': 2013, 'e': 543}|Clay|Ecuador|$50000|32|11.11.2013|17.11.2013|543|2013
+914|IPP Open|1|{'y': 2013, 'e': 305}|Hard|Finland|€42500|32|11.11.2013|17.11.2013|305|2013
+915|Lima Challenger Copa Claro|0|{'y': 2013, 'e': 6579}|Clay|Peru|$50000|32|11.11.2013|17.11.2013|6579|2013
+916|Keio Challenger International Tennis Tournament 2013|0|{'y': 2013, 'e': 6626}|Hard|Japan|$50000|32|11.11.2013|17.11.2013|6626|2013
+917|ATP Challenger Tour Andria e Castel del Monte|1|{'y': 2013, 'e': 6911}|Hard|Italy|€30000|32|18.11.2013|24.11.2013|6911|2013
+918|2013 Dunlop World Challenge Tennis Tournament|1|{'y': 2013, 'e': 4042}|Carpet|Japan|$35000|32|18.11.2013|24.11.2013|4042|2013
+919|Siberia Cup|1|{'y': 2013, 'e': 6630}|Hard|Russia|$35000|32|18.11.2013|24.11.2013|6630|2013
+920|Challenger BNP Paribas de Nouvelle Caledonie|0|{'y': 2014, 'e': 2205}|Hard|New Caledonia|$75000|32|30.12.2013|05.01.2014|2205|2014
+921|Aberto de Sao Paulo|0|{'y': 2014, 'e': 746}|Hard|Brazil|$125000|32|30.12.2013|05.01.2014|746|2014
+922|Bucaramanga Open|0|{'y': 2014, 'e': 5016}|Clay|Colombia|$40000|32|20.01.2014|26.01.2014|5016|2014
+923|Heilbronn Open|1|{'y': 2014, 'e': 460}|Hard|Germany|€106500|32|20.01.2014|26.01.2014|460|2014
+924|The Royal Lahaina Challenger|0|{'y': 2014, 'e': 6708}|Hard|Hawaii, USA|$50000|32|20.01.2014|26.01.2014|6708|2014
+925|McDonald's Burnie International|0|{'y': 2014, 'e': 5018}|Hard|Australia|$50000|32|27.01.2014|02.02.2014|5018|2014
+926|Visit Panama Cup|0|{'y': 2014, 'e': 6946}|Hard|Panama|$40000|32|27.01.2014|02.02.2014|6946|2014
+927|Shiram Capital P.L. Reddy Memorial ATP Challenger|0|{'y': 2014, 'e': 6957}|Hard|India|$50000|32|03.02.2014|09.02.2014|6957|2014
+928|Challenger of Dallas|1|{'y': 2014, 'e': 695}|Hard|TX, USA|$100000|32|03.02.2014|09.02.2014|695|2014
+929|Charles Sturt Adelaide International|0|{'y': 2014, 'e': 6714}|Hard|Adelaide, Australia|$50000|32|03.02.2014|09.02.2014|6714|2014
+930|Trofeo Perrel - FAIP|1|{'y': 2014, 'e': 854}|Hard|Italy|€42500|32|10.02.2014|16.02.2014|854|2014
+931|State Bank of India ATP Challenger Tour Tennis Tournament|0|{'y': 2014, 'e': 6959}|Hard|India|$50000|32|10.02.2014|16.02.2014|6959|2014
+932|Open BNP Paribas-Banque de Bretagne Quimper|1|{'y': 2014, 'e': 6239}|Hard|France|€42500|32|10.02.2014|16.02.2014|6239|2014
+933|Astana Challenger|1|{'y': 2014, 'e': 3618}|Hard|Kazakhstan|$75000|32|17.02.2014|23.02.2014|3618|2014
+934|Morelos Open|0|{'y': 2014, 'e': 6963}|Hard|Mexico|$75000|32|17.02.2014|23.02.2014|6963|2014
+935|ONGC- GAIL DELHI OPEN|0|{'y': 2014, 'e': 6961}|Hard|India|$100000|32|17.02.2014|23.02.2014|6961|2014
+936|Challenger La Manche|1|{'y': 2014, 'e': 398}|Hard|France|€64000|32|24.02.2014|02.03.2014|398|2014
+937|ATP Challenger Guangzhou|0|{'y': 2014, 'e': 6965}|Hard|China|$50000|32|24.02.2014|02.03.2014|6965|2014
+938|XIX Challenger ATP de Salinas|0|{'y': 2014, 'e': 59}|Clay|Ecuador|$40000|32|24.02.2014|02.03.2014|59|2014
+939|Shimadzu All Japan|1|{'y': 2014, 'e': 91}|Hard|Japan|$40000|32|03.03.2014|16.03.2014|91|2014
+940|Irving Tennis Classic|0|{'y': 2014, 'e': 6486}|Hard|TX, U.S.A.|$125000|32|10.03.2014|16.03.2014|6486|2014
+941|Kazan|1|{'y': 2014, 'e': 6114}|Hard|Russia|$75000|32|10.03.2014|16.03.2014|6114|2014
+942|Panama City|0|{'y': 2014, 'e': 6566}|Clay|Panama|$40000|32|17.03.2014|30.03.2014|6566|2014
+943|Rimouski|1|{'y': 2014, 'e': 3535}|Hard|Canada|$40000|32|17.03.2014|30.03.2014|3535|2014
+944|Guadalajara|0|{'y': 2014, 'e': 6284}|Hard|Mexico|$100000|32|24.03.2014|30.03.2014|6284|2014
+945|Barranquilla|0|{'y': 2014, 'e': 6250}|Clay|Colombia|$40000|32|24.03.2014|30.03.2014|6250|2014
+946|Orange Open Guadeloupe|0|{'y': 2014, 'e': 6244}|Hard|Guadeloupe|$100000|32|31.03.2014|06.04.2014|6244|2014
+947|Leon|0|{'y': 2014, 'e': 1539}|Hard|Mexico|$40000|32|31.03.2014|06.04.2014|1539|2014
+948|Open Harmonie Mutuelle|1|{'y': 2014, 'e': 1796}|Hard|France|€42500|32|31.03.2014|06.04.2014|1796|2014
+949|Taroii Open De TEnnis|0|{'y': 2014, 'e': 3407}|Clay|Brazil|$40000|32|07.04.2014|13.04.2014|3407|2014
+950|Mersin|0|{'y': 2014, 'e': 6488}|Clay|Turkey|€64000|32|07.04.2014|13.04.2014|6488|2014
+951|San Luis Potosi Challenger 2014|0|{'y': 2014, 'e': 213}|Clay|Mexico|$40000|32|14.04.2014|20.04.2014|213|2014
+952|Cachantun Cup|0|{'y': 2014, 'e': 3406}|Clay|Chile|$40000|32|14.04.2014|20.04.2014|3406|2014
+953|Sao Paulo 2|0|{'y': 2014, 'e': 6492}|Clay|Brazil|$40000|32|14.04.2014|20.04.2014|6492|2014
+954|Sarasota|0|{'y': 2014, 'e': 5069}|Clay|FL, USA|$100000|32|14.04.2014|20.04.2014|5069|2014
+955|Santos|0|{'y': 2014, 'e': 6256}|Clay|Brazil|$40000|32|21.04.2014|27.04.2014|6256|2014
+956|Savannah|0|{'y': 2014, 'e': 5067}|Clay|GA, USA|$50000|32|21.04.2014|27.04.2014|5067|2014
+957|Gemdale ATP Challenger|0|{'y': 2014, 'e': 7004}|Hard|China|$50000|32|21.04.2014|27.04.2014|7004|2014
+958|Vercelli|0|{'y': 2014, 'e': 7006}|Clay|Italy|$42500|32|21.04.2014|27.04.2014|7006|2014
+959|China International 2014, An-Ning|0|{'y': 2014, 'e': 6572}|Clay|China|$50000|32|28.04.2014|04.05.2014|6572|2014
+960|Seguros Bolivar Open 2014|0|{'y': 2014, 'e': 3994}|Clay|Colombia|$40000|32|28.04.2014|04.05.2014|3994|2014
+961|Prosperita Open 2014|0|{'y': 2014, 'e': 1797}|Clay|Czech Republic|€85000|32|28.04.2014|04.05.2014|1797|2014
+962|2014 Santaizi Challenger|1|{'y': 2014, 'e': 2278}|Carpet|Taiwan|$75000|32|28.04.2014|04.05.2014|2278|2014
+963|Tallahassee Tennis Challenger|0|{'y': 2014, 'e': 692}|Clay|FL, U.S.A.|$50000|32|28.04.2014|04.05.2014|692|2014
+964|Tunis|0|{'y': 2014, 'e': 1541}|Clay|Tunisia|$125000|32|28.04.2014|04.05.2014|1541|2014
+965|OPEN DU PAYS D'AIX|0|{'y': 2014, 'e': 7009}|Clay|France|€64000|32|05.05.2014|11.05.2014|7009|2014
+966|Gimcheon|0|{'y': 2014, 'e': 7011}|Hard|South Korea|$50000|32|05.05.2014|11.05.2014|7011|2014
+967|Roma Open 2014|0|{'y': 2014, 'e': 2151}|Clay|Italy|€42500|32|05.05.2014|11.05.2014|2151|2014
+968|Primrose Bordeaux 2014|0|{'y': 2014, 'e': 3824}|Clay|France|€85000|32|12.05.2014|18.05.2014|3824|2014
+969|Busan Open Challenger Tour|0|{'y': 2014, 'e': 1741}|Hard|South Korea|$75000|32|12.05.2014|18.05.2014|1741|2014
+970|Heilbronn II|0|{'y': 2014, 'e': 7013}|Clay|Germany|€35000|32|12.05.2014|18.05.2014|7013|2014
+971|Samarkand Challenger|0|{'y': 2014, 'e': 447}|Clay|Uzbekistan|$50000|32|12.05.2014|18.05.2014|447|2014
+972|KARSHI CHALLENGER|0|{'y': 2014, 'e': 3967}|Hard|Uzbekistan|$50000|32|19.05.2014|25.05.2014|3967|2014
+973|Internazionali Di Tennis 'Citta Di Vicenza'|0|{'y': 2014, 'e': 7015}|Clay|Italy|€42500|32|26.05.2014|08.06.2014|7015|2014
+974|BRD ARAD CHALLENGER|0|{'y': 2014, 'e': 6564}|Clay|Romania|€35000|32|02.06.2014|08.06.2014|6564|2014
+975|Franken Challenge|0|{'y': 2014, 'e': 396}|Clay|Germany|€35000|32|02.06.2014|08.06.2014|396|2014
+976|XII Venice Challenge Save Cup|0|{'y': 2014, 'e': 7021}|Clay|Italy|€42500|32|02.06.2014|08.06.2014|7021|2014
+977|Aegon Trophy|0|{'y': 2014, 'e': 1631}|Grass|Great Britain|€64000|32|02.06.2014|08.06.2014|1631|2014
+978|Unicredit Czech Open|0|{'y': 2014, 'e': 558}|Clay|Czech Republic|€106500|32|02.06.2014|08.06.2014|558|2014
+979|Internationaux De Tennis Blois|0|{'y': 2014, 'e': 6757}|Clay|France|€35000|32|09.06.2014|15.06.2014|6757|2014
+980|Citta Di Caltanissetta|0|{'y': 2014, 'e': 5049}|Clay|Italy|€106500|32|09.06.2014|15.06.2014|5049|2014
+981|Fergana Challenger|0|{'y': 2014, 'e': 603}|Hard|Uzbekistan|$50000|32|09.06.2014|15.06.2014|603|2014
+982|Kosice Open 2014|0|{'y': 2014, 'e': 853}|Clay|Slovak Republic|€35000|32|09.06.2014|15.06.2014|853|2014
+983|Aegon Nottingham Challenger|0|{'y': 2014, 'e': 6286}|Grass|Great Britain|€64000|32|09.06.2014|15.06.2014|6286|2014
+984|Prague Open 2014|0|{'y': 2014, 'e': 600}|Clay|Czech Republic|€42500|32|09.06.2014|15.06.2014|600|2014
+985|Aspira Tennis Cup Trofeo CDI|0|{'y': 2014, 'e': 3463}|Clay|Italy|€35000|32|16.06.2014|22.06.2014|3463|2014
+986|Morocco Tennis Tour|1|{'y': 2014, 'e': 7025}|Clay|Morocco|€42500|32|16.06.2014|22.06.2014|7025|2014
+987|ATP Challenger China International|0|{'y': 2014, 'e': 7023}|Hard|China|$50000|32|16.06.2014|22.06.2014|7023|2014
+988|Marburg Open 2014|0|{'y': 2014, 'e': 6156}|Clay|Germany|€35000|32|23.06.2014|06.07.2014|6156|2014
+989|ATP Challenger China International 2014 Nan Chang|0|{'y': 2014, 'e': 7027}|Hard|China|$50000|32|23.06.2014|06.07.2014|7027|2014
+990|Challenger 2001 Team 'Citta Di Padova'|0|{'y': 2014, 'e': 7029}|Clay|Italy|€42500|32|23.06.2014|06.07.2014|7029|2014
+991|Sparkassen Open 2014|0|{'y': 2014, 'e': 526}|Clay|Germany|€106500|32|30.06.2014|06.07.2014|526|2014
+992|Manta|0|{'y': 2014, 'e': 2121}|Hard|Ecuador|$40000|32|30.06.2014|06.07.2014|2121|2014
+993|Distl & ITR Group Tennis Cup|0|{'y': 2014, 'e': 3627}|Clay|Italy|€35000|32|30.06.2014|06.07.2014|3627|2014
+994|Nielsen Pro Tennis Championship|0|{'y': 2014, 'e': 228}|Hard|United States|$50000|32|30.06.2014|06.07.2014|228|2014
+995|ATP Challenger Tilla Slovenia Open 2014|0|{'y': 2014, 'e': 6787}|Hard|Slovenia|€42500|32|07.07.2014|13.07.2014|6787|2014
+996|San Benedetto Tennis Cup|0|{'y': 2014, 'e': 3945}|Clay|Italy|€35000|32|07.07.2014|13.07.2014|3945|2014
+997|Sport 1 Open 2014|0|{'y': 2014, 'e': 686}|Clay|Netherlands|€42500|32|07.07.2014|13.07.2014|686|2014
+998|Levene Gouldin & Thompson Tennis Challenge|0|{'y': 2014, 'e': 670}|Hard|United States|$50000|32|14.07.2014|20.07.2014|670|2014
+999|The National Bank Granby Challenger|0|{'y': 2014, 'e': 877}|Hard|Canada|$50000|32|14.07.2014|20.07.2014|877|2014
+1000|2014 OEC Kaohsiung ATP Challenger|0|{'y': 2014, 'e': 6490}|Hard|Republic of China|$125000|32|14.07.2014|20.07.2014|6490|2014
+1001|Poznan Open|0|{'y': 2014, 'e': 786}|Clay|Poland|€35000|32|14.07.2014|20.07.2014|786|2014
+1002|Recanati|0|{'y': 2014, 'e': 1743}|Hard|Italy|€35000|32|14.07.2014|20.07.2014|1743|2014
+1003|Presidents Cup|0|{'y': 2014, 'e': 7071}|Hard|Kazakhstan|$125000|32|21.07.2014|27.07.2014|7071|2014
+1004|Kentucky Bank Tennis Championships|0|{'y': 2014, 'e': 586}|Hard|United States|$50000|32|21.07.2014|27.07.2014|586|2014
+1005|Oberstaufen Cup ATP Challenger|0|{'y': 2014, 'e': 833}|Clay|Germany|€35000|32|21.07.2014|27.07.2014|833|2014
+1006|Aamulehti Tampere Open|0|{'y': 2014, 'e': 221}|Clay|Finland|€42500|32|21.07.2014|27.07.2014|221|2014
+1007|International Tennis Tournament of Cortina|0|{'y': 2014, 'e': 7073}|Clay|Italy|€42500|32|28.07.2014|03.08.2014|7073|2014
+1008|Svijany Open 2014|0|{'y': 2014, 'e': 6795}|Clay|Czech Republic|€35000|32|28.07.2014|03.08.2014|6795|2014
+1009|Open Castilla Y Leon|0|{'y': 2014, 'e': 783}|Hard|Spain|€42500|32|28.07.2014|03.08.2014|783|2014
+1010|Oldum Brown Vanopen|0|{'y': 2014, 'e': 254}|Hard|Canada|$100000|32|28.07.2014|03.08.2014|254|2014
+1011|The Comercia Bank Challenger|0|{'y': 2014, 'e': 467}|Hard|United States|$100000|32|04.08.2014|10.08.2014|467|2014
+1012|Advantage Cars Prague Open 2014|0|{'y': 2014, 'e': 7077}|Clay|Czech Republic|€42500|32|04.08.2014|10.08.2014|7077|2014
+1013|San Marino Go & Fun Open|0|{'y': 2014, 'e': 841}|Clay|San Marino|€64000|32|04.08.2014|10.08.2014|841|2014
+1014|Internazionali Di Tennis Del Friuli Venezia Giulia|0|{'y': 2014, 'e': 2120}|Clay|Italy|€42500|32|11.08.2014|17.08.2014|2120|2014
+1015|Maserati Challenger|0|{'y': 2014, 'e': 6809}|Clay|Germany|€35000|32|11.08.2014|17.08.2014|6809|2014
+1016|Chang-Sat Bangkok Open 2014|0|{'y': 2014, 'e': 5047}|Hard|Thailand|$50000|32|25.08.2014|07.09.2014|5047|2014
+1017|Citta Di Como|0|{'y': 2014, 'e': 3473}|Clay|Italy|€35000|32|25.08.2014|07.09.2014|3473|2014
+1018|Tean International 2014|0|{'y': 2014, 'e': 3626}|Clay|The Netherlands|€42500|32|01.09.2014|07.09.2014|3626|2014
+1019|BRD Brasov Challenger|0|{'y': 2014, 'e': 696}|Clay|Romania|€35000|32|01.09.2014|07.09.2014|696|2014
+1020|AON Open Challenger|0|{'y': 2014, 'e': 1763}|Clay|Italy|€85000|32|01.09.2014|07.09.2014|1763|2014
+1021|Claro Open Medellin 2014|0|{'y': 2014, 'e': 252}|Clay|Colombia|$50000|32|01.09.2014|07.09.2014|252|2014
+1022|Road to the Shanghai Rolex Masters|0|{'y': 2014, 'e': 6313}|Hard|China|$50000|32|01.09.2014|07.09.2014|6313|2014
+1023|Trophee des Alpilles|0|{'y': 2014, 'e': 6014}|Hard|France|€42500|32|01.09.2014|07.09.2014|6014|2014
+1024|Banja Luka 2014|0|{'y': 2014, 'e': 1607}|Clay|Bosnia & Herzegovina|€64000|32|08.09.2014|14.09.2014|1607|2014
+1025|Challenger Pulcra Lachiter Biella|0|{'y': 2014, 'e': 7085}|Clay|Italy|€42500|32|08.09.2014|14.09.2014|7085|2014
+1026|Amex - Istanbul Challenger|0|{'y': 2014, 'e': 7083}|Hard|Turkey|$75000|32|08.09.2014|14.09.2014|7083|2014
+1027|Lil Copa Sevilla|0|{'y': 2014, 'e': 784}|Clay|Spain|€42500|32|08.09.2014|14.09.2014|784|2014
+1028|Pekao Szczecin Open|0|{'y': 2014, 'e': 448}|Clay|Poland|€106500|32|08.09.2014|14.09.2014|448|2014
+1029|Campeonato Internacional de Tenis de Campinas|0|{'y': 2014, 'e': 6307}|Clay|Brazil|$40000|32|15.09.2014|21.09.2014|6307|2014
+1030|Izmir Cup|0|{'y': 2014, 'e': 3834}|Hard|Turkey|€106500|32|15.09.2014|21.09.2014|3834|2014
+1031|Morocco Tennis Tour|0|{'y': 2014, 'e': 7093}|Clay|Morocco|€42500|32|15.09.2014|21.09.2014|7093|2014
+1032|XX Challenger ATP Trofeo Ciudad de Quito|0|{'y': 2014, 'e': 589}|Clay|Ecuador|$40000|32|15.09.2014|21.09.2014|589|2014
+1033|Arimex Challenger Trophy|0|{'y': 2014, 'e': 3628}|Clay|Slovakia|€42500|32|15.09.2014|21.09.2014|3628|2014
+1034|Morocco Tennis Tour|0|{'y': 2014, 'e': 7095}|Clay|Morocco|€42500|32|22.09.2014|28.09.2014|7095|2014
+1035|Napa Valley Challenger|0|{'y': 2014, 'e': 6841}|Hard|CA, U.S.A.|$50000|32|22.09.2014|28.09.2014|6841|2014
+1036|Open D'Orleans|1|{'y': 2014, 'e': 2273}|Hard|France|€106500|32|22.09.2014|28.09.2014|2273|2014
+1037|Seguros Bolivar Open|0|{'y': 2014, 'e': 5063}|Clay|Colombia|$40000|32|22.09.2014|28.09.2014|5063|2014
+1038|Aberto de Tenis do Rio Grande do Sul|0|{'y': 2014, 'e': 6620}|Clay|Brazil|$40000|32|22.09.2014|28.09.2014|6620|2014
+1039|Sibiu Open 2014 Presented by Raiffeisen Bank|0|{'y': 2014, 'e': 6590}|Clay|Romania|€42500|32|22.09.2014|28.09.2014|6590|2014
+1040|Claro Open Cali 2014|1|{'y': 2014, 'e': 7075}|Clay|Colombia|$40000|32|29.09.2014|05.10.2014|7075|2014
+1041|Ethias Trophy|1|{'y': 2014, 'e': 3350}|Hard|Belgium|€106500|32|29.09.2014|05.10.2014|3350|2014
+1042|Sacramento Pro Circiut Challenger|0|{'y': 2014, 'e': 3351}|Hard|CA, U.S.A.|$100000|32|29.09.2014|05.10.2014|3351|2014
+1043|Open De Rennes|1|{'y': 2014, 'e': 3503}|Hard|France|€85000|32|06.10.2014|12.10.2014|3503|2014
+1044|Tashkent Challenger|0|{'y': 2014, 'e': 4012}|Hard|Uzbekistan|$125000|32|06.10.2014|12.10.2014|4012|2014
+1045|First Republic Bank Tiburon Challenger|0|{'y': 2014, 'e': 1768}|Hard|CA, USA|$100000|32|06.10.2014|12.10.2014|1768|2014
