@@ -8,7 +8,6 @@ Created on Mon Oct 13 17:12:51 2014
 import datetime
 import time
 import re
-import urllib
 
 from utils import *
 from matchCrawler import *
@@ -38,11 +37,9 @@ tournaments_fields = [
     't', 'y', 'r', 'p' ]
 
 
-
 def getTournamentHTML(e,y):
-    url = 'http://www.atpworldtour.com/Share/Event-Draws.aspx?e=' + str(e) + '&y=' + str(y)
-    return urllib.urlopen(url).read()
-
+    return getHTML( 'http://www.atpworldtour.com/Share/Event-Draws.aspx?e=' +
+            str(e) + '&y=' + str(y) )
 
 def parseTournamentInfos(content, infos):
     draw        = re.findall("Draw: <\/span>([0-9]+)<\/p>", content)[0]

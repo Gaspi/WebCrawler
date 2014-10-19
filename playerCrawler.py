@@ -4,8 +4,6 @@ Created on Fri Oct 10 14:28:49 2014
 @author: Gaspard, Thomas, Arnaud
 """
 
-
-import urllib
 import re
 import os
 from bs4 import BeautifulSoup
@@ -44,7 +42,7 @@ class Players:
 
     def addInfoPlayer(self, code):
         if not self.isTreated(code):
-            url = urllib.urlopen( url_players + code + '.aspx' )
+            url = urlOpen( url_players + code + '.aspx' )
             dom = BeautifulSoup(url)
             aux = infoFromDOM(dom)
             playerURL = playersFromURL(url)
@@ -58,7 +56,7 @@ class Players:
     
     def save(self):
         with open(self.playersPath, 'wb') as csvfile:
-            w = getWriter(csvfile, players_fields )
+            w = getWriter(csvfile, players_fields)
             w.writerows( sorted(self.dic.values(), key=lambda k: k['ID']) )
     def load(self):
         with open(self.playersPath, 'rb') as csvfile:

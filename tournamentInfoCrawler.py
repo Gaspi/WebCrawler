@@ -5,8 +5,6 @@ Created on Wed Oct 15 10:31:07 2014
 @author: Gaspard
 """
 
-import urllib
-import re
 import os
 import sets
 import numpy as np

@@ -5,7 +5,9 @@ Created on Mon Oct 13 16:03:13 2014
 @author: Gaspard, Thomas, Arnaud
 """
 
-import time
+import time, urllib
+from bs4 import BeautifulSoup
+
 
 debug_mode = True
 
@@ -70,3 +72,19 @@ class Clock:
     
     def strClock(self):
         return "Time: " + str(self.clock())
+
+
+
+
+
+def urlOpen(url):
+    a = urllib.urlopen(url)
+    # handle timeout here
+    return a
+
+def getDOM(url):
+    return BeautifulSoup( urlOpen(url) )
+
+
+def getHTML(url):
+    return urlOpen(url).read()

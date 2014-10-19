@@ -58,8 +58,7 @@ def parseStat(line, balise):
 
 
 def getInfoRows(t,y,r,p):
-    url_file = urllib.urlopen(mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p)
-    dom = BeautifulSoup(url_file)
+    dom = getDOM( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p)
     a = dom.find_all('tr', 'infoRow')
     if len(a) != 20:
         return printError("Mauvaise longueur : " + str(len(a)) + " != 20")

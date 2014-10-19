@@ -4,7 +4,6 @@ Created on Fri Oct 10 14:28:49 2014
 @author: Gaspard, Thomas, Arnaud
 """
 
-import urllib
 import re
 
 from utils import *
@@ -24,8 +23,7 @@ class Seasons:
         self.ID = 0
     
     def addTournamentsFromTY(self, t, y):
-        url = url_tournament + '?t='+str(t)+'&y='+str(y)
-        dom = BeautifulSoup( urllib.urlopen(url) )
+        dom = getDOM( url_tournament + '?t='+str(t)+'&y='+str(y) )
         tournaments = dom.find_all('tr','calendarFilterItem')
         
         for tr in tournaments:
