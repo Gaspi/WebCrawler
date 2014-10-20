@@ -13,22 +13,22 @@ from searchCrawler          import *
 from playerCrawler          import *
 from tournamentInfoCrawler  import *
 from seasonCrawler          import *
+from matchMerger            import *
 
 
-debug("Initialisation...")
 
 yearStart = 2014
 yearEnd = 2014
-tournamentTypes = [4]
+tournamentTypes = [2]
 
-folder = 'C:\\Users\\Gaspard\\Documents\\WebMining\\WebCrawler\\BDD\\2014\\'
+folder = 'C:\\Users\\Gaspard\\Dropbox2\\Dropbox\\WebCrawling 2.0\\WebCrawler\\2014\\'
 matches_folder    = folder + "tournaments\\"
 tournaments_codes = folder + "tournamentCodes.csv"
 tournaments_save  = folder + "tournaments.csv"
 player_codes      = folder + "playerCodes.csv"
 player_save       = folder + "players.csv"
 treated_path      = folder + "treated.csv"
-
+matches_path      = folder + "matches.csv"
 
 
 try:    os.stat( folder)
@@ -36,93 +36,130 @@ except: os.mkdir(folder)
 try:    os.stat( matches_folder)
 except: os.mkdir(matches_folder)
 
-seasons     = Seasons()
-
-tournaments = Tournaments()
-tournaments.tournamentsPath = tournaments_save
-tournaments.playerCodesPath = player_codes
-
-players     = Players()
-players.playersPath = player_save
-
-matchCrawler = Matches()
-matchCrawler.matchesPath = matches_folder
-
-chrono      = Chrono()
-clock       = Clock()
-clock.clock()
-debug("Done. ")
+debug("Done.")
 
 
 
-debug("Looking for all tournaments (types " + str(tournamentTypes) +
-      ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-seasons.addTournamentsFromAllTY( tournamentTypes, yearStart, yearEnd )
-debug("Saving information...")
-seasons.saveCodes( tournaments_codes )
-lengthTour = str( len(seasons.codes) )
-debug("Done. " + clock.strClock())
-debug("Found: " + lengthTour + " tournaments")
+
+def mainBody():
+    
+    debug("Initialisation...")
+    
+    seasons     = Seasons()
+    
+    tournaments = Tournaments()
+    tournaments.tournamentsPath = tournaments_save
+    tournaments.playerCodesPath = player_codes
+    
+    players     = Players()
+    players.playersPath = player_save
+    
+    matchCrawler = Matches()
+    matchCrawler.matchesPath = matches_folder
+    
+    matchMerger = MatchMerger()
+    matchMerger.matchesFolder = matches_folder
+    matchMerger.targetPath    = matches_path
+    
+    chrono      = Chrono()
+    clock       = Clock()
+    clock.clock()
+    debug("Done. ")
+    
+    
+    
+    debug("Looking for all tournaments (types " + str(tournamentTypes) +
+          ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
+    seasons.addTournamentsFromAllTY( tournamentTypes, yearStart, yearEnd )
+    debug("Saving information...")
+    seasons.saveCodes( tournaments_codes )
+    lengthTour = str( len(seasons.codes) )
+    debug("Done. " + clock.strClock())
+    debug("Found: " + lengthTour + " tournaments")
+    
+    
+    
+    if tournaments.canLoad():
+        debug("Loading...")
+        tournaments.load()
+    
+    if True:
+        debug("Crawling all tournaments (types " + str(tournamentTypes) +
+            ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
+        chrono.start( int(lengthTour) )
+        i = 0
+        for code in seasons.codes:
+            chrono.tick()
+            tournaments.addTournamentFromCode(code)
+            i += 1
+            if i % 20 == 0:
+                debug("Tournaments " + str(i) + " / " + lengthTour +
+                      " treated. Players found: " + str(len(tournaments.playerCodes)) +
+                      "  Remaining: " + str( chrono.remaining() ) )
+        tournaments.save()
+    
+    debug("Done. " + clock.strClock())
+    numberPlayers = str( len(tournaments.playerCodes) )
+    debug("Found: " + numberPlayers + " players" )
+    
+    
+    if players.canLoad():
+        debug("Loading...")
+        players.load()
+    
+    if True:
+        debug("Looking for all " + numberPlayers + " players...")
+    
+        chrono.start( int(numberPlayers) )
+        i = 0
+        for code in tournaments.playerCodes:
+            chrono.tick()
+            players.addInfoPlayer(code)
+            i += 1
+            if i % 20 == 0: chrono.printRemaining()
+        players.save()
+    matchCrawler.dicoPlayers = players.dic
+    debug("Done. " + clock.strClock())
+    
+    
+    
+    
+    if True:
+        debug("Fetching informations for all matches...")
+        chrono.start( int(lengthTour) )
+        for t in tournaments.tournaments:
+            matchCrawler.treatTournament( t )
+            chrono.tick()
+            if chrono.i % 5 == 0:
+                chrono.printRemaining()
+            debug( "Tournament e = " + str( t['e'] ) + " & " + str( t['y'] ) + " Done.")
+        debug("All tournaments: Done. " + clock.strClock())
+    
+    
+    
+    if True:
+        debug("Merging all matches...")
+        matchMerger.startMerging( tournaments.tournaments )
+        debug("Done. " + clock.strClock())
+    
+    return True
 
 
 
-if tournaments.canLoad():
-    debug("Loading...")
-    tournaments.load()
+keepOn = True
+while keepOn:
+    keepOn = False
+    mainBody()
+    try :
+        mainBody()
+    except:
+        printError("Network error expected: " + str( sys.exc_info()[0] ) )
+        time.sleep(10)
+        debug("Waking up !")
+        keepOn = True
+        
 
-if True:
-    debug("Crawling all tournaments (types " + str(tournamentTypes) +
-        ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-    chrono.start( int(lengthTour) )
-    i = 0
-    for code in seasons.codes:
-        chrono.tick()
-        tournaments.addTournamentFromCode(code)
-        i += 1
-        if i % 20 == 0:
-            debug("Tournaments " + str(i) + " / " + lengthTour +
-                  " treated. Players found: " + str(len(tournaments.playerCodes)) +
-                  "  Remaining: " + str( chrono.remaining() ) )
-    tournaments.save()
-
-debug("Done. " + clock.strClock())
-numberPlayers = str( len(tournaments.playerCodes) )
-debug("Found: " + numberPlayers + " players" )
-
-
-if players.canLoad():
-    debug("Loading...")
-    players.load()
-
-if True:
-    debug("Looking for all " + numberPlayers + " players...")
-
-    chrono.start( int(numberPlayers) )
-    i = 0
-    for code in tournaments.playerCodes:
-        chrono.tick()
-        players.addInfoPlayer(code)
-        i += 1
-        if i % 20 == 0: chrono.printRemaining()
-    players.save()
-matchCrawler.dicoPlayers = players.dic
-debug("Done. " + clock.strClock())
-
-
-
-if True:
-    debug("Fetching informations for all matches...")
-    chrono.start( int(lengthTour) )
-    for t in tournaments.tournaments:
-        matchCrawler.treatTournament( t )
-        chrono.tick()
-        if chrono.i % 5 == 0:
-            chrono.printRemaining()
-        debug( "Tournament e = " + str( t['e'] ) + " & " + str( t['y'] ) + " Done.")
-    debug("All tournaments: Done. " + clock.strClock())
-
-
-
+debug("C'est fini !!!")
 
 
 #

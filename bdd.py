@@ -85,17 +85,6 @@ def getReader(csvFile):
     res = [ e for e in r]
     return res
 
-def getMatchReader(csvFile):
-    return getReader(csvFile, match_field_names)
-
-
-def readMatch(reader, match):
-    reader.writerow(match)
-
-def readTournament(reader, tournament):
-    reader.writerows(tournament)
-
-
 
 
 
