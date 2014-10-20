@@ -25,6 +25,7 @@ match_field_names = [
     'RoundNumber',
     'TournamentStart',
     'TournamentEnd',
+    'TournamentCategory',
     'Scores',
     'WinnerScores',
     'LoserScores',

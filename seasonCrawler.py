@@ -13,7 +13,10 @@ from tournamentCrawler import *
 
 url_tournament = 'http://www.atpworldtour.com/Scores/Archive-Event-Calendar.aspx'
 
-tournaments_codes_fields = [ 'IDTournament', 'e', 'y', 'Indoor', 'TournamentType' ]
+tournaments_codes_fields = ['IDTournament',
+                            'Indoor',
+                            'TournamentType',
+                            'TournamentCategory', 'e', 'y' ]  # Field de Sylvain
 
 
 class Seasons:
@@ -33,12 +36,25 @@ class Seasons:
                 a = re.findall('e=([0-9]+)\&y\=([0-9]+)' , link[0].attrs['href'])[0]
                 e = int(a[0])
                 y = int(a[1])
+                cat = col[1].contents[-1]
+                c = -1
+                if   cat == u'Grand Slams':
+                    c = 0
+                elif cat == u'ATP World Tour Masters 1000':
+                    c = 1
+                elif cat == u'ATP World Tour 500':
+                    c = 2
+                elif cat == u'ATP World Tour 250':
+                    c = 3
+                elif cat == u'ATP Challenger Tour':
+                    c = 4
                 tour =  {
                     'IDTournament': self.ID,
                     'e':e,
                     'y':y,
                     'Indoor': 0 if col[2].contents[0] == u'Outdoor' else 1,
-                    'TournamentType':t   }
+                    'TournamentType': t,
+                    'TournamentCategory': c }
                 self.codes.append( tour )
                 self.ID += 1
     

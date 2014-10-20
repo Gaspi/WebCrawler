@@ -19,7 +19,8 @@ tournaments_infos_fields = [
     'IDTournament',
     'Tournament',
     'Indoor',
-    'TournamentType',
+    'TournamentType',   # Field du site [1,2,4]
+    'TournamentCategory',   # Field de Sylvain
     'Surface',
     'Country',
     'TournamentPrize',

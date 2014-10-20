@@ -53,7 +53,10 @@ class Matches:
         y = int( t['y'] )
         tourPath = self.getPath(e, y)
         if not self.isTreated(tourPath):
-            matches = getMatchesOfTournament( e, y, {'IDTournament': t['IDTournament'], 'Indoor':t['Indoor'] }, self.dicoPlayers )
+            matches = getMatchesOfTournament( e, y, {
+                'IDTournament'      : t['IDTournament'],
+                'Indoor'            : t['Indoor'],
+                'TournamentCategory': t['TournamentCategory'] }, self.dicoPlayers )
             self.save(tourPath, matches)
     
     def save(self, path, matches):

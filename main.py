@@ -19,7 +19,7 @@ debug("Initialisation...")
 
 yearStart = 2014
 yearEnd = 2014
-tournamentTypes = [1]
+tournamentTypes = [4]
 
 folder = 'C:\\Users\\Gaspard\\Documents\\WebMining\\WebCrawler\\BDD\\2014\\'
 matches_folder    = folder + "tournaments\\"
