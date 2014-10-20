@@ -4,6 +4,7 @@ Created on Mon Oct 06 09:16:48 2014
 @authors: Gaspard, Thomas, Arnaud
 """
 
+import os
 from utils                  import *
 from tournamentCrawler      import *
 from matchCrawler           import *
@@ -12,17 +13,16 @@ from searchCrawler          import *
 from playerCrawler          import *
 from tournamentInfoCrawler  import *
 from seasonCrawler          import *
-import os
 
 
 
 
 debug("Initialisation...")
 yearStart = 2013
-yearEnd = 2013
+yearEnd = 2014
 tournamentTypes = [1,2, 4]
-folder = 'C:\\Users\\Gaspard\\Dropbox2\\Dropbox\\PESTOCrawling\\BDD\\test\\'
-try: os.stat(folder)
+folder = 'C:\\Users\\Gaspard\\Documents\\WebMining\\WebCrawler\\BDD\\2013to2014\\'
+try:    os.stat( folder)
 except: os.mkdir(folder)
 tournaments_codes = folder + "tournamentCodes.csv"
 tournaments_save  = folder + "tournaments.csv"
@@ -38,6 +38,9 @@ tournaments.playerCodesPath = player_codes
 
 players     = Players()
 players.playersPath = player_save
+
+# matchesCrawler = Match()
+# matchesCrawler.
 
 chrono      = Chrono()
 clock       = Clock()
@@ -71,8 +74,8 @@ if True:
         i += 1
         if i % 20 == 0:
             debug("Tournaments " + str(i) + " / " + lengthTour +
-                    " treated. Players found: " + str(len(tournaments.playerCodes)) +
-                    "Remaining: " + str( chrono.remaining() ) )
+                  " treated. Players found: " + str(len(tournaments.playerCodes)) +
+                  "  Remaining: " + str( chrono.remaining() ) )
     tournaments.save()
 debug("Done. " + clock.strClock())
 
@@ -90,7 +93,7 @@ if True:
         chrono.tick()
         players.addInfoPlayer(code)
         i += 1
-        if i % 5 == 0: chrono.printRemaining()
+        if i % 20 == 0: chrono.printRemaining()
     players.save()
 debug("Done. " + clock.strClock())
 

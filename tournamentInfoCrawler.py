@@ -58,8 +58,7 @@ class Tournaments:
                 self.playerCodes.add(p)
             self.saveMaybe()
     
-
-        
+    
     
     def saveCodes(self):
         with open(self.playerCodesPath, 'wb') as csvfile:
@@ -90,7 +89,7 @@ class Tournaments:
         self.loadCodes()
         self.loadTournaments()
     def canLoad(self):
-        return os.path.isfile(self.playerCodesPath) and os.path.isfile(self.tournamentsPath)
+        return  os.path.isfile(self.playerCodesPath) and os.path.isfile(self.tournamentsPath)
 
     def saveMaybe(self):
         self.i += 1

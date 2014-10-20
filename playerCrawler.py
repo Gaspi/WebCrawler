@@ -32,7 +32,7 @@ class Players:
         self.ID  = 0
         self.playersPath = ''
         self.i = 0
-        self.savePeriod = 5
+        self.savePeriod = 20
     
     def isTreated(self, code):
         for t in self.dic:
@@ -96,7 +96,7 @@ def infoFromDOM(dom):
     turnedPro   = -1
     for li in f:
         field = li.find('span').contents[0]
-        if field == u'Age:':
+        if field == u'Age:' or field == u'Birthdate:':
             birth = re.findall('\(([0-9]*)\.([0-9]*)\.([0-9]*)\)', li.getText() )[0]
         elif field == u'Height:':
             height = int( re.findall('\(([0-9]*) cm\)', li.getText())[0] )

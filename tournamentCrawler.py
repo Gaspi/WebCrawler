@@ -130,7 +130,7 @@ def getTournament(e, y, infos):
 
 
 def getMatchesOfTournament(e, y, infos, dicoPlayers, verbose=None, sleep=None):
-    tournament = getTournament(e,y, infos)
+    tournament = getTournament( e, y, infos )
     result = []
     index = 0
     l = len(tournament)

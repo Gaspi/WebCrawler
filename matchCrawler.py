@@ -10,7 +10,7 @@ from utils import *
 import urllib
 from bs4 import BeautifulSoup
 
-import re
+import re, os
 
 
 mc_url_matches = "http://www.atpworldtour.com/Share/Match-Facts-Pop-Up.aspx"
@@ -37,7 +37,43 @@ mc_fields = {
     }
 
 
-# TODO time 68 minutes -> 68
+
+class Matches:
+    
+    def __init__(self):
+        self.matchesPath = ''
+        self.dicoPlayers = dict()
+    
+    def getPath(self, e, y):
+        return self.matchesPath + "y" + str(t['y']) + "e" + str(t['e'])
+    
+    def isTreated(self, path):
+        try :
+            os.path.isfile( path  )
+            return True
+        except:
+            return False
+    
+    def treatTournament(self, t):
+        e = int( t['e'] )
+        y = int( t['y'] )
+        path = self.getPath(e, y)
+        if not self.isTreated(path):
+            matches = getMatchesOfTournament( t['e'], t['y'],
+                    {'IDTournament': t['IDTournament'],
+                     'Indoor':t['Indoor'] },
+                    self.dicoPlayers )
+            save(path, matches)
+    
+    def save(self, path, matches):
+        with open(path+"u", 'wb') as f:
+                w = getMatchWriter(f)
+                writeTournament(w, matches)
+                os.rename( path+"u", path)
+
+
+
+
 
 def parseSimple(line, balise):
     return line.find(balise).contents[0]
