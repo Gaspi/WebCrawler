@@ -15,24 +15,26 @@ from tournamentInfoCrawler  import *
 from seasonCrawler          import *
 
 
-
-
 debug("Initialisation...")
+
 yearStart = 2014
 yearEnd = 2014
 tournamentTypes = [1]
 
 folder = 'C:\\Users\\Gaspard\\Documents\\WebMining\\WebCrawler\\BDD\\2014\\'
-try:    os.stat( folder)
-except: os.mkdir(folder)
 matches_folder    = folder + "tournaments\\"
-try:    os.stat( matches_folder)
-except: os.mkdir(matches_folder)
 tournaments_codes = folder + "tournamentCodes.csv"
 tournaments_save  = folder + "tournaments.csv"
 player_codes      = folder + "playerCodes.csv"
 player_save       = folder + "players.csv"
 treated_path      = folder + "treated.csv"
+
+
+
+try:    os.stat( folder)
+except: os.mkdir(folder)
+try:    os.stat( matches_folder)
+except: os.mkdir(matches_folder)
 
 seasons     = Seasons()
 
@@ -110,8 +112,12 @@ debug("Done. " + clock.strClock())
 
 if True:
     debug("Fetching informations for all matches...")
+    chrono.start( int(lengthTour) )
     for t in tournaments.tournaments:
         matchCrawler.treatTournament( t )
+        chrono.tick()
+        if chrono.i % 5 == 0:
+            chrono.printRemaining()
         debug( "Tournament e = " + str( t['e'] ) + " & " + str( t['y'] ) + " Done.")
     debug("All tournaments: Done. " + clock.strClock())
 

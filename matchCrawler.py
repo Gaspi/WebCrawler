@@ -91,7 +91,8 @@ def getInfoRows(t,y,r,p):
     dom = getDOM( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p)
     a = dom.find_all('tr', 'infoRow')
     if len(a) != 20:
-        return printError("Mauvaise longueur : " + str(len(a)) + " != 20")
+        printError("Mauvaise longueur : " + str(len(a)) + " != 20")
+        return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
     return a
 
 def getMatchInfos(t,y,r,p):
