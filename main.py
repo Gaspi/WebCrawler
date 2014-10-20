@@ -67,16 +67,20 @@ def mainBody():
     debug("Done. ")
     
     
+    if True:
+        debug("Looking for all tournaments (types " + str(tournamentTypes) +
+              ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
+        seasons.addTournamentsFromAllTY( tournamentTypes, yearStart, yearEnd )
+        debug("Saving information...")
+        seasons.saveCodes( tournaments_codes )
+    else:
+        debug("Loading all tournaments (types " + str(tournamentTypes) +
+              ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
+        seasons.loadCodes( tournaments_codes )
     
-    debug("Looking for all tournaments (types " + str(tournamentTypes) +
-          ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-    seasons.addTournamentsFromAllTY( tournamentTypes, yearStart, yearEnd )
-    debug("Saving information...")
-    seasons.saveCodes( tournaments_codes )
     lengthTour = str( len(seasons.codes) )
     debug("Done. " + clock.strClock())
     debug("Found: " + lengthTour + " tournaments")
-    
     
     
     if tournaments.canLoad():

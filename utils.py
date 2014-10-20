@@ -35,7 +35,7 @@ class Chrono:
         return remaining
     
     def printRemaining(self):
-        debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal + '  Remaining: ' + str(self.remaining()) )
+        debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal + '  Remaining: ' + prettyPrintTime(self.remaining()) )
 
 
 def debug(msg):
@@ -73,8 +73,15 @@ class Clock:
     def strClock(self):
         return "Time: " + str(self.clock())
 
-
-
+def prettyPrintTime(s):
+    hours, remainder = divmod(s, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    if hours > 0:
+        return ('%sh %smin %ssec' % (hours, minutes, seconds) )
+    elif minutes > 0:
+        return ('%smin %ssec' % (minutes, seconds) )
+    else:
+        return ('%ssec' % (hours, minutes, seconds) )
 
 
 def urlOpen(url):
