@@ -17,19 +17,14 @@ from matchMerger            import *
 
 
 
-yearStart = 2014
+yearStart = 2000
 yearEnd = 2014
-tournamentTypes = [2]
-
-
-folder = 'C:\\Users\\Gaspard\\Dropbox2\\Dropbox\\WebCrawling 2.0\\WebCrawler\\2014\\'
-matches_folder    = folder + "tournaments\\"
-
-
-
+tournamentTypes = [1,2,4]
 
 folder = 'C:\\Users\\Gaspard\\Dropbox2\\Dropbox\\WebCrawling 2.0\\WebCrawler\\2014\\'
 matches_folder    = folder + "tournaments\\"
+# folder = '/cal/homes/tbraun/Documents/Webmining/WebCrawler/2000to2014/'
+# matches_folder    = folder + "tournaments/"
 tournaments_codes = folder + "tournamentCodes.csv"
 tournaments_save  = folder + "tournaments.csv"
 player_codes      = folder + "playerCodes.csv"
