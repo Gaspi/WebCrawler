@@ -1,0 +1,403 @@
+IDTournament|Tournament|Indoor|TournamentType|Surface|Country|TournamentPrize|Draw|TournamentStart|TournamentEnd|e|y
+0|Australian Open|0|1|Hard|Australia|A$13803160|128|14.01.2013|27.01.2013|580|2013
+1|Roland Garros|0|1|Clay|France|€10104000|128|27.05.2013|09.06.2013|520|2013
+2|Wimbledon|0|1|Grass|Great Britain|£10514000|128|24.06.2013|07.07.2013|540|2013
+3|US Open|0|1|Hard|NY, U.S.A.|$16102000|128|26.08.2013|08.09.2013|560|2013
+4|Australian Open|0|1|Hard|Australia|A$14982200|128|13.01.2014|26.01.2014|580|2014
+5|Roland Garros|0|1|Clay|France|€11552000|128|26.05.2014|08.06.2014|520|2014
+6|Wimbledon|0|1|Grass|Great Britain|£11715000|128|23.06.2014|06.07.2014|540|2014
+7|US Open|0|1|Hard|NY, U.S.A.|$17851868|128|25.08.2014|07.09.2014|560|2014
+8|Brisbane International presented by Suncorp|0|2|Hard|Australia|$436630|32|31.12.2012|06.01.2013|339|2013
+9|Aircel Chennai Open|0|2|Hard|India|$385150|32|31.12.2012|06.01.2013|891|2013
+10|Qatar ExxonMobil Open|0|2|Hard|Qatar|$1054720|32|31.12.2012|06.01.2013|451|2013
+11|Heineken Open|0|2|Hard|New Zealand|$433400|32|07.01.2013|13.01.2013|301|2013
+12|Apia International Sydney|0|2|Hard|Australia|$436630|32|07.01.2013|13.01.2013|338|2013
+13|Open Sud de France|1|2|Hard|France|€410200|32|04.02.2013|10.02.2013|375|2013
+14|Royal Guard Open Chile |0|2|Clay|Chile|$410200|32|04.02.2013|10.02.2013|505|2013
+15|PBZ Zagreb Indoors|1|2|Hard|Croatia|€410200|32|04.02.2013|10.02.2013|2276|2013
+16|ABN AMRO World Tennis Tournament|1|2|Hard|The Netherlands|€1267875|32|11.02.2013|17.02.2013|407|2013
+17|SAP Open|1|2|Hard|CA, U.S.A.|$546930|32|11.02.2013|17.02.2013|424|2013
+18|Brasil Open 2014|1|2|Clay|Brazil|$455775|32|11.02.2013|17.02.2013|533|2013
+19|Copa Claro|0|2|Clay|Argentina|$493670|32|18.02.2013|24.02.2013|506|2013
+20|Open 13|1|2|Hard|France|€528135|32|18.02.2013|24.02.2013|496|2013
+21|U.S. National Indoor Tennis Championships|1|2|Hard|TN, U.S.A.|$1212750|32|18.02.2013|24.02.2013|402|2013
+22|Abierto Mexicano Telcel|0|2|Clay|Mexico|$1212750|32|25.02.2013|03.03.2013|807|2013
+23|Delray Beach Open by The  Venetian® Las Vegas|0|2|Hard|FL, U.S.A.|$455775|32|25.02.2013|03.03.2013|499|2013
+24|Dubai Duty Free Tennis Championships|0|2|Hard|U.A.E.|$1785500|32|25.02.2013|03.03.2013|495|2013
+25|BNP Paribas Open|0|2|Hard|CA, U.S.A.|$5191943|128|04.03.2013|17.03.2013|404|2013
+26|Miami Open, presented by Itau|0|2|Hard|FL, U.S.A.|$4330625|128|18.03.2013|31.03.2013|403|2013
+27|Grand Prix Hassan II|0|2|Clay|Morocco|€410200|32|08.04.2013|14.04.2013|360|2013
+28|Fayez Sarofim & Co. U.S. Men's Clay Court Championship|0|2|Clay|TX, U.S.A.|$455775|32|08.04.2013|14.04.2013|717|2013
+29|Monte-Carlo Rolex Masters|0|2|Clay|Monaco|€2646495|64|15.04.2013|21.04.2013|410|2013
+30|Barcelona Open Banc Sabadell|0|2|Clay|Spain|€1708875|64|22.04.2013|28.04.2013|425|2013
+31|BRD Nastase Tiriac Trophy|0|2|Clay|Romania|€410200|32|22.04.2013|28.04.2013|773|2013
+32|BMW Open by FWU AG|0|2|Clay|Germany|€410200|32|29.04.2013|05.05.2013|308|2013
+33|Portugal Open|0|2|Clay|Portugal|€410200|32|29.04.2013|05.05.2013|468|2013
+34|Mutua Madrid Open|0|2|Clay|Spain|€3368265|64|06.05.2013|12.05.2013|1536|2013
+35|Internazionali BNL d'Italia|0|2|Clay|Italy|€2646495|64|13.05.2013|19.05.2013|416|2013
+36|Düsseldorf Open|0|2|Clay|Germany|€410200|32|20.05.2013|26.05.2013|6710|2013
+37|Open de Nice Côte d’Azur|0|2|Clay|France|€410200|32|20.05.2013|26.05.2013|6120|2013
+38|Gerry Weber Open |0|2|Grass|Germany|€683665|32|10.06.2013|16.06.2013|500|2013
+39|Aegon Championships|0|2|Grass|Great Britain|€683665|64|10.06.2013|16.06.2013|311|2013
+40|Topshelf Open|0|2|Grass|The Netherlands|€410200|32|17.06.2013|23.06.2013|440|2013
+41|Aegon International|0|2|Grass|Great Britain|€468460|32|17.06.2013|23.06.2013|741|2013
+42|SkiStar Swedish Open|0|2|Clay|Sweden|€433770|32|08.07.2013|14.07.2013|316|2013
+43|Hall of Fame Tennis Championships|0|2|Grass|RI, U.S.A.|$455775|32|08.07.2013|14.07.2013|315|2013
+44|MercedesCup|0|2|Clay|Germany|€410200|32|08.07.2013|14.07.2013|321|2013
+45|Claro Open Colombia|0|2|Hard|Colombia|$638085|32|15.07.2013|21.07.2013|6718|2013
+46|bet-at-home Open|0|2|Clay|Germany|€1102500|64|15.07.2013|21.07.2013|414|2013
+47|BB&T Atlanta Open|0|2|Hard|GA, USA|$546930|32|22.07.2013|28.07.2013|6116|2013
+48|Crédit Agricole Suisse Open Gstaad|0|2|Clay|Switzerland|€410200|32|22.07.2013|28.07.2013|314|2013
+49|Vegeta Croatia Open Umag|0|2|Clay|Croatia|€410200|32|22.07.2013|28.07.2013|439|2013
+50|bet-at-home Cup Kitzbühel|0|2|Clay|Austria|€410200|32|29.07.2013|04.08.2013|319|2013
+51|Citi Open|0|2|Hard|DC, USA|$1295790|64|29.07.2013|04.08.2013|418|2013
+52|Rogers Cup|0|2|Hard|Montreal, Canada|$2887085|64|05.08.2013|11.08.2013|421|2013
+53|Western & Southern Open - Cincinnati|0|2|Hard|OH, U.S.A.|$3079555|64|12.08.2013|18.08.2013|422|2013
+54|Winston-Salem Open|0|2|Hard|NC, U.S.A.|$575250|64|19.08.2013|25.08.2013|6242|2013
+55|Moselle Open|1|2|Hard|France|€410200|32|16.09.2013|22.09.2013|341|2013
+56|Negev Israel Open|1|2|Hard|Russia|$455775|32|16.09.2013|22.09.2013|568|2013
+57|Thailand Open|1|2|Hard|Thailand|$567530|32|23.09.2013|29.09.2013|1720|2013
+58|Malaysian Open, Kuala Lumpur|1|2|Hard|Malaysia|$875500|32|23.09.2013|29.09.2013|6003|2013
+59|China Open|0|2|Hard|China|$2315250|32|30.09.2013|06.10.2013|747|2013
+60|Rakuten Japan Open Tennis Championships|0|2|Hard|Japan|$1297000|32|30.09.2013|06.10.2013|329|2013
+61|Shanghai Rolex Masters|0|2|Hard|Shanghai, China|$3849445|64|07.10.2013|13.10.2013|5014|2013
+62|Kremlin Cup by Bank of Moscow|1|2|Hard|Russia|$746750|32|14.10.2013|20.10.2013|438|2013
+63|If Stockholm Open|1|2|Hard|Sweden|€530165|32|14.10.2013|20.10.2013|429|2013
+64|Erste Bank Open|1|2|Hard|Austria|€501355|32|14.10.2013|20.10.2013|337|2013
+65|Swiss Indoors Basel|1|2|Hard|Switzerland|€1445835|32|21.10.2013|27.10.2013|328|2013
+66|Valencia Open 500|1|2|Hard|Spain|€1496095|32|21.10.2013|27.10.2013|573|2013
+67|BNP Paribas Masters|1|2|Hard|France|€2646495|64|28.10.2013|03.11.2013|352|2013
+68|Barclays ATP World Tour Finals|1|2|Hard|Great Britain|$6000000|4|04.11.2013|10.11.2013|605|2013
+69|Brisbane International presented by Suncorp|0|2|Hard|Australia|$452670|32|30.12.2013|05.01.2014|339|2014
+70|Aircel Chennai Open|0|2|Hard|India|$399985|32|30.12.2013|05.01.2014|891|2014
+71|Qatar ExxonMobil Open|0|2|Hard|Qatar|$1096910|32|30.12.2013|05.01.2014|451|2014
+72|Heineken Open|0|2|Hard|New Zealand|$455190|32|06.01.2014|12.01.2014|301|2014
+73|Apia International Sydney|0|2|Hard|Australia|$452670|32|06.01.2014|12.01.2014|338|2014
+74|Open Sud de France|1|2|Hard|France|€426605|32|03.02.2014|09.02.2014|375|2014
+75|Royal Guard Open Chile |0|2|Clay|Chile|$426605|32|03.02.2014|09.02.2014|505|2014
+76|PBZ Zagreb Indoors|1|2|Hard|Croatia|€426605|32|03.02.2014|09.02.2014|2276|2014
+77|Copa Claro|0|2|Clay|Argentina|$488890|32|10.02.2014|16.02.2014|506|2014
+78|U.S. National Indoor Tennis Championships|1|2|Hard|TN, U.S.A.|$568805|32|10.02.2014|16.02.2014|402|2014
+79|ABN AMRO World Tennis Tournament|1|2|Hard|The Netherlands|€1369305|32|10.02.2014|16.02.2014|407|2014
+80|Delray Beach Open by The  Venetian® Las Vegas|0|2|Hard|FL, U.S.A.|$474005|32|17.02.2014|23.02.2014|499|2014
+81|Open 13|1|2|Hard|France|€549260|32|17.02.2014|23.02.2014|496|2014
+82|Rio Open presented by Claro hdtv|0|2|Clay|Brazil|$1309770|32|17.02.2014|23.02.2014|6932|2014
+83|Abierto Mexicano Telcel|0|2|Hard|Mexico|$1309770|32|24.02.2014|02.03.2014|807|2014
+84|Dubai Duty Free Tennis Championships|0|2|Hard|U.A.E.|$1928340|32|24.02.2014|02.03.2014|495|2014
+85|Brasil Open 2014|1|2|Clay|Brazil|$474005|32|24.02.2014|02.03.2014|533|2014
+86|BNP Paribas Open|0|2|Hard|CA, U.S.A.|$5240015|128|03.03.2014|16.03.2014|404|2014
+87|Miami Open, presented by Itau|0|2|Hard|FL, U.S.A.|$4720380|128|17.03.2014|30.03.2014|403|2014
+88|Grand Prix Hassan II|0|2|Clay|Morocco|€426605|32|07.04.2014|13.04.2014|360|2014
+89|Fayez Sarofim & Co. U.S. Men's Clay Court Championship|0|2|Clay|TX, U.S.A.|$474005|32|07.04.2014|13.04.2014|717|2014
+90|Monte-Carlo Rolex Masters|0|2|Clay|Monaco|€2884675|64|14.04.2014|20.04.2014|410|2014
+91|Barcelona Open Banc Sabadell|0|2|Clay|Spain|€1845585|64|21.04.2014|27.04.2014|425|2014
+92|BRD Nastase Tiriac Trophy|0|2|Clay|Romania|€426605|32|21.04.2014|27.04.2014|773|2014
+93|BMW Open by FWU AG|0|2|Clay|Germany|€426605|32|28.04.2014|04.05.2014|308|2014
+94|Portugal Open|0|2|Clay|Portugal|€426605|32|28.04.2014|04.05.2014|468|2014
+95|Mutua Madrid Open|0|2|Clay|Spain|€3671405|64|05.05.2014|11.05.2014|1536|2014
+96|Internazionali BNL d'Italia|0|2|Clay|Italy|€2884675|64|12.05.2014|18.05.2014|416|2014
+97|Düsseldorf Open|0|2|Clay|Germany|€426605|32|19.05.2014|25.05.2014|6710|2014
+98|Open de Nice Côte d’Azur|0|2|Clay|France|€426605|32|19.05.2014|25.05.2014|6120|2014
+99|Gerry Weber Open |0|2|Grass|Germany|€711010|32|09.06.2014|15.06.2014|500|2014
+100|Aegon Championships|0|2|Grass|Great Britain|€711010|64|09.06.2014|15.06.2014|311|2014
+101|Topshelf Open|0|2|Grass|Netherlands|€426605|32|16.06.2014|22.06.2014|440|2014
+102|Aegon International|0|2|Grass|Great Britain|€503185|32|16.06.2014|22.06.2014|741|2014
+103|SkiStar Swedish Open|0|2|Clay|Sweden|€426605|32|07.07.2014|13.07.2014|316|2014
+104|Hall of Fame Tennis Championships|0|2|Grass|RI, U.S.A.|$474005|32|07.07.2014|13.07.2014|315|2014
+105|MercedesCup|0|2|Clay|Germany|€426605|32|07.07.2014|13.07.2014|321|2014
+106|Claro Open Colombia|0|2|Hard|Colombia|$663610|32|14.07.2014|20.07.2014|6718|2014
+107|bet-at-home Open|0|2|Clay|Germany|€1190700|64|14.07.2014|20.07.2014|414|2014
+108|BB&T Atlanta Open|0|2|Hard|GA, USA|$568805|32|21.07.2014|27.07.2014|6116|2014
+109|Crédit Agricole Suisse Open Gstaad|0|2|Clay|Switzerland|€426605|32|21.07.2014|27.07.2014|314|2014
+110|Vegeta Croatia Open Umag|0|2|Clay|Croatia|€426605|32|21.07.2014|27.07.2014|439|2014
+111|bet-at-home Cup Kitzbühel|0|2|Clay|Austria|€426605|32|28.07.2014|03.08.2014|319|2014
+112|Citi Open|0|2|Hard|DC, USA|$1399700|64|28.07.2014|03.08.2014|418|2014
+113|Rogers Cup|0|2|Hard|Toronto, Canada|$3146920|64|04.08.2014|10.08.2014|421|2014
+114|Western & Southern Open - Cincinnati|0|2|Hard|OH, U.S.A.|$3356715|64|11.08.2014|17.08.2014|422|2014
+115|Winston-Salem Open|0|2|Hard|NC, U.S.A.|$598260|64|18.08.2014|24.08.2014|6242|2014
+116|Moselle Open|1|2|Hard|France|€426605|32|15.09.2014|21.09.2014|341|2014
+117|Malaysian Open, Kuala Lumpur|1|2|Hard|Malaysia|$910520|32|22.09.2014|28.09.2014|6003|2014
+118|Shenzhen Open|0|2|Hard|China|$590230|32|22.09.2014|28.09.2014|6967|2014
+119|China Open|0|2|Hard|China|$2500470|32|29.09.2014|05.10.2014|747|2014
+120|Rakuten Japan Open Tennis Championships|0|2|Hard|Japan|$1228825|32|29.09.2014|05.10.2014|329|2014
+121|Shanghai Rolex Masters|0|2|Hard|Shanghai, China|$4195895|64|06.10.2014|12.10.2014|5014|2014
+122|Kremlin Cup by Bank of Moscow|1|2|Hard|Moscow, Russia |$776620|32|13.10.2014|19.10.2014|438|2014
+123|If Stockholm Open|1|2|Hard|Stockholm, Sweden|€521405|32|13.10.2014|19.10.2014|429|2014
+124|Erste Bank Open|1|2|Hard|Vienna, Austria|€521405|32|13.10.2014|19.10.2014|337|2014
+125|Noumea|0|4|Hard|New Caledonia|$75000|32|31.12.2012|06.01.2013|2205|2013
+126|Sao Paulo1|0|4|Hard|Brazil|$125000|32|31.12.2012|06.01.2013|746|2013
+127|Heilbronn Open|1|4|Hard|Germany|€85000|32|21.01.2013|27.01.2013|460|2013
+128|Maui|0|4|Hard|Hawaii, USA|$50000|32|21.01.2013|27.01.2013|6708|2013
+129|Seguros Bolivar Open|0|4|Clay|Colombia|$35000|32|21.01.2013|27.01.2013|5016|2013
+130|McDonald's Burnie International|0|4|Hard|Australia|$50000|32|28.01.2013|03.02.2013|5018|2013
+131|Internationale Trismoka|1|4|Hard|Italy|€42500|32|04.02.2013|10.02.2013|854|2013
+132|Dallas|1|4|Hard|TX, USA|$100000|32|04.02.2013|10.02.2013|695|2013
+133|West Lakes|0|4|Hard|Adelaide, Australia|$50000|32|04.02.2013|10.02.2013|6714|2013
+134|Open De Quimper|1|4|Hard|France|€42500|32|11.02.2013|17.02.2013|6239|2013
+135|Challenger DCNS De Cherbourg|1|4|Hard|France|€42500|32|25.02.2013|03.03.2013|398|2013
+136|Salinas|0|4|Clay|Ecuador|$35000|32|25.02.2013|03.03.2013|59|2013
+137|Sydney1|0|4|Hard|Australia|$50000|32|25.02.2013|03.03.2013|6720|2013
+138|All Japan Indoor Tennis Championships|1|4|Carpet|Japan|$35000|32|04.03.2013|17.03.2013|91|2013
+139|Copa Cachantun|0|4|Clay|Chile|$35000|32|04.03.2013|17.03.2013|3406|2013
+140|Dallas Tennis Classic|0|4|Hard|TX, U.S.A.|$125000|32|11.03.2013|17.03.2013|6486|2013
+141|BH Telecom Indoors 2013|1|4|Hard|Bosnia & Herzegovina|€30000|32|11.03.2013|17.03.2013|1683|2013
+142|National Bank Men's Rimouski Challenger|1|4|Hard|Canada|$35000|32|18.03.2013|31.03.2013|3535|2013
+143|Orange Open Guadeloupe|0|4|Hard|Guadeloupe|$100000|32|25.03.2013|31.03.2013|6244|2013
+144|Seguros Bolivar Open|0|4|Clay|Colombia|$50000|32|25.03.2013|31.03.2013|5063|2013
+145|San Luis Open Challenger 2013|0|4|Clay|Mexico|$35000|32|25.03.2013|31.03.2013|213|2013
+146|Torneo Internacional Challenger|0|4|Hard|Mexico|$35000|32|01.04.2013|07.04.2013|1539|2013
+147|Open Harmonie Mutuelle|1|4|Hard|France|€30000|32|01.04.2013|07.04.2013|1796|2013
+148|Barranquilla|0|4|Clay|Colombia|$50000|32|08.04.2013|14.04.2013|6250|2013
+149|Guadalajara|0|4|Hard|Mexico|$100000|32|08.04.2013|14.04.2013|6284|2013
+150|Itajai|0|4|Clay|Brazil|$35000|32|08.04.2013|14.04.2013|3407|2013
+151|Mersin|0|4|Clay|Turkey|€42500|32|08.04.2013|14.04.2013|6488|2013
+152|Mexico City|0|4|Hard|Mexico|$35000|32|15.04.2013|21.04.2013|6724|2013
+153|Panama City|0|4|Clay|Panama|$35000|32|15.04.2013|21.04.2013|6566|2013
+154|Rome|0|4|Clay|Italy|€30000|32|15.04.2013|21.04.2013|2151|2013
+155|Santos|0|4|Clay|Brazil|$35000|32|15.04.2013|21.04.2013|6256|2013
+156|Sarasota|0|4|Clay|FL, USA|$100000|32|15.04.2013|21.04.2013|5069|2013
+157|Sao Paulo 2|0|4|Clay|Brazil|$50000|32|22.04.2013|28.04.2013|6492|2013
+158|Savannah|0|4|Clay|GA, USA|$50000|32|22.04.2013|28.04.2013|5067|2013
+159|An-Ning|0|4|Clay|China|$50000|32|29.04.2013|05.05.2013|6572|2013
+160|Johannesburg|0|4|Hard|South Africa|$100000|32|29.04.2013|05.05.2013|6722|2013
+161|Napoli|0|4|Clay|Italy|€30000|32|29.04.2013|05.05.2013|443|2013
+162|Ostrava|0|4|Clay|Czech Republic|€85000|32|29.04.2013|05.05.2013|1797|2013
+163|Tallahassee|0|4|Clay|FL, U.S.A.|$50000|32|29.04.2013|05.05.2013|692|2013
+164|Tunis|0|4|Clay|Tunisia|$125000|32|29.04.2013|05.05.2013|1541|2013
+165|Karshi|0|4|Hard|Uzbekistan|$50000|32|06.05.2013|12.05.2013|3967|2013
+166|Kun-Ming|0|4|Hard|Kun-Ming|$125000|32|06.05.2013|12.05.2013|6726|2013
+167|Rio Quente|0|4|Hard|Brazil|$35000|32|06.05.2013|12.05.2013|6532|2013
+168|Rome-2|0|4|Clay|Italy|€30000|32|06.05.2013|12.05.2013|5057|2013
+169|Bordeaux|0|4|Clay|France|€85000|32|13.05.2013|19.05.2013|3824|2013
+170|Busan|0|4|Hard|South Korea|$75000|32|13.05.2013|19.05.2013|1741|2013
+171|Samarkand|0|4|Clay|Uzbekistan|$50000|32|13.05.2013|19.05.2013|447|2013
+172|Prostejov|0|4|Clay|Czech Republic|€106500|32|03.06.2013|09.06.2013|558|2013
+173|Arad|0|4|Clay|Romania|€30000|32|03.06.2013|09.06.2013|6564|2013
+174|Caltanissetta|0|4|Clay|Italy|€85000|32|03.06.2013|09.06.2013|5049|2013
+175|Furth|0|4|Clay|Germany|€30000|32|03.06.2013|09.06.2013|396|2013
+176|Nottingham|0|4|Grass|Great Britain|€64000|32|03.06.2013|09.06.2013|1631|2013
+177|Blois|0|4|Clay|France|€30000|32|10.06.2013|16.06.2013|6757|2013
+178|Kosice|0|4|Clay|Slovak Republic|€30000|32|10.06.2013|16.06.2013|853|2013
+179|Nottingham-2|0|4|Grass|Great Britain|€64000|32|10.06.2013|16.06.2013|6286|2013
+180|Prague|0|4|Clay|Czech Republic|€42500|32|10.06.2013|16.06.2013|600|2013
+181|Milan|0|4|Clay|Italy|€30000|32|17.06.2013|23.06.2013|3463|2013
+182|Tanger|0|4|Clay|Morocco|€30000|32|17.06.2013|23.06.2013|6759|2013
+183|Marburg|0|4|Clay|Germany|€30000|32|24.06.2013|07.07.2013|6156|2013
+184|Braunschweig|0|4|Clay|Germany|€106500|32|01.07.2013|07.07.2013|526|2013
+185|Manta|0|4|Hard|Ecuador|$35000|32|01.07.2013|07.07.2013|2121|2013
+186|Portoroz|0|4|Hard|Slovenia|€30000|32|01.07.2013|07.07.2013|6787|2013
+187|Timisoara|0|4|Clay|Romania|€30000|32|01.07.2013|07.07.2013|6570|2013
+188|Todi|0|4|Clay|Italy|€30000|32|01.07.2013|07.07.2013|3627|2013
+189|Winnetka|0|4|Hard|IL, U.S.A.|$50000|32|01.07.2013|07.07.2013|228|2013
+190|Beijing|0|4|Hard|China|$75000|32|08.07.2013|14.07.2013|6167|2013
+191|Istanbul|0|4|Hard|Turkey|€42500|32|08.07.2013|14.07.2013|226|2013
+192|San Benedetto|0|4|Clay|Italy|€30000|32|08.07.2013|14.07.2013|3945|2013
+193|Sport1 Open|0|4|Clay|The Netherlands|€42500|32|08.07.2013|14.07.2013|686|2013
+194|Binghamton|0|4|Hard|NY, U.S.A.|$50000|32|15.07.2013|21.07.2013|670|2013
+195|Eskisehir|0|4|Hard|Turkey|€42500|32|15.07.2013|21.07.2013|6791|2013
+196|Granby|0|4|Hard|Canada|$50000|32|15.07.2013|21.07.2013|877|2013
+197|Poznan|0|4|Clay|Poland|€30000|32|15.07.2013|21.07.2013|786|2013
+198|Recanati|0|4|Hard|Italy|€30000|32|15.07.2013|21.07.2013|1743|2013
+199|Astana|0|4|Hard|Kazakhstan|$125000|32|22.07.2013|28.07.2013|3618|2013
+200|Guimaraes|0|4|Hard|Portugal|€42500|32|22.07.2013|28.07.2013|6793|2013
+201|Lexington|0|4|Hard|KY, U.S.A.|$50000|32|22.07.2013|28.07.2013|586|2013
+202|Medellin|0|4|Clay|Colombia|$50000|32|22.07.2013|28.07.2013|252|2013
+203|Oberstaufen|0|4|Clay|Germany|€30000|32|22.07.2013|28.07.2013|833|2013
+204|Orbetello|0|4|Clay|Italy|€30000|32|22.07.2013|28.07.2013|6001|2013
+205|Tampere|0|4|Clay|Finland|€42500|32|22.07.2013|28.07.2013|221|2013
+206|Liberec|0|4|Clay|Czech Republic|€30000|32|29.07.2013|04.08.2013|6795|2013
+207|Sao Paulo 3|0|4|Clay|Brazil|$50000|32|29.07.2013|04.08.2013|6807|2013
+208|ATP Open Castilla y Leon|0|4|Hard|Spain|€42500|32|29.07.2013|04.08.2013|783|2013
+209|Vancouver|0|4|Hard|Canada|$100000|32|29.07.2013|04.08.2013|254|2013
+210|Aptos|0|4|Hard|CA, U.S.A.|$100000|32|05.08.2013|11.08.2013|467|2013
+211|Rio de Janeiro|0|4|Clay|Brazil|$50000|32|05.08.2013|11.08.2013|6618|2013
+212|San Marino CEPU Open|0|4|Clay|San Marino|€64000|32|05.08.2013|11.08.2013|841|2013
+213|Credit Agricole Tennis Cup|0|4|Clay|Italy|€42500|32|12.08.2013|18.08.2013|2120|2013
+214|Kazan Summer Cup|1|4|Hard|Russia|$50000|32|12.08.2013|18.08.2013|6114|2013
+215|Maserati Challenger|0|4|Clay|Germany|€30000|32|12.08.2013|18.08.2013|6809|2013
+216|Chang-Sat Bangkok Open 2013|0|4|Hard|Thailand|$50000|32|26.08.2013|08.09.2013|5047|2013
+217|Citta Di Como|0|4|Clay|Italy|€30000|32|26.08.2013|08.09.2013|3473|2013
+218|Road to the Shanghai Rolex Masters|0|4|Hard|China|$50000|32|02.09.2013|08.09.2013|6313|2013
+219|Tean International 2013|0|4|Clay|The Netherlands|€42500|32|02.09.2013|08.09.2013|3626|2013
+220|BRD Brasov Challenger|0|4|Clay|Romania|€30000|32|02.09.2013|08.09.2013|696|2013
+221|AON Open Challenger|0|4|Clay|Italy|€85000|32|02.09.2013|08.09.2013|1763|2013
+222|Trophee des Alpilles|0|4|Hard|France|€42500|32|02.09.2013|08.09.2013|6014|2013
+223|Banja Luka 2013|0|4|Clay|Bosnia & Herzegovina|€64000|32|09.09.2013|15.09.2013|1607|2013
+224|Seguros Bolivar Open Cali 2013|0|4|Clay|Colombia|$50000|32|09.09.2013|15.09.2013|3994|2013
+225|Istanbul Challenger - American Express|0|4|Hard|Turkey|$75000|32|09.09.2013|15.09.2013|6837|2013
+226|Moroco Tennis Tour|0|4|Clay|Morocco|€30000|32|09.09.2013|15.09.2013|3767|2013
+227|ATP Roller Open Challenger|1|4|Hard|Luxembourg|€64000|32|09.09.2013|15.09.2013|6592|2013
+228|Copa Sevilla|0|4|Clay|Spain|€42500|32|09.09.2013|15.09.2013|784|2013
+229|Campeonato Internacional de Tenis de Campinas|0|4|Clay|Brazil|$35000|32|16.09.2013|22.09.2013|6307|2013
+230|Izmir Cup|0|4|Hard|Turkey|€64000|32|16.09.2013|22.09.2013|3834|2013
+231|2013 OEC Kaohsiung ATP Challenger|0|4|Hard|Taiwan|$125000|32|16.09.2013|22.09.2013|6490|2013
+232|Morocco Tennis Tour|0|4|Clay|Kenitra|€30000|32|16.09.2013|22.09.2013|6839|2013
+233|XIX Challenger ATP Trofeo Ciudad de Quito|0|4|Clay|Ecuador|$35000|32|16.09.2013|22.09.2013|589|2013
+234|Pekao Szczecin Open|0|4|Clay|Poland|€106500|32|16.09.2013|22.09.2013|448|2013
+235|Arimex Challenger Trophy|0|4|Clay|Slovakia|€42500|32|16.09.2013|22.09.2013|3628|2013
+236|Fergana Challenger|0|4|Hard|Uzbekistan|$50000|32|23.09.2013|29.09.2013|603|2013
+237|Napa Valley Challenger|0|4|Hard|CA, U.S.A.|$50000|32|23.09.2013|29.09.2013|6841|2013
+238|Open d'Orleans|1|4|Hard|France|€106500|32|23.09.2013|29.09.2013|2273|2013
+239|Aberto de Tenis do Rio Grande do Sul|0|4|Clay|Brazil|$35000|32|23.09.2013|29.09.2013|6620|2013
+240|Sibiu Open 2013|0|4|Clay|Romania|€64000|32|23.09.2013|29.09.2013|6590|2013
+241|Ethias Trophy|1|4|Hard|Belgium|€106500|32|30.09.2013|06.10.2013|3350|2013
+242|Sacramento Pro Circiut Challenger|0|4|Hard|CA, U.S.A.|$100000|32|30.09.2013|06.10.2013|3351|2013
+243|Motorola IS Open|0|4|Clay|Brazil|$35000|32|30.09.2013|06.10.2013|6867|2013
+244|Open de Rennes|1|4|Hard|France|€64000|32|07.10.2013|13.10.2013|3503|2013
+245|Copa San Juan Gobierno|0|4|Clay|Argentina|$35000|32|07.10.2013|13.10.2013|6622|2013
+246|Aberto Rio Preto 2013|0|4|Clay|Brazil|$50000|32|07.10.2013|13.10.2013|6342|2013
+247|Tashkent Challenger|0|4|Hard|Uzbekistan|$125000|32|07.10.2013|13.10.2013|4012|2013
+248|First Republic Bank Tiburon Challenger|0|4|Hard|CA, USA|$100000|32|07.10.2013|13.10.2013|1768|2013
+249|Internationaux de Tennis de Vendee|1|4|Hard|France|€64000|32|14.10.2013|20.10.2013|6857|2013
+250|Copa Topper 2013|0|4|Clay|Argentina|$75000|32|21.10.2013|27.10.2013|722|2013
+251|Kazan Kremlin Cup|1|4|Hard|Russia|$75000|32|21.10.2013|27.10.2013|6861|2013
+252|Melbourne Challenger|0|4|Hard|Australia|$50000|32|21.10.2013|27.10.2013|6863|2013
+253|Morocco Tennis Tour|0|4|Clay|Morocco|€30000|32|28.10.2013|03.11.2013|3584|2013
+254|Men's Tennis Championships|1|4|Hard|VA, USA|$75000|32|28.10.2013|03.11.2013|6055|2013
+255|Bauer Watertechnology Cup 2013|1|4|Carpet|Germany|€30000|32|28.10.2013|03.11.2013|83|2013
+256|Geneva Open 2013|1|4|Hard|Switzerland|€64000|32|28.10.2013|03.11.2013|471|2013
+257|Uruguay Open|0|4|Clay|Uruguay|$50000|32|28.10.2013|03.11.2013|544|2013
+258|Samsung Securities Cup Challenger|0|4|Hard|Korea|$50000|32|28.10.2013|03.11.2013|545|2013
+259|Traralgon Challenger|0|4|Hard|Australia|$50000|32|28.10.2013|03.11.2013|6865|2013
+260|Seguros Bolivar Open Bogota|0|4|Clay|Colombia|$125000|32|04.11.2013|10.11.2013|576|2013
+261|Slovak Open 2013|1|4|Hard|Slovakia|€64000|32|04.11.2013|10.11.2013|444|2013
+262|Knoxville 2013 Challenger|1|4|Hard|TN, USA|$50000|32|04.11.2013|10.11.2013|363|2013
+263|Sparkasse ATP Challenger|1|4|Hard|Italy|€64000|32|04.11.2013|10.11.2013|6204|2013
+264|Yeongwol Challenger Tennis|0|4|Hard|South Korea|$35000|32|04.11.2013|10.11.2013|6881|2013
+265|ATP Challenger Tour Finals|0|4|Clay|Brazil|$220000|8|11.11.2013|17.11.2013|6406|2013
+266|JSM Challenger of Champaign-Urbana|1|4|Hard|IL, USA|$50000|32|11.11.2013|17.11.2013|637|2013
+267|Challenger Ciudad de Guayaquil|0|4|Clay|Ecuador|$50000|32|11.11.2013|17.11.2013|543|2013
+268|IPP Open|1|4|Hard|Finland|€42500|32|11.11.2013|17.11.2013|305|2013
+269|Lima Challenger Copa Claro|0|4|Clay|Peru|$50000|32|11.11.2013|17.11.2013|6579|2013
+270|Keio Challenger International Tennis Tournament 2013|0|4|Hard|Japan|$50000|32|11.11.2013|17.11.2013|6626|2013
+271|ATP Challenger Tour Andria e Castel del Monte|1|4|Hard|Italy|€30000|32|18.11.2013|24.11.2013|6911|2013
+272|2013 Dunlop World Challenge Tennis Tournament|1|4|Carpet|Japan|$35000|32|18.11.2013|24.11.2013|4042|2013
+273|Siberia Cup|1|4|Hard|Russia|$35000|32|18.11.2013|24.11.2013|6630|2013
+274|Challenger BNP Paribas de Nouvelle Caledonie|0|4|Hard|New Caledonia|$75000|32|30.12.2013|05.01.2014|2205|2014
+275|Aberto de Sao Paulo|0|4|Hard|Brazil|$125000|32|30.12.2013|05.01.2014|746|2014
+276|Bucaramanga Open|0|4|Clay|Colombia|$40000|32|20.01.2014|26.01.2014|5016|2014
+277|Heilbronn Open|1|4|Hard|Germany|€106500|32|20.01.2014|26.01.2014|460|2014
+278|The Royal Lahaina Challenger|0|4|Hard|Hawaii, USA|$50000|32|20.01.2014|26.01.2014|6708|2014
+279|McDonald's Burnie International|0|4|Hard|Australia|$50000|32|27.01.2014|02.02.2014|5018|2014
+280|Visit Panama Cup|0|4|Hard|Panama|$40000|32|27.01.2014|02.02.2014|6946|2014
+281|Shiram Capital P.L. Reddy Memorial ATP Challenger|0|4|Hard|India|$50000|32|03.02.2014|09.02.2014|6957|2014
+282|Challenger of Dallas|1|4|Hard|TX, USA|$100000|32|03.02.2014|09.02.2014|695|2014
+283|Charles Sturt Adelaide International|0|4|Hard|Adelaide, Australia|$50000|32|03.02.2014|09.02.2014|6714|2014
+284|Trofeo Perrel - FAIP|1|4|Hard|Italy|€42500|32|10.02.2014|16.02.2014|854|2014
+285|State Bank of India ATP Challenger Tour Tennis Tournament|0|4|Hard|India|$50000|32|10.02.2014|16.02.2014|6959|2014
+286|Open BNP Paribas-Banque de Bretagne Quimper|1|4|Hard|France|€42500|32|10.02.2014|16.02.2014|6239|2014
+287|Astana Challenger|1|4|Hard|Kazakhstan|$75000|32|17.02.2014|23.02.2014|3618|2014
+288|Morelos Open|0|4|Hard|Mexico|$75000|32|17.02.2014|23.02.2014|6963|2014
+289|ONGC- GAIL DELHI OPEN|0|4|Hard|India|$100000|32|17.02.2014|23.02.2014|6961|2014
+290|Challenger La Manche|1|4|Hard|France|€64000|32|24.02.2014|02.03.2014|398|2014
+291|ATP Challenger Guangzhou|0|4|Hard|China|$50000|32|24.02.2014|02.03.2014|6965|2014
+292|XIX Challenger ATP de Salinas|0|4|Clay|Ecuador|$40000|32|24.02.2014|02.03.2014|59|2014
+293|Shimadzu All Japan|1|4|Hard|Japan|$40000|32|03.03.2014|16.03.2014|91|2014
+294|Irving Tennis Classic|0|4|Hard|TX, U.S.A.|$125000|32|10.03.2014|16.03.2014|6486|2014
+295|Kazan|1|4|Hard|Russia|$75000|32|10.03.2014|16.03.2014|6114|2014
+296|Panama City|0|4|Clay|Panama|$40000|32|17.03.2014|30.03.2014|6566|2014
+297|Rimouski|1|4|Hard|Canada|$40000|32|17.03.2014|30.03.2014|3535|2014
+298|Guadalajara|0|4|Hard|Mexico|$100000|32|24.03.2014|30.03.2014|6284|2014
+299|Barranquilla|0|4|Clay|Colombia|$40000|32|24.03.2014|30.03.2014|6250|2014
+300|Orange Open Guadeloupe|0|4|Hard|Guadeloupe|$100000|32|31.03.2014|06.04.2014|6244|2014
+301|Leon|0|4|Hard|Mexico|$40000|32|31.03.2014|06.04.2014|1539|2014
+302|Open Harmonie Mutuelle|1|4|Hard|France|€42500|32|31.03.2014|06.04.2014|1796|2014
+303|Taroii Open De TEnnis|0|4|Clay|Brazil|$40000|32|07.04.2014|13.04.2014|3407|2014
+304|Mersin|0|4|Clay|Turkey|€64000|32|07.04.2014|13.04.2014|6488|2014
+305|San Luis Potosi Challenger 2014|0|4|Clay|Mexico|$40000|32|14.04.2014|20.04.2014|213|2014
+306|Cachantun Cup|0|4|Clay|Chile|$40000|32|14.04.2014|20.04.2014|3406|2014
+307|Sao Paulo 2|0|4|Clay|Brazil|$40000|32|14.04.2014|20.04.2014|6492|2014
+308|Sarasota|0|4|Clay|FL, USA|$100000|32|14.04.2014|20.04.2014|5069|2014
+309|Santos|0|4|Clay|Brazil|$40000|32|21.04.2014|27.04.2014|6256|2014
+310|Savannah|0|4|Clay|GA, USA|$50000|32|21.04.2014|27.04.2014|5067|2014
+311|Gemdale ATP Challenger|0|4|Hard|China|$50000|32|21.04.2014|27.04.2014|7004|2014
+312|Vercelli|0|4|Clay|Italy|$42500|32|21.04.2014|27.04.2014|7006|2014
+313|China International 2014, An-Ning|0|4|Clay|China|$50000|32|28.04.2014|04.05.2014|6572|2014
+314|Seguros Bolivar Open 2014|0|4|Clay|Colombia|$40000|32|28.04.2014|04.05.2014|3994|2014
+315|Prosperita Open 2014|0|4|Clay|Czech Republic|€85000|32|28.04.2014|04.05.2014|1797|2014
+316|2014 Santaizi Challenger|1|4|Carpet|Taiwan|$75000|32|28.04.2014|04.05.2014|2278|2014
+317|Tallahassee Tennis Challenger|0|4|Clay|FL, U.S.A.|$50000|32|28.04.2014|04.05.2014|692|2014
+318|Tunis|0|4|Clay|Tunisia|$125000|32|28.04.2014|04.05.2014|1541|2014
+319|OPEN DU PAYS D'AIX|0|4|Clay|France|€64000|32|05.05.2014|11.05.2014|7009|2014
+320|Gimcheon|0|4|Hard|South Korea|$50000|32|05.05.2014|11.05.2014|7011|2014
+321|Roma Open 2014|0|4|Clay|Italy|€42500|32|05.05.2014|11.05.2014|2151|2014
+322|Primrose Bordeaux 2014|0|4|Clay|France|€85000|32|12.05.2014|18.05.2014|3824|2014
+323|Busan Open Challenger Tour|0|4|Hard|South Korea|$75000|32|12.05.2014|18.05.2014|1741|2014
+324|Heilbronn II|0|4|Clay|Germany|€35000|32|12.05.2014|18.05.2014|7013|2014
+325|Samarkand Challenger|0|4|Clay|Uzbekistan|$50000|32|12.05.2014|18.05.2014|447|2014
+326|KARSHI CHALLENGER|0|4|Hard|Uzbekistan|$50000|32|19.05.2014|25.05.2014|3967|2014
+327|Internazionali Di Tennis 'Citta Di Vicenza'|0|4|Clay|Italy|€42500|32|26.05.2014|08.06.2014|7015|2014
+328|BRD ARAD CHALLENGER|0|4|Clay|Romania|€35000|32|02.06.2014|08.06.2014|6564|2014
+329|Franken Challenge|0|4|Clay|Germany|€35000|32|02.06.2014|08.06.2014|396|2014
+330|XII Venice Challenge Save Cup|0|4|Clay|Italy|€42500|32|02.06.2014|08.06.2014|7021|2014
+331|Aegon Trophy|0|4|Grass|Great Britain|€64000|32|02.06.2014|08.06.2014|1631|2014
+332|Unicredit Czech Open|0|4|Clay|Czech Republic|€106500|32|02.06.2014|08.06.2014|558|2014
+333|Internationaux De Tennis Blois|0|4|Clay|France|€35000|32|09.06.2014|15.06.2014|6757|2014
+334|Citta Di Caltanissetta|0|4|Clay|Italy|€106500|32|09.06.2014|15.06.2014|5049|2014
+335|Fergana Challenger|0|4|Hard|Uzbekistan|$50000|32|09.06.2014|15.06.2014|603|2014
+336|Kosice Open 2014|0|4|Clay|Slovak Republic|€35000|32|09.06.2014|15.06.2014|853|2014
+337|Aegon Nottingham Challenger|0|4|Grass|Great Britain|€64000|32|09.06.2014|15.06.2014|6286|2014
+338|Prague Open 2014|0|4|Clay|Czech Republic|€42500|32|09.06.2014|15.06.2014|600|2014
+339|Aspira Tennis Cup Trofeo CDI|0|4|Clay|Italy|€35000|32|16.06.2014|22.06.2014|3463|2014
+340|Morocco Tennis Tour|1|4|Clay|Morocco|€42500|32|16.06.2014|22.06.2014|7025|2014
+341|ATP Challenger China International|0|4|Hard|China|$50000|32|16.06.2014|22.06.2014|7023|2014
+342|Marburg Open 2014|0|4|Clay|Germany|€35000|32|23.06.2014|06.07.2014|6156|2014
+343|ATP Challenger China International 2014 Nan Chang|0|4|Hard|China|$50000|32|23.06.2014|06.07.2014|7027|2014
+344|Challenger 2001 Team 'Citta Di Padova'|0|4|Clay|Italy|€42500|32|23.06.2014|06.07.2014|7029|2014
+345|Sparkassen Open 2014|0|4|Clay|Germany|€106500|32|30.06.2014|06.07.2014|526|2014
+346|Manta|0|4|Hard|Ecuador|$40000|32|30.06.2014|06.07.2014|2121|2014
+347|Distl & ITR Group Tennis Cup|0|4|Clay|Italy|€35000|32|30.06.2014|06.07.2014|3627|2014
+348|Nielsen Pro Tennis Championship|0|4|Hard|United States|$50000|32|30.06.2014|06.07.2014|228|2014
+349|ATP Challenger Tilla Slovenia Open 2014|0|4|Hard|Slovenia|€42500|32|07.07.2014|13.07.2014|6787|2014
+350|San Benedetto Tennis Cup|0|4|Clay|Italy|€35000|32|07.07.2014|13.07.2014|3945|2014
+351|Sport 1 Open 2014|0|4|Clay|Netherlands|€42500|32|07.07.2014|13.07.2014|686|2014
+352|Levene Gouldin & Thompson Tennis Challenge|0|4|Hard|United States|$50000|32|14.07.2014|20.07.2014|670|2014
+353|The National Bank Granby Challenger|0|4|Hard|Canada|$50000|32|14.07.2014|20.07.2014|877|2014
+354|2014 OEC Kaohsiung ATP Challenger|0|4|Hard|Republic of China|$125000|32|14.07.2014|20.07.2014|6490|2014
+355|Poznan Open|0|4|Clay|Poland|€35000|32|14.07.2014|20.07.2014|786|2014
+356|Recanati|0|4|Hard|Italy|€35000|32|14.07.2014|20.07.2014|1743|2014
+357|Presidents Cup|0|4|Hard|Kazakhstan|$125000|32|21.07.2014|27.07.2014|7071|2014
+358|Kentucky Bank Tennis Championships|0|4|Hard|United States|$50000|32|21.07.2014|27.07.2014|586|2014
+359|Oberstaufen Cup ATP Challenger|0|4|Clay|Germany|€35000|32|21.07.2014|27.07.2014|833|2014
+360|Aamulehti Tampere Open|0|4|Clay|Finland|€42500|32|21.07.2014|27.07.2014|221|2014
+361|International Tennis Tournament of Cortina|0|4|Clay|Italy|€42500|32|28.07.2014|03.08.2014|7073|2014
+362|Svijany Open 2014|0|4|Clay|Czech Republic|€35000|32|28.07.2014|03.08.2014|6795|2014
+363|Open Castilla Y Leon|0|4|Hard|Spain|€42500|32|28.07.2014|03.08.2014|783|2014
+364|Oldum Brown Vanopen|0|4|Hard|Canada|$100000|32|28.07.2014|03.08.2014|254|2014
+365|The Comercia Bank Challenger|0|4|Hard|United States|$100000|32|04.08.2014|10.08.2014|467|2014
+366|Advantage Cars Prague Open 2014|0|4|Clay|Czech Republic|€42500|32|04.08.2014|10.08.2014|7077|2014
+367|San Marino Go & Fun Open|0|4|Clay|San Marino|€64000|32|04.08.2014|10.08.2014|841|2014
+368|Internazionali Di Tennis Del Friuli Venezia Giulia|0|4|Clay|Italy|€42500|32|11.08.2014|17.08.2014|2120|2014
+369|Maserati Challenger|0|4|Clay|Germany|€35000|32|11.08.2014|17.08.2014|6809|2014
+370|Chang-Sat Bangkok Open 2014|0|4|Hard|Thailand|$50000|32|25.08.2014|07.09.2014|5047|2014
+371|Citta Di Como|0|4|Clay|Italy|€35000|32|25.08.2014|07.09.2014|3473|2014
+372|Tean International 2014|0|4|Clay|The Netherlands|€42500|32|01.09.2014|07.09.2014|3626|2014
+373|BRD Brasov Challenger|0|4|Clay|Romania|€35000|32|01.09.2014|07.09.2014|696|2014
+374|AON Open Challenger|0|4|Clay|Italy|€85000|32|01.09.2014|07.09.2014|1763|2014
+375|Claro Open Medellin 2014|0|4|Clay|Colombia|$50000|32|01.09.2014|07.09.2014|252|2014
+376|Road to the Shanghai Rolex Masters|0|4|Hard|China|$50000|32|01.09.2014|07.09.2014|6313|2014
+377|Trophee des Alpilles|0|4|Hard|France|€42500|32|01.09.2014|07.09.2014|6014|2014
+378|Banja Luka 2014|0|4|Clay|Bosnia & Herzegovina|€64000|32|08.09.2014|14.09.2014|1607|2014
+379|Challenger Pulcra Lachiter Biella|0|4|Clay|Italy|€42500|32|08.09.2014|14.09.2014|7085|2014
+380|Amex - Istanbul Challenger|0|4|Hard|Turkey|$75000|32|08.09.2014|14.09.2014|7083|2014
+381|Lil Copa Sevilla|0|4|Clay|Spain|€42500|32|08.09.2014|14.09.2014|784|2014
+382|Pekao Szczecin Open|0|4|Clay|Poland|€106500|32|08.09.2014|14.09.2014|448|2014
+383|Campeonato Internacional de Tenis de Campinas|0|4|Clay|Brazil|$40000|32|15.09.2014|21.09.2014|6307|2014
+384|Izmir Cup|0|4|Hard|Turkey|€106500|32|15.09.2014|21.09.2014|3834|2014
+385|Morocco Tennis Tour|0|4|Clay|Morocco|€42500|32|15.09.2014|21.09.2014|7093|2014
+386|XX Challenger ATP Trofeo Ciudad de Quito|0|4|Clay|Ecuador|$40000|32|15.09.2014|21.09.2014|589|2014
+387|Arimex Challenger Trophy|0|4|Clay|Slovakia|€42500|32|15.09.2014|21.09.2014|3628|2014
+388|Morocco Tennis Tour|0|4|Clay|Morocco|€42500|32|22.09.2014|28.09.2014|7095|2014
+389|Napa Valley Challenger|0|4|Hard|CA, U.S.A.|$50000|32|22.09.2014|28.09.2014|6841|2014
+390|Open D'Orleans|1|4|Hard|France|€106500|32|22.09.2014|28.09.2014|2273|2014
+391|Seguros Bolivar Open|0|4|Clay|Colombia|$40000|32|22.09.2014|28.09.2014|5063|2014
+392|Aberto de Tenis do Rio Grande do Sul|0|4|Clay|Brazil|$40000|32|22.09.2014|28.09.2014|6620|2014
+393|Sibiu Open 2014 Presented by Raiffeisen Bank|0|4|Clay|Romania|€42500|32|22.09.2014|28.09.2014|6590|2014
+394|Claro Open Cali 2014|1|4|Clay|Colombia|$40000|32|29.09.2014|05.10.2014|7075|2014
+395|Ethias Trophy|1|4|Hard|Belgium|€106500|32|29.09.2014|05.10.2014|3350|2014
+396|Sacramento Pro Circiut Challenger|0|4|Hard|CA, U.S.A.|$100000|32|29.09.2014|05.10.2014|3351|2014
+397|Open De Rennes|1|4|Hard|France|€85000|32|06.10.2014|12.10.2014|3503|2014
+398|Tashkent Challenger|0|4|Hard|Uzbekistan|$125000|32|06.10.2014|12.10.2014|4012|2014
+399|First Republic Bank Tiburon Challenger|0|4|Hard|CA, USA|$100000|32|06.10.2014|12.10.2014|1768|2014
+400|Indore Open ATP Challenger|0|4|Hard|India|$50000|32|13.10.2014|19.10.2014|7098|2014
+401|Copa San Juan Gobierno|0|4|Clay|Argentina|$40000|32|13.10.2014|19.10.2014|6622|2014
