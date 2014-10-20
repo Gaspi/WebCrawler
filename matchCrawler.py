@@ -6,11 +6,9 @@ Created on Mon Oct 13 16:56:45 2014
 """
 
 from utils import *
-
-import urllib
-from bs4 import BeautifulSoup
-
+from bdd import *
 import re, os
+from tournamentCrawler import *
 
 
 mc_url_matches = "http://www.atpworldtour.com/Share/Match-Facts-Pop-Up.aspx"
@@ -45,31 +43,27 @@ class Matches:
         self.dicoPlayers = dict()
     
     def getPath(self, e, y):
-        return self.matchesPath + "y" + str(t['y']) + "e" + str(t['e'])
+        return self.matchesPath + "y" + str(y) + "e" + str(e)
     
     def isTreated(self, path):
-        try :
-            os.path.isfile( path  )
-            return True
-        except:
-            return False
+        return os.path.isfile(path+".csv")
     
     def treatTournament(self, t):
         e = int( t['e'] )
         y = int( t['y'] )
-        path = self.getPath(e, y)
-        if not self.isTreated(path):
-            matches = getMatchesOfTournament( t['e'], t['y'],
-                    {'IDTournament': t['IDTournament'],
-                     'Indoor':t['Indoor'] },
-                    self.dicoPlayers )
-            save(path, matches)
+        tourPath = self.getPath(e, y)
+        if not self.isTreated(tourPath):
+            matches = getMatchesOfTournament( e, y, {'IDTournament': t['IDTournament'], 'Indoor':t['Indoor'] }, self.dicoPlayers )
+            self.save(tourPath, matches)
     
     def save(self, path, matches):
-        with open(path+"u", 'wb') as f:
-                w = getMatchWriter(f)
-                writeTournament(w, matches)
-                os.rename( path+"u", path)
+        with open(path+"u.csv", 'wb') as f:
+            w = getMatchWriter(f)
+            writeTournament(w, matches)
+        try:
+            os.rename( path+"u.csv", path+".csv" )
+        except:
+            debug("This should never happen")
 
 
 
@@ -161,6 +155,75 @@ def addMatchInfos(match, dicoPlayers):
 
 
 
+
+
+def getTournament(e, y, infos):
+    content = getTournamentHTML(e,y)
+    
+    tournamentInfos = parseTournamentInfos(content, infos)
+    del tournamentInfos['Country']
+    del tournamentInfos['Tournament']
+    
+    occurences = re.findall("openWin\(\'\/Share\/Match\-Facts\-Pop\-Up\.aspx\?t\=([0-9]+)&y\=([0-9]+)&r\=([0-9]+)\&p=([A-Z0-9]+)\'.*\>([0-9].*)<\/a>", content)
+    result = []
+    
+    for i in range(len(occurences)):
+        occurence = occurences[i]
+        if re.findall('\) RET', occurence[4]):
+            sets = []
+            winnerScores = ["RETWIN"]
+            loserScores = ["RETLOSE RET"]
+        else:
+            sets = occurence[4].split(", ")
+            winnerScores = [s.split("-")[0] for s in sets]
+            loserScores = [s.split("-")[1].split("(")[0] for s in sets]
+        
+        retirement = False
+        if loserScores[-1][-3:] == "RET":
+            loserScores[-1] = loserScores[-1][:-4]
+            retirement = True
+        tieBreakScores = []
+        for s in sets:
+            tmp = s.split("-")[1].split("(")
+            if (len(tmp) > 1):
+                tieBreakScores.append(tmp[1][:-1])
+            else:
+                tieBreakScores.append("-1")
+
+        matchInfo = tournamentInfos.copy()
+        matchInfo.update( {
+            't' : occurence[0],
+            'y' : occurence[1],
+            'r' : occurence[2],
+            'p' : occurence[3],
+            'Year'              : int(occurence[1]),
+            'RoundNumber'       : int(occurence[2]),
+            'WinnerScores'      : winnerScores,
+            'LoserScores'       : loserScores,
+            'TieBreakScores'    : tieBreakScores,
+            'Retirement'        : int( retirement ),
+            'Timestamp'         : createChronology( matchInfo['TournamentStart'], int(occurence[2]) )
+        })
+        result.append( matchInfo )
+    return result
+
+
+
+
+def getMatchesOfTournament(e, y, infos, dicoPlayers, verbose=None, sleep=None):
+    tournament = getTournament( e, y, infos )
+    result = []
+    index = 0
+    l = len(tournament)
+    for m in tournament:
+        index += 1
+        tab = addMatchInfos(m, dicoPlayers)
+        result.append( tab[0] )
+        result.append( tab[1] )
+        if sleep  : time.sleep( sleep )
+        if verbose: debug( str(index) + " / " + str(l) )
+    return result
+    
 
 
 

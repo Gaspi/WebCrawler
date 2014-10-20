@@ -97,22 +97,22 @@ class Tournaments:
             debug("Saving")
             self.save()
 
-    
-
-    def fetchAllMatches(self, filename, dicoPlayers, verbose=True):
-        chrono = Chrono()
-        with open(filename, 'wb') as f:
-            w = getMatchWriter(f)
-            chrono.start( len(self.tour) )
-            for t in self.tour:
-                matches = getMatchesOfTournament( t['e'], t['y'],
-                    {'IDTournament': t['IDTournament'],
-                     'Indoor':t['Indoor'] },
-                    dicoPlayers )
-                writeTournament(w, matches)
-                chrono.tick()
-                if verbose and ( chrono.i % 5 == 0 ):
-                    chrono.printRemaining()
-
-
-
+#    
+#
+#    def fetchAllMatches(self, filename, dicoPlayers, verbose=True):
+#        chrono = Chrono()
+#        with open(filename, 'wb') as f:
+#            w = getMatchWriter(f)
+#            chrono.start( len(self.tour) )
+#            for t in self.tour:
+#                matches = getMatchesOfTournament( t['e'], t['y'],
+#                    {'IDTournament': t['IDTournament'],
+#                     'Indoor':t['Indoor'] },
+#                    dicoPlayers )
+#                writeTournament(w, matches)
+#                chrono.tick()
+#                if verbose and ( chrono.i % 5 == 0 ):
+#                    chrono.printRemaining()
+#
+#
+#
