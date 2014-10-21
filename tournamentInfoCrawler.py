@@ -5,9 +5,7 @@ Created on Wed Oct 15 10:31:07 2014
 @author: Gaspard
 """
 
-import os
-import sets
-import numpy as np
+import os, sets
 
 from utils import *
 from bdd   import *
@@ -29,15 +27,40 @@ tournaments_infos_fields = [
     'TournamentEnd', 'e', 'y' ]
 
 
+def defaultTournamentCleanFunction(t):
+    e   = int( t['e'] )
+    cat = int( t['TournamentCategory'] )
+    if   cat==4: cat=6
+    elif cat==3: cat=5
+    elif cat==2: cat=4
+    elif cat==1: cat=3
+    elif cat ==-1:
+        if   e == 96:
+            cat = 1
+        elif e == 605:
+            cat = 2
+        elif e in {352,403,404,410,416,421,422,1536,357}:
+            cat = 3
+        elif e in {328,329,402,407,414,418,425,495,573,747,807,408}:
+            cat = 4
+        elif e in { 301,306,308,311,314,315,316,321,337,338,339,341,360,375,
+                    419,423,424,429,438,439,440,451,468,496,499,500,505,506,
+                    533,568,717,741,773,891,1720,2276,3348,317,409,309,359,
+                    620,481,615,890,336,433,441,3465,475,325,73,327,319 }:
+            cat = 5
+    t['TournamentCategory'] = cat
+    return t
+
+
 
 class Tournaments:
     
-    def __init__(self):
+    def __init__(self, tournamentsPath = '', playerCodesPath = ''):
         self.tournaments = []
         self.playerCodes = sets.Set()
         
-        self.playerCodesPath = ''
-        self.tournamentsPath = ''
+        self.tournamentsPath = tournamentsPath
+        self.playerCodesPath = playerCodesPath
         
         self.i = 0
         self.savePeriod = 20
@@ -97,23 +120,27 @@ class Tournaments:
         if self.i % self.savePeriod == 0:
             debug("Saving")
             self.save()
+    
+    def clean(self, cleanFunction=defaultTournamentCleanFunction):
+        path2 = self.tournamentsPath + "2"
+        os.rename( self.tournamentsPath, path2 )
+        with open( self.tournamentsPath , 'wb') as f:
+            w = getWriter(f, tournaments_infos_fields )
+            with open( path2, 'rb' ) as f2:
+                for e in csv.DictReader(f2, restval='?', delimiter='|'):
+                    w.writerow( cleanFunction(e) )
+    
 
-#    
-#
-#    def fetchAllMatches(self, filename, dicoPlayers, verbose=True):
-#        chrono = Chrono()
-#        with open(filename, 'wb') as f:
-#            w = getMatchWriter(f)
-#            chrono.start( len(self.tour) )
-#            for t in self.tour:
-#                matches = getMatchesOfTournament( t['e'], t['y'],
-#                    {'IDTournament': t['IDTournament'],
-#                     'Indoor':t['Indoor'] },
-#                    dicoPlayers )
-#                writeTournament(w, matches)
-#                chrono.tick()
-#                if verbose and ( chrono.i % 5 == 0 ):
-#                    chrono.printRemaining()
-#
-#
-#
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Oct 13 16:56:45 2014
-
 @author: Gaspard, Thomas, Arnaud
 """
 
+import re, os
 from utils import *
 from bdd import *
-import re, os
 from tournamentCrawler import *
 
 
@@ -38,8 +37,8 @@ mc_fields = {
 
 class Matches:
     
-    def __init__(self):
-        self.matchesPath = ''
+    def __init__(self,matchesPath=''):
+        self.matchesPath = matchesPath
         self.dicoPlayers = dict()
     
     def getPath(self, e, y):
@@ -67,6 +66,7 @@ class Matches:
             os.rename( path+"u.csv", path+".csv" )
         except:
             debug("This should never happen")
+    
 
 
 
@@ -173,7 +173,7 @@ def getTournament(e, y, infos):
     
     for i in range(len(occurences)):
         occurence = occurences[i]
-        if re.findall('\) RET', occurence[4]):
+        if re.findall('\) RET', occurence[4]) or re.findall('\) DEF', occurence[4]):
             sets = []
             winnerScores = ["RETWIN"]
             loserScores = ["RETLOSE RET"]
