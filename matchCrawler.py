@@ -51,13 +51,16 @@ class Matches:
         e = int( t['e'] )
         y = int( t['y'] )
         tourPath = self.getPath(e, y)
-        if not self.isTreated(tourPath):
+        if self.isTreated(tourPath):
+            return False
+        else:
             matches = getMatchesOfTournament( e, y, {
                 'IDTournament'      : t['IDTournament'],
                 'Indoor'            : t['Indoor'],
                 'TournamentCategory': t['TournamentCategory'] }, self.dicoPlayers )
             self.save(tourPath, matches)
             debug( "Tournament e = " + str( t['e'] ) + " & " + str( t['y'] ) + " Done.")
+            return True
     
     def save(self, path, matches):
         with open(path+"u.csv", 'wb') as f:

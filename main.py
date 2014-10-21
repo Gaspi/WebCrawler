@@ -13,20 +13,17 @@ from playerCrawler          import *
 from tournamentInfoCrawler  import *
 from seasonCrawler          import *
 from matchMerger            import *
+from ATPRankCrawler         import *
 
 
-
-yearStart = 2000
+yearStart = 2014
 yearEnd = 2014
-tournamentTypes = [1,2,4]
+tournamentTypes = [1]
 
-folder = 'C:\\Users\\Gaspard\\Dropbox2\\Dropbox\\WebCrawling 2.0\\WebCrawler\\2000to2014\\'
-matches_folder    = folder + "tournaments\\"
-# folder = '/cal/homes/tbraun/Documents/Webmining/WebCrawler/2000to2014/'
-# matches_folder    = folder + "tournaments/"
 CrawlingSeasons     = True
 CrawlingTournaments = True
 CrawlPlayers        = True
+CrawlATPRanks       = True
 CrawlMatches        = False
 MergeMatches        = True
 CleaningTournaments = True
@@ -41,10 +38,24 @@ player_save       = folder + "players.csv"
 treated_path      = folder + "treated.csv"
 matches_path      = folder + "matches.csv"
 
+
+
+
+folder = ''
+matches_folder = ''
+ranksFolder =  ''
+with open('localurl.txt', 'rb') as f:
+    lines = f.readlines()
+    folder          = lines[0]
+    matches_folder  = lines[0]
+    ranksFolder     = lines[0]
 try:    os.stat( folder)
 except: os.mkdir(folder)
 try:    os.stat( matches_folder)
 except: os.mkdir(matches_folder)
+try:    os.stat( ranksFolder)
+except: os.mkdir(ranksFolder)
+
 
 debug("Done.")
 
@@ -60,7 +71,7 @@ def mainBody():
     players     = Players(    player_save       )
     matchCrawler= Matches(    matches_folder    )
     matchMerger = MatchMerger(matches_folder, matches_path  )
-    
+    atpRank     = ATPRank( ranksFolder )
     chrono      = Chrono()
     clock       = Clock()
     clock.clock()
@@ -108,33 +119,32 @@ def mainBody():
     
     
     if players.canLoad():
-        debug("Loading...")
+        debug("Loading players...")
         players.load()
     
     if CrawlPlayers:
         debug("Looking for all " + numberPlayers + " players...")
     
         chrono.start( int(numberPlayers) )
-        i = 0
         for code in tournaments.playerCodes:
-            chrono.tick()
-            players.addInfoPlayer(code)
-            i += 1
-            if i % 20 == 0: chrono.printRemaining()
+            if players.addInfoPlayer(code):
+                chrono.tick()
+                if chrono.i % 20 == 0: chrono.printRemaining()
         players.save()
     matchCrawler.dicoPlayers = players.dic
     debug("Done. " + clock.strClock())
+    
+    
+
     
     
     if CrawlMatches:
         debug("Fetching informations for all matches...")
         chrono.start( int(lengthTour) )
         for t in tournaments.tournaments:
-            matchCrawler.treatTournament( t )
-            chrono.tick()
-            if chrono.i % 5 == 0:
-                chrono.printRemaining()
-            
+            if matchCrawler.treatTournament( t ):
+                chrono.tick()
+                if chrono.i % 5 == 0: chrono.printRemaining()
         debug("All tournaments: Done. " + clock.strClock())
     
     
@@ -142,6 +152,16 @@ def mainBody():
     if MergeMatches:
         debug("Merging all matches...")
         matchMerger.startMerging( tournaments.tournaments )
+        debug("Done. " + clock.strClock())
+    
+    
+    if CrawlATPRanks:
+        debug("Crawling all " + numberPlayers + " ranking histories...")
+        chrono.start( int(numberPlayers) )
+        for i in players.dic:
+            if atpRank.addATPRank( players.dic[i] ):
+                chrono.tick()
+                if chrono.i % 20 == 0: chrono.printRemaining()
         debug("Done. " + clock.strClock())
     
     
@@ -167,6 +187,7 @@ def mainBody():
 keepOn = True
 while keepOn:
     keepOn = False
+    mainBody()
     try :
         mainBody()
     except:
@@ -185,119 +206,3 @@ debug("C'est fini !!!")
 
 
 
-
-
-
-
-#
-#if True:
-#    debug("Looking for all tournaments (types " + str(tournamentTypes) +
-#        ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-#    for t in tournamentTypes:
-#        tournaments.addTournamentsFromYears( t, yearStart, yearEnd )
-#    debug("Saving information...")
-#    tournaments.saveCodes( tournaments_codes )
-#    tournaments.saveTournaments(tournaments_save)
-#else:
-#    debug("Loading all tournaments (types " + str(tournamentTypes) +
-#        ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-#    tournaments.loadCodes(tournaments_codes)
-#    tournaments.loadTournaments(tournaments_save)
-#
-#
-#lengthTour = str( len(tournaments.codes) )
-#debug("Done. " + clock.strClock())
-#debug("Found: " + lengthTour + " tournaments")
-#
-#
-#
-#if True:
-#    debug("Looking for all players in all the " + lengthTour + " tournaments.")
-#    chrono.start( int(lengthTour) )
-#    for tournament in tournaments.codes:
-#        players.addPlayersFromTournament(tournament['e'], tournament['y'] )
-#        chrono.tick()
-#        if chrono.i % 10 == 0:
-#            chrono.printRemaining()
-#            debug("Found: " + str(len(players.codes)) )
-#    players.saveCodes( player_codes )
-#else:
-#    debug("Loading all players in all the " + lengthTour + " tournaments.")
-#    players.loadCodes(player_codes)
-#debug("Done. " + clock.strClock())
-#
-#numberOfPlayers =  str( len( players.codes ) )
-#debug("Found: " + numberOfPlayers + " players" )
-#
-#
-#
-#if True:
-#    debug("Fetching informations for all " + numberOfPlayers + " players")
-#    players.fetchInfoPlayers()
-#    players.savePlayers( player_save )
-#else:
-#    debug("Loading informations for all " + numberOfPlayers + " players")
-#    players.loadPlayers(player_save)
-#debug("Done. " + clock.strClock())
-#
-#
-#if True:
-#    debug("Fetching informations for all matches...")
-#    tournaments.fetchAllMatches('BDD/matches.csv', players.dic)
-#else:
-#    pass
-#debug("Done. " + clock.strClock())
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#if False:
-#    tournament = getTournamentInfos("339", "2010")
-#    printObject( tournament )
-#
-#
-#if False:
-#    matchInfos = getMatchInfos('0339', '2010', '3', 'R485')
-#    printObject( matchInfos )
-#
-#
-#if False:
-#    matches = getMatchesOfTournament("339", "2010")
-#    printObject( matches )
-#
-#
-#if False:
-#    saveMatchesOfYear("BDD/bdd.csv", "2", "2014", 20, True)
-##    mainCSV("bdd.csv", [ ["339", "2010"] ] )
-#
-#
-#
-#
-#if False:
-#    tournament = getTournamentInfos("339", "2010")
-#    printObject( tournament )
-#
-#
-#if False:
-#    matchInfos = getMatchInfos('0339', '2010', '3', 'R485')
-#    printObject( matchInfos )
-#
-#
-#if False:
-#    matches = getMatchesOfTournament("339", "2010")
-#    printObject( matches )
-#
-#
-#if False:
-#    saveMatchesOfYear("BDD/bdd.csv", "2", "2014", 20, True)
-##    mainCSV("bdd.csv", [ ["339", "2010"] ] )
-#
-#
-#

@@ -45,7 +45,9 @@ class Players:
         return False
 
     def addInfoPlayer(self, code):
-        if not self.isTreated(code):
+        if self.isTreated(code):
+            return False
+        else:
             url = urlOpen( url_players + code + '.aspx' )
             dom = BeautifulSoup(url)
             aux = infoFromDOM(dom)
@@ -57,6 +59,7 @@ class Players:
             self.dic[playerURL] = aux
             self.ID += 1
             self.saveMaybe()
+            return True
     
     def save(self):
         with open(self.playersPath, 'wb') as csvfile:
