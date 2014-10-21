@@ -153,7 +153,6 @@ def mainBody():
 keepOn = True
 while keepOn:
     keepOn = False
-    mainBody()
     try :
         mainBody()
     except:

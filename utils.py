@@ -81,7 +81,7 @@ def prettyPrintTime(s):
     elif minutes > 0:
         return ('%smin %ssec' % (minutes, seconds) )
     else:
-        return ('%ssec' % (hours, minutes, seconds) )
+        return ('%ssec' % (seconds) )
 
 
 def urlOpen(url):
