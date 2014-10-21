@@ -4,7 +4,7 @@ Created on Mon Oct 06 09:16:48 2014
 @authors: Gaspard, Thomas, Arnaud
 """
 
-import os
+import os, sys 
 from utils                  import *
 from tournamentCrawler      import *
 from matchCrawler           import *
@@ -134,7 +134,7 @@ def mainBody():
             chrono.tick()
             if chrono.i % 5 == 0:
                 chrono.printRemaining()
-            debug( "Tournament e = " + str( t['e'] ) + " & " + str( t['y'] ) + " Done.")
+            
         debug("All tournaments: Done. " + clock.strClock())
     
     

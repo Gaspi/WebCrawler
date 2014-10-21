@@ -57,6 +57,7 @@ class Matches:
                 'Indoor'            : t['Indoor'],
                 'TournamentCategory': t['TournamentCategory'] }, self.dicoPlayers )
             self.save(tourPath, matches)
+            debug( "Tournament e = " + str( t['e'] ) + " & " + str( t['y'] ) + " Done.")
     
     def save(self, path, matches):
         with open(path+"u.csv", 'wb') as f:

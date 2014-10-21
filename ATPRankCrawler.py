@@ -5,16 +5,13 @@ Created on Tue Oct 21 10:50:14 2014
 @author: Gaspard
 """
 
-
-
-
+from playerCrawler import *
 
 
 class ATPRank:
     
     def __init__(self, playerPath=''):
         self.dic = dict()
-        self.ID  = 0
         self.playersPath = playerPath
         self.i = 0
         self.savePeriod = 20
@@ -25,7 +22,7 @@ class ATPRank:
                 return True
         return False
 
-    def addInfoPlayer(self, code):
+    def addATPRank(self, code):
         if not self.isTreated(code):
             url = urlOpen( url_players + code + '.aspx' )
             dom = BeautifulSoup(url)
