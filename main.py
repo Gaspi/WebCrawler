@@ -31,15 +31,6 @@ CleaningPlayers     = True
 CleaningMatches     = True
 sleepingTime = 30
 
-tournaments_codes = folder + "tournamentCodes.csv"
-tournaments_save  = folder + "tournaments.csv"
-player_codes      = folder + "playerCodes.csv"
-player_save       = folder + "players.csv"
-treated_path      = folder + "treated.csv"
-matches_path      = folder + "matches.csv"
-
-
-
 
 folder = ''
 matches_folder = ''
@@ -55,6 +46,17 @@ try:    os.stat( matches_folder)
 except: os.mkdir(matches_folder)
 try:    os.stat( ranksFolder)
 except: os.mkdir(ranksFolder)
+
+
+
+tournaments_codes = folder + "tournamentCodes.csv"
+tournaments_save  = folder + "tournaments.csv"
+player_codes      = folder + "playerCodes.csv"
+player_save       = folder + "players.csv"
+treated_path      = folder + "treated.csv"
+matches_path      = folder + "matches.csv"
+
+
 
 
 debug("Done.")
