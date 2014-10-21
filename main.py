@@ -4,7 +4,7 @@ Created on Mon Oct 06 09:16:48 2014
 @authors: Gaspard, Thomas, Arnaud
 """
 
-import os, sys 
+import os, sys
 from utils                  import *
 from tournamentCrawler      import *
 from matchCrawler           import *
@@ -16,7 +16,7 @@ from matchMerger            import *
 from ATPRankCrawler         import *
 
 
-yearStart = 2014
+yearStart = 2000
 yearEnd = 2014
 tournamentTypes = [1]
 
@@ -29,7 +29,7 @@ MergeMatches        = True
 CleaningTournaments = True
 CleaningPlayers     = True
 CleaningMatches     = True
-
+sleepingTime = 30
 
 tournaments_codes = folder + "tournamentCodes.csv"
 tournaments_save  = folder + "tournaments.csv"
@@ -192,13 +192,12 @@ while keepOn:
         mainBody()
     except:
         printError("Network error expected: " + str( sys.exc_info()[0] ) )
-        time.sleep(10)
+        time.sleep( sleepingTime )
         debug("Waking up !")
         keepOn = True
         
 
 debug("C'est fini !!!")
-
 
 
 
