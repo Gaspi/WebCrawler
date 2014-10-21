@@ -21,9 +21,10 @@ tournaments_codes_fields = ['IDTournament',
 
 class Seasons:
     
-    def __init__(self):
+    def __init__(self, tournamentCodes=''):
         self.codes = []
         self.ID = 0
+        self.tournamentsCodes = tournamentCodes
     
     def addTournamentsFromTY(self, t, y):
         dom = getDOM( url_tournament + '?t='+str(t)+'&y='+str(y) )
@@ -65,14 +66,14 @@ class Seasons:
                 self.addTournamentsFromTY(t, y)
     
     
-    def saveCodes(self, filename):
-        with open(filename, 'wb') as csvfile:
+    def saveCodes(self):
+        with open(self.tournamentsCodes, 'wb') as csvfile:
             w = getWriter(csvfile, tournaments_codes_fields)
             w.writerows(self.codes)
     
     
-    def loadCodes(self, filename):
-        with open(filename, 'rb') as csvfile:
+    def loadCodes(self):
+        with open(self.tournamentsCodes, 'rb') as csvfile:
             self.codes = getReader( csvfile )
     
     

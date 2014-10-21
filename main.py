@@ -9,7 +9,6 @@ from utils                  import *
 from tournamentCrawler      import *
 from matchCrawler           import *
 from bdd                    import *
-from searchCrawler          import *
 from playerCrawler          import *
 from tournamentInfoCrawler  import *
 from seasonCrawler          import *
@@ -21,17 +20,26 @@ yearStart = 2000
 yearEnd = 2014
 tournamentTypes = [1,2,4]
 
-folder = 'C:\\Users\\Gaspard\\Dropbox2\\Dropbox\\WebCrawling 2.0\\WebCrawler\\2014\\'
+folder = 'C:\\Users\\Gaspard\\Dropbox2\\Dropbox\\WebCrawling 2.0\\WebCrawler\\2000to2014\\'
 matches_folder    = folder + "tournaments\\"
 # folder = '/cal/homes/tbraun/Documents/Webmining/WebCrawler/2000to2014/'
 # matches_folder    = folder + "tournaments/"
+CrawlingSeasons     = True
+CrawlingTournaments = True
+CrawlPlayers        = True
+CrawlMatches        = False
+MergeMatches        = True
+CleaningTournaments = True
+CleaningPlayers     = True
+CleaningMatches     = True
+
+
 tournaments_codes = folder + "tournamentCodes.csv"
 tournaments_save  = folder + "tournaments.csv"
 player_codes      = folder + "playerCodes.csv"
 player_save       = folder + "players.csv"
 treated_path      = folder + "treated.csv"
 matches_path      = folder + "matches.csv"
-
 
 try:    os.stat( folder)
 except: os.mkdir(folder)
@@ -47,21 +55,11 @@ def mainBody():
     
     debug("Initialisation...")
     
-    seasons     = Seasons()
-    
-    tournaments = Tournaments()
-    tournaments.tournamentsPath = tournaments_save
-    tournaments.playerCodesPath = player_codes
-    
-    players     = Players()
-    players.playersPath = player_save
-    
-    matchCrawler = Matches()
-    matchCrawler.matchesPath = matches_folder
-    
-    matchMerger = MatchMerger()
-    matchMerger.matchesFolder = matches_folder
-    matchMerger.targetPath    = matches_path
+    seasons     = Seasons(    tournaments_codes )
+    tournaments = Tournaments(tournaments_save, player_codes)
+    players     = Players(    player_save       )
+    matchCrawler= Matches(    matches_folder    )
+    matchMerger = MatchMerger(matches_folder, matches_path  )
     
     chrono      = Chrono()
     clock       = Clock()
@@ -69,16 +67,16 @@ def mainBody():
     debug("Done. ")
     
     
-    if True:
+    if CrawlingSeasons:
         debug("Looking for all tournaments (types " + str(tournamentTypes) +
               ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
         seasons.addTournamentsFromAllTY( tournamentTypes, yearStart, yearEnd )
         debug("Saving information...")
-        seasons.saveCodes( tournaments_codes )
+        seasons.saveCodes( )
     else:
         debug("Loading all tournaments (types " + str(tournamentTypes) +
               ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-        seasons.loadCodes( tournaments_codes )
+        seasons.loadCodes()
     
     lengthTour = str( len(seasons.codes) )
     debug("Done. " + clock.strClock())
@@ -89,7 +87,7 @@ def mainBody():
         debug("Loading...")
         tournaments.load()
     
-    if True:
+    if CrawlingTournaments:
         debug("Crawling all tournaments (types " + str(tournamentTypes) +
             ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
         chrono.start( int(lengthTour) )
@@ -113,7 +111,7 @@ def mainBody():
         debug("Loading...")
         players.load()
     
-    if True:
+    if CrawlPlayers:
         debug("Looking for all " + numberPlayers + " players...")
     
         chrono.start( int(numberPlayers) )
@@ -128,9 +126,7 @@ def mainBody():
     debug("Done. " + clock.strClock())
     
     
-    
-    
-    if True:
+    if CrawlMatches:
         debug("Fetching informations for all matches...")
         chrono.start( int(lengthTour) )
         for t in tournaments.tournaments:
@@ -143,9 +139,25 @@ def mainBody():
     
     
     
-    if True:
+    if MergeMatches:
         debug("Merging all matches...")
         matchMerger.startMerging( tournaments.tournaments )
+        debug("Done. " + clock.strClock())
+    
+    
+    if CleaningTournaments:
+        debug("Cleaning tournaments...")
+        tournaments.clean()
+        debug("Done. " + clock.strClock())
+    
+    if CleaningPlayers:
+        debug("Cleaning players...")
+        players.clean()
+        debug("Done. " + clock.strClock())
+    
+    if CleaningMatches:
+        debug("Cleaning matches...")
+        matchMerger.clean()
         debug("Done. " + clock.strClock())
     
     return True
@@ -166,6 +178,16 @@ while keepOn:
         
 
 debug("C'est fini !!!")
+
+
+
+
+
+
+
+
+
+
 
 
 #

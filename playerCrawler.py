@@ -4,8 +4,7 @@ Created on Fri Oct 10 14:28:49 2014
 @author: Gaspard, Thomas, Arnaud
 """
 
-import re
-import os
+import re, os
 from bs4 import BeautifulSoup
 
 from utils  import *
@@ -23,14 +22,19 @@ players_fields = [
     'Height',
     'Weight',
     'RightHanded',
-    'TurnedPro' ]
+    'TurnedPro',
+    'Country'  ]
+
+def defaultPlayerCleanFunction(entry):
+    return entry
+
 
 class Players:
     
-    def __init__(self):
+    def __init__(self, playerPath=''):
         self.dic = dict()
         self.ID  = 0
-        self.playersPath = ''
+        self.playersPath = playerPath
         self.i = 0
         self.savePeriod = 20
     
@@ -77,9 +81,18 @@ class Players:
     
     def canLoad(self):
         return os.path.isfile(self.playersPath)
-
-
-
+    
+    
+    def clean(self, cleanFunction=defaultPlayerCleanFunction):
+        path2 = self.playersPath + "2"
+        os.rename( self.playersPath, path2 )
+        with open( self.playersPath , 'wb') as f:
+            w = getWriter(f, players_fields)
+            with open( path2, 'rb' ) as f2:
+                for e in csv.DictReader(f2, restval='?', delimiter='|'):
+                    w.writerow( cleanFunction(e) )
+    
+    
 
 
 def playersFromURL(url):
@@ -88,6 +101,11 @@ def playersFromURL(url):
 
 
 def infoFromDOM(dom):
+    country = "NotFound"
+    try :
+        country = dom.find('div', {'id':'playerBioInfoFlag'} ).find('p').contents[0]
+    except:
+        printError("No country found !")
     f = dom.find('ul', {'id':'playerBioInfoList'} ).find_all('li')
     birth       = ['-1','-1','-1']
     height      = -1
@@ -118,6 +136,7 @@ def infoFromDOM(dom):
         'Height'        : height,
         'Weight'        : weight,
         'RightHanded'   : handed,
-        'TurnedPro'     : turnedPro
+        'TurnedPro'     : turnedPro,
+        'Country'       : country
     }
 
