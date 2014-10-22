@@ -54,6 +54,7 @@ class Matches:
         if self.isTreated(tourPath):
             return False
         else:
+            print str(e) + " / " + str(y)
             matches = getMatchesOfTournament( e, y, {
                 'IDTournament'      : t['IDTournament'],
                 'Indoor'            : t['Indoor'],

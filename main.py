@@ -18,13 +18,13 @@ from ATPRankCrawler         import *
 
 yearStart = 2000
 yearEnd = 2014
-tournamentTypes = [1]
+tournamentTypes = [1,2,4]
 
 CrawlingSeasons     = True
 CrawlingTournaments = True
 CrawlPlayers        = True
 CrawlATPRanks       = True
-CrawlMatches        = False
+CrawlMatches        = True
 MergeMatches        = True
 CleaningTournaments = True
 CleaningPlayers     = True
@@ -32,14 +32,21 @@ CleaningMatches     = True
 sleepingTime = 30
 
 
+def aux(line):
+   if line[-1] == '\n':
+      return line[:-1]
+   else:
+      return line
+
+
 folder = ''
 matches_folder = ''
 ranksFolder =  ''
 with open('localurl.txt', 'rb') as f:
     lines = f.readlines()
-    folder          = lines[0]
-    matches_folder  = lines[0]
-    ranksFolder     = lines[0]
+    folder          = aux(lines[0])
+    matches_folder  = aux(lines[1])
+    ranksFolder     = aux(lines[2])
 try:    os.stat( folder)
 except: os.mkdir(folder)
 try:    os.stat( matches_folder)
