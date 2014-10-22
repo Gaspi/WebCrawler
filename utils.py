@@ -43,8 +43,8 @@ class Chrono:
             debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal +
                   '  Remaining: ' + prettyPrintTime(self.remaining()) )
         else:
-            debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal +
-                  '(Total: '+ str(self.absoluteTotal) +
+            debug('Chrono: ' + str( self.i ) + ' / ' + str( self.total ) +
+                  '(Total: '+ self.strTotal +
                   ' )  Remaining: ' + prettyPrintTime(self.remaining()) )
 
 

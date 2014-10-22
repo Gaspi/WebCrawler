@@ -26,7 +26,7 @@ MergeMatches        = True
 CleaningTournaments = True
 CleaningPlayers     = True
 CleaningMatches     = True
-debugMode           = True
+debugMode           = False
 
 folder = ''
 matches_folder = ''
