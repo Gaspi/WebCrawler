@@ -8,21 +8,23 @@ import os
 from bdd    import *
 from utils  import *
 
-def defaultMatchCleanFunction(entry):
-    return entry
+
+final_match_field_names = ['IDMatch'] + match_field_names
+
 
 class MatchMerger:
     
-    def __init__(self,matchesFolder = '',targetPath  = ''):
+    def __init__(self,matchesFolder = '',targetPath  = '',cleanMatchesPath=''):
         self.matchesFolder = matchesFolder
         self.targetPath    = targetPath
+        self.cleanMatchesPath=cleanMatchesPath
         self.ID = 0
     
     def startMerging(self, tournaments):
         with open( self.targetPath , 'wb') as f:
             w = getMatchWriter(f)
             for t in tournaments:
-                writeTournament(w, self.load(int( t['e'] ) , int( t['y'] )))
+                writeTournament(w, self.load( int(t['e']) , int(t['y'])))
                 self.ID += 1
     
     def getPath(self, e, y):
@@ -38,16 +40,18 @@ class MatchMerger:
         return r
     
     
-    def clean(self, cleanFunction=defaultMatchCleanFunction):
-        path2 = self.targetPath + "2"
-        os.rename( self.targetPath, path2 )
-        with open( self.targetPath , 'wb') as f:
-            w = getMatchWriter(f)
-            with open( path2, 'rb' ) as f2:
+    def clean(self):
+        self.ID = 0
+        with open( self.cleanMatchesPath , 'wb') as f:
+            w = getWriter(f, final_match_field_names)
+            with open(self.targetPath, 'rb') as f2:
                 for e in csv.DictReader(f2, restval='?', delimiter='|'):
-                    w.writerow(cleanFunction(e))
+                    w.writerow( self.defaultMatchCleanFunction(e) )
                 
-    
+    def defaultMatchCleanFunction(self, entry):
+        entry['IDMatch'] = self.ID // 2
+        self.ID += 1
+        return entry
 
 
 

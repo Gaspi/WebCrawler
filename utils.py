@@ -138,3 +138,35 @@ def getBool(s):
         return False
     else:
         raise Exception("Wrong boolean indicator")
+
+
+class InfoReader:
+    
+    def __init__(self, path):
+        with open(path, 'rb') as f:
+            self.lines = f.readlines()
+        self.i = 0
+    
+    def readLine(self):
+        res = self.lines[ self.i ]
+        self.i += 1
+        return cleanLine(res)
+    
+    def readInt(self):
+        self.readLine()
+        return int( self.readLine() )
+    def readBool(self):
+        self.readLine()
+        return getBool( self.readLine() )
+    def readIntList(self):
+        self.readLine()
+        return [ int(e) for e in  self.readLine().split(',') ]
+    
+    def start(self, nbIterations):
+        self.total = nbIterations
+        self.absoluteTotal = self.total
+        self.strTotal = str( self.absoluteTotal )
+        self.i = 0
+        self.previous = 0
+        self.startTime = time.time()
+        self.previousTime = self.startTime

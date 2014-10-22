@@ -55,10 +55,10 @@ def defaultTournamentCleanFunction(t):
 
 class Tournaments:
     
-    def __init__(self, tournamentsPath = '', playerCodesPath = ''):
+    def __init__(self, tournamentsPath = '', playerCodesPath = '', cleanTournamentsPath=''):
         self.tournaments = []
         self.playerCodes = sets.Set()
-        
+        self.cleanTournamentsPath = cleanTournamentsPath
         self.tournamentsPath = tournamentsPath
         self.playerCodesPath = playerCodesPath
         
@@ -122,11 +122,9 @@ class Tournaments:
             self.save()
     
     def clean(self, cleanFunction=defaultTournamentCleanFunction):
-        path2 = self.tournamentsPath + "2"
-        os.rename( self.tournamentsPath, path2 )
-        with open( self.tournamentsPath , 'wb') as f:
+        with open( self.cleanTournamentsPath, 'wb') as f:
             w = getWriter(f, tournaments_infos_fields )
-            with open( path2, 'rb' ) as f2:
+            with open( self.tournamentsPath, 'rb' ) as f2:
                 for e in csv.DictReader(f2, restval='?', delimiter='|'):
                     w.writerow( cleanFunction(e) )
     

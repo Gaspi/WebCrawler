@@ -31,10 +31,11 @@ def defaultPlayerCleanFunction(entry):
 
 class Players:
     
-    def __init__(self, playerPath=''):
+    def __init__(self, playerPath='', cleanPlayerPath=''):
         self.dic = dict()
         self.ID  = 0
         self.playersPath = playerPath
+        self.cleanPlayerPath = cleanPlayerPath
         self.i = 0
         self.savePeriod = 20
     
@@ -87,11 +88,9 @@ class Players:
     
     
     def clean(self, cleanFunction=defaultPlayerCleanFunction):
-        path2 = self.playersPath + "2"
-        os.rename( self.playersPath, path2 )
-        with open( self.playersPath , 'wb') as f:
+        with open( self.cleanPlayerPath , 'wb') as f:
             w = getWriter(f, players_fields)
-            with open( path2, 'rb' ) as f2:
+            with open( self.playersPath, 'rb' ) as f2:
                 for e in csv.DictReader(f2, restval='?', delimiter='|'):
                     w.writerow( cleanFunction(e) )
     

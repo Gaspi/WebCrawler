@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Oct 06 09:16:48 2014
-@authors: Gaspard, Thomas, Arnaud
+@authors: Gaspard, Thomas
 """
 
 import os, sys
@@ -17,51 +17,36 @@ from ATPRankCrawler         import *
 from ATPRankings            import *
 
 
+infoReader = InfoReader('localurl.txt')
 
-folder = ''
-matches_folder = ''
-ranksFolder =  ''
-yearStart = 0
-yearEnd = 0
-tournamentTypes = []
-sleepingTime = 0
-CrawlingSeasons     = True
-CrawlingTournaments = True
-CrawlPlayers        = True
-CrawlATPRanks       = True
-CrawlMatches        = True
-MergeMatches        = True
-CleaningTournaments = True
-CleaningPlayers     = True
-CleaningMatches     = True
-AddRankings         = True
-debugMode           = False
-with open('localurl.txt', 'rb') as f:
-    lines = f.readlines()
-    folder          = cleanLine(lines[0])
-    matches_folder  = cleanLine(lines[1])
-    ranksFolder     = cleanLine(lines[2])
-    yearStart       = int( cleanLine(lines[4]) )
-    yearEnd         = int( cleanLine(lines[6]) )
-    tournamentTypes = [ int(e) for e in  cleanLine(lines[8]).split(',')  ]
-    sleepingTime    = int( cleanLine(lines[10]) )
-CrawlingSeasons     = getBool(cleanLine(lines[12]))
-CrawlingTournaments = getBool(cleanLine(lines[14]))
-CrawlPlayers        = getBool(cleanLine(lines[16]))
-CrawlATPRanks       = getBool(cleanLine(lines[18]))
-CrawlMatches        = getBool(cleanLine(lines[20]))
-MergeMatches        = getBool(cleanLine(lines[22]))
-CleaningTournaments = getBool(cleanLine(lines[24]))
-CleaningPlayers     = getBool(cleanLine(lines[26]))
-CleaningMatches     = getBool(cleanLine(lines[28]))
-AddRankings         = getBool(cleanLine(lines[30]))
-debugMode           = getBool(cleanLine(lines[32]))
+folder              = infoReader.readLine()
+matches_folder      = infoReader.readLine()
+ranksFolder         = infoReader.readLine()
+cleanFolder         = infoReader.readLine()
+yearStart           = infoReader.readInt()
+yearEnd             = infoReader.readInt()
+tournamentTypes     = infoReader.readIntList()
+sleepingTime        = infoReader.readInt()
+CrawlingSeasons     = infoReader.readBool()
+CrawlingTournaments = infoReader.readBool()
+CrawlPlayers        = infoReader.readBool()
+CrawlATPRanks       = infoReader.readBool()
+CrawlMatches        = infoReader.readBool()
+MergeMatches        = infoReader.readBool()
+CleaningTournaments = infoReader.readBool()
+CleaningPlayers     = infoReader.readBool()
+CleaningMatches     = infoReader.readBool()
+AddRankings         = infoReader.readBool()
+debugMode           = infoReader.readBool()
+
 try:    os.stat( folder)
 except: os.mkdir(folder)
 try:    os.stat( matches_folder)
 except: os.mkdir(matches_folder)
 try:    os.stat( ranksFolder)
 except: os.mkdir(ranksFolder)
+try:    os.stat( cleanFolder)
+except: os.mkdir(cleanFolder)
 
 tournaments_codes = folder + "tournamentCodes.csv"
 tournaments_save  = folder + "tournaments.csv"
@@ -69,6 +54,11 @@ player_codes      = folder + "playerCodes.csv"
 player_save       = folder + "players.csv"
 treated_path      = folder + "treated.csv"
 matches_path      = folder + "matches.csv"
+rankingsSave      = folder + "rankingsSave.csv"
+
+cleanPlayerPath     = cleanFolder + "players.csv"
+cleanTournamentsPath= cleanFolder + "tournaments.csv"
+cleanMatchesPath    = cleanFolder + "matches.csv"
 
 debug("Done.")
 
@@ -80,12 +70,12 @@ def mainBody():
     debug("Initialisation...")
     
     seasons     = Seasons(    tournaments_codes )
-    tournaments = Tournaments(tournaments_save, player_codes)
-    players     = Players(    player_save       )
+    tournaments = Tournaments(tournaments_save, player_codes, cleanTournamentsPath)
+    players     = Players(    player_save, cleanPlayerPath  )
     matchCrawler= Matches(    matches_folder    )
-    matchMerger = MatchMerger(matches_folder, matches_path  )
+    matchMerger = MatchMerger(matches_folder, matches_path,cleanMatchesPath)
     atpRank     = ATPRank( ranksFolder )
-    atpRankings = ATPRankings( ranksFolder, matches_path )
+    atpRankings = ATPRankings( ranksFolder, matches_path, rankingsSave )
     chrono      = Chrono()
     clock       = Clock()
     clock.clock()
@@ -196,12 +186,15 @@ def mainBody():
         matchMerger.clean()
         debug("Done. " + clock.strClock())
     
+    
+    atpRankings.setNumberOfPlayers( players.ID )
+    atpRankings.setTournaments = tournaments.tournaments
+    atpRankings.load()
     if AddRankings:
         debug("Computing rankings...")
-        atpRankings.setNumberOfPlayers( players.ID )
-        atpRankings.setTournaments = tournaments.tournaments
         atpRankings.startFeedingMatches()
         # do stuff here
+        atpRankings.save()
         debug("Done. " + clock.strClock())
     
     return True
