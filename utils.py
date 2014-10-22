@@ -48,6 +48,12 @@ def printError(msg):
 
 
 
+def cleanLine(line):
+   if line[-1] == '\n' or line[-1] == '\r':
+      return cleanLine( line[:-1] )
+   else:
+      return line
+
 def printObject(arg, prefix = ""):
     if type(arg) == type(dict()):
         for i in arg:

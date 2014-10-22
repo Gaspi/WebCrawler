@@ -54,6 +54,7 @@ class Matches:
         if self.isTreated(tourPath):
             return False
         else:
+            print str(e) + " / " + str(y)
             matches = getMatchesOfTournament( e, y, {
                 'IDTournament'      : t['IDTournament'],
                 'Indoor'            : t['Indoor'],
@@ -100,10 +101,16 @@ def getInfoRows(t,y,r,p):
     if len(a) != 20:
         printError("Mauvaise longueur : " + str(len(a)) + " != 20")
         return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
-    return a
+    elif parseSimple(a[0], 'a') == '':
+        printError("Empty match...")
+        return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
+    else:
+        return a
 
 def getMatchInfos(t,y,r,p):
     a = getInfoRows(t,y,r,p)
+    if not a:
+        return []
     result = [ dict(), dict() ]
     
     for k,v in mc_fields.iteritems():

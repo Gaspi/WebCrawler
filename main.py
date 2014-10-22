@@ -16,30 +16,34 @@ from matchMerger            import *
 from ATPRankCrawler         import *
 
 
-yearStart = 2013
-yearEnd = 2013
-tournamentTypes = [1,2,4]
 
 CrawlingSeasons     = True
 CrawlingTournaments = True
 CrawlPlayers        = True
 CrawlATPRanks       = True
-CrawlMatches        = False
+CrawlMatches        = True
 MergeMatches        = True
 CleaningTournaments = True
 CleaningPlayers     = True
 CleaningMatches     = True
-sleepingTime = 30
 
 
 folder = ''
 matches_folder = ''
 ranksFolder =  ''
+yearStart = 0
+yearEnd = 0
+tournamentTypes = []
+sleepingTime = 0
 with open('localurl.txt', 'rb') as f:
     lines = f.readlines()
-    folder          = lines[0]
-    matches_folder  = lines[0]
-    ranksFolder     = lines[0]
+    folder          = cleanLine(lines[0])
+    matches_folder  = cleanLine(lines[1])
+    ranksFolder     = cleanLine(lines[2])
+    yearStart       = int( cleanLine(lines[4]) )
+    yearEnd         = int( cleanLine(lines[6]) )
+    tournamentTypes = [ int(e) for e in  cleanLine(lines[8]).split(',')  ]
+    sleepingTime    = int( cleanLine(lines[10]) )
 try:    os.stat( folder)
 except: os.mkdir(folder)
 try:    os.stat( matches_folder)
