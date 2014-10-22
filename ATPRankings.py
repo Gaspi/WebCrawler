@@ -66,7 +66,6 @@ class ATPRankings:
                 tStart = self.tournaments[tID]['TournamentStart']
                 rank = findRankingFromDate(tStart, rankings)
                 self.ranks[IDplayer].add( (tID,rank) )
-        print self.ranks
     
     
     def loadRankings(self, ID):
@@ -90,7 +89,6 @@ class ATPRankings:
                 r = csv.reader(f, delimiter='|',quotechar='|')
                 self.playedTourn = []
                 for p in r:
-#                    print str( p[0][1:-1].split(',') )
                     l = [ int(e) for e in p[0][1:-1].split(',') ]
                     self.playedTourn.append( sets.Set(l) )
             self.playersNb = len(self.playedTourn)
