@@ -26,7 +26,7 @@ MergeMatches        = True
 CleaningTournaments = True
 CleaningPlayers     = True
 CleaningMatches     = True
-debugMode           = False
+debugMode           = True
 
 folder = ''
 matches_folder = ''
@@ -108,15 +108,13 @@ def mainBody():
         debug("Crawling all tournaments (types " + str(tournamentTypes) +
             ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
         chrono.start( int(lengthTour) )
-        i = 0
         for code in seasons.codes:
-            chrono.tick()
             tournaments.addTournamentFromCode(code)
-            i += 1
-            if i % 20 == 0:
-                debug("Tournaments " + str(i) + " / " + lengthTour +
-                      " treated. Players found: " + str(len(tournaments.playerCodes)) +
-                      "  Remaining: " + str( chrono.remaining() ) )
+            chrono.tick()
+            if chrono.i % 20 == 0:
+                debug("Tournaments " + str(chrono.i) + " / " + lengthTour +
+                      " treated. Players found: " + str(len(tournaments.playerCodes)))
+                chrono.printRemaining()
         tournaments.save()
     
     debug("Done. " + clock.strClock())
@@ -136,6 +134,8 @@ def mainBody():
             if players.addInfoPlayer(code):
                 chrono.tick()
                 if chrono.i % 20 == 0: chrono.printRemaining()
+            else:
+                chrono.decTotal()
         players.save()
     matchCrawler.dicoPlayers = players.dic
     debug("Done. " + clock.strClock())
@@ -151,6 +151,8 @@ def mainBody():
             if matchCrawler.treatTournament( t ):
                 chrono.tick()
                 if chrono.i % 5 == 0: chrono.printRemaining()
+            else:
+                chrono.decTotal()
         debug("All tournaments: Done. " + clock.strClock())
     
     

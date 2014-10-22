@@ -18,25 +18,49 @@ class Chrono:
     
     def start(self, nbIterations):
         self.total = nbIterations
-        self.strTotal = str( self.total )
+        self.absoluteTotal = self.total
+        self.strTotal = str( self.absoluteTotal )
         self.i = 0
         self.previous = 0
         self.startTime = time.time()
         self.previousTime = self.startTime
-        
+    
     def tick(self, iterations = 1):
         self.i += iterations
     
+    def decTotal(self, iterations = 1):
+        self.total -= 1
+    
     def remaining(self):
         t = time.time()
-        remaining = int( (self.total - self.i) * (t - self.previousTime) / (self.i - self.previous) )
+        remaining = (self.total - self.i) * (t - self.previousTime) / (self.i - self.previous)
         self.previous = self.i
         self.previousTime = t
         return remaining
     
     def printRemaining(self):
-        debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal + '  Remaining: ' + prettyPrintTime(self.remaining()) )
+        if self.absoluteTotal == self.total:
+            debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal +
+                  '  Remaining: ' + prettyPrintTime(self.remaining()) )
+        else:
+            debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal +
+                  '(Total: '+ str(self.absoluteTotal) +
+                  ' )  Remaining: ' + prettyPrintTime(self.remaining()) )
 
+
+class Clock:
+    def __init__(self):
+        self.time = 0
+    
+    def clock(self):
+        t = time.time()
+        result = t - self.time
+        self.time = t
+        return result
+    
+    def strClock(self):
+        return "Time: " + prettyPrintTime(self.clock())
+        
 
 def debug(msg):
     if debug_mode:
@@ -66,20 +90,10 @@ def printObject(arg, prefix = ""):
 
 
 
-class Clock:
-    def __init__(self):
-        self.time = 0
-    
-    def clock(self):
-        t = time.time()
-        result = t - self.time
-        self.time = t
-        return result
-    
-    def strClock(self):
-        return "Time: " + str(self.clock())
 
-def prettyPrintTime(s):
+
+def prettyPrintTime(sec):
+    s = int(sec)
     hours, remainder = divmod(s, 3600)
     minutes, seconds = divmod(remainder, 60)
     if hours > 0:
@@ -87,7 +101,8 @@ def prettyPrintTime(s):
     elif minutes > 0:
         return ('%smin %ssec' % (minutes, seconds) )
     else:
-        return ('%ssec' % (seconds) )
+        ms = int( 100 * (sec - s))
+        return ('%ssec %sms' % (seconds, ms) )
 
 
 def urlOpen(url):
