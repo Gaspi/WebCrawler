@@ -16,9 +16,9 @@ from matchMerger            import *
 from ATPRankCrawler         import *
 
 
-yearStart = 2000
-yearEnd = 2014
-tournamentTypes = [1]
+yearStart = 2013
+yearEnd = 2013
+tournamentTypes = [1,2,4]
 
 CrawlingSeasons     = True
 CrawlingTournaments = True
