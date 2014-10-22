@@ -42,13 +42,15 @@ class ATPRank:
             return True
     
     
-    
     def getPath(self, ID):
         return self.rankPath + "p" + str(ID) + "p.csv"
     
     def isTreated(self, path):
-        return os.path.isfile(path+".csv")
+        return os.path.isfile(path)
     
     
+
+
+
 
 

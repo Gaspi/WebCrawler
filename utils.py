@@ -31,21 +31,29 @@ class Chrono:
     def decTotal(self, iterations = 1):
         self.total -= 1
     
-    def remaining(self):
+    def elapsed(self):
+        return time.time() - self.startTime
+    
+    def remaining(self, wholeSegment = True):
         t = time.time()
-        remaining = (self.total - self.i) * (t - self.previousTime) / (self.i - self.previous)
+        remaining = 0
+        if wholeSegment:
+            remaining = (self.total - self.i) * self.elapsed() / self.i
+        else:
+            remaining = (self.total - self.i) * (t - self.previousTime) / (self.i - self.previous)
         self.previous = self.i
         self.previousTime = t
         return remaining
     
-    def printRemaining(self):
+    def printRemaining(self, wholeSegment = True):
+        r = self.remaining(wholeSegment)
         if self.absoluteTotal == self.total:
             debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal +
-                  '  Remaining: ' + prettyPrintTime(self.remaining()) )
+                  '  Remaining: ' + prettyPrintTime(r) )
         else:
             debug('Chrono: ' + str( self.i ) + ' / ' + str( self.total ) +
-                  '(Total: '+ self.strTotal +
-                  ' )  Remaining: ' + prettyPrintTime(self.remaining()) )
+                  ' (Total: '+ self.strTotal +
+                  ')  Remaining: ' + prettyPrintTime(r) )
 
 
 class Clock:
@@ -116,3 +124,17 @@ def getDOM(url):
 
 def getHTML(url):
     return urlOpen(url).read()
+
+
+
+
+trueIndic  = ['yes', 'Yes', 'True', 'true', 'T']
+falseIndic = ['no', 'No', 'False', 'false', 'F']
+
+def getBool(s):
+    if s in trueIndic:
+        return True
+    elif s in falseIndic:
+        return False
+    else:
+        raise Exception("Wrong boolean indicator")

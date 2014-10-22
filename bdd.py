@@ -79,11 +79,11 @@ def writeTournament(writer, tournament):
     writer.writerows(tournament)
 
 
+def getDictReader(csvFile):
+    return csv.DictReader(csvFile, restval='?', delimiter='|')
 
 def getReader(csvFile):
-    r = csv.DictReader(csvFile, restval='?', delimiter='|')
-    res = [ e for e in r]
-    return res
+    return [ e for e in getDictReader(csvFile) ]
 
 
 

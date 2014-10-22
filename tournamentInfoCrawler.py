@@ -75,13 +75,13 @@ class Tournaments:
     def addTournamentFromCode(self, code):
         e = code['e']
         y = code['y']
-        if not self.isTreated(e, y):
-            (newPlayers, newTour) = getAllTournamentInfos(code)
-            self.tournaments.append( newTour )
-            for p in newPlayers:
-                self.playerCodes.add(p)
-            self.saveMaybe()
-    
+        if self.isTreated(e, y): return False
+        (newPlayers, newTour) = getAllTournamentInfos(code)
+        self.tournaments.append( newTour )
+        for p in newPlayers:
+            self.playerCodes.add(p)
+        self.saveMaybe()
+        return True
     
     
     def saveCodes(self):
