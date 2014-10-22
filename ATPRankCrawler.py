@@ -6,7 +6,7 @@ Created on Tue Oct 21 10:50:14 2014
 """
 
 from playerCrawler import *
-
+from utils import *
 
 
 def intFromRank(r):
@@ -32,11 +32,11 @@ class ATPRank:
             dom = BeautifulSoup(url)
             trList = dom.find('table').find_all('tr')
             with open(path+'2', 'wb') as f:
-                w = csv.DictWriter(f, [ 'Date', 'Rank' ] )
+                w = csv.DictWriter(f, [ 'Time', 'Rank' ])
                 for tr in trList[1:]:
                     tab = tr.find_all('td')
                     if len( tab[1].contents ) > 0:
-                        w.writerow( {'Date' : tab[0].contents[0] ,
+                        w.writerow( {'Time' : tab[0].contents[0],
                                      'Rank' : intFromRank( tab[1].contents[0] ) }  )
             os.rename( path+"2", path )
             return True

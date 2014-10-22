@@ -5,12 +5,11 @@ Created on Mon Oct 13 17:12:51 2014
 @author: Gaspard, Thomas, Arnaud
 """
 
-import datetime, time, re
+import re
 from utils import *
 
 
-def createChronology(date, round_):
-    return int(time.mktime(datetime.datetime.strptime(date,"%d.%m.%Y").timetuple()))*10 + int(round_)
+
 
 
 tournaments_fields = [

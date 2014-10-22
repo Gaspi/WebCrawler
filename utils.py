@@ -5,11 +5,21 @@ Created on Mon Oct 13 16:03:13 2014
 @author: Gaspard, Thomas, Arnaud
 """
 
-import time, urllib
+import time, datetime, urllib
 from bs4 import BeautifulSoup
 
 
+# TODO put that in localurl
 debug_mode = True
+
+
+
+def timestamp(date):
+    return int(time.mktime(datetime.datetime.strptime(date,"%d.%m.%Y").timetuple()))
+
+def createChronology(date, round_):
+    return timestamp(date)*10 + int(round_)
+
 
 
 class Chrono:

@@ -9,8 +9,6 @@ from bdd    import *
 from utils  import *
 
 
-final_match_field_names = ['IDMatch'] + match_field_names
-
 
 class MatchMerger:
     
@@ -42,12 +40,12 @@ class MatchMerger:
     
     def clean(self):
         self.ID = 0
-        with open( self.cleanMatchesPath , 'wb') as f:
-            w = getWriter(f, final_match_field_names)
+        with open( self.cleanMatchesPath + "id" , 'wb') as f:
+            w = getWriter(f, ['IDMatch'] + match_field_names )
             with open(self.targetPath, 'rb') as f2:
                 for e in csv.DictReader(f2, restval='?', delimiter='|'):
                     w.writerow( self.defaultMatchCleanFunction(e) )
-                
+    
     def defaultMatchCleanFunction(self, entry):
         entry['IDMatch'] = self.ID // 2
         self.ID += 1

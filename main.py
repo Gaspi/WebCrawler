@@ -75,7 +75,7 @@ def mainBody():
     matchCrawler= Matches(    matches_folder    )
     matchMerger = MatchMerger(matches_folder, matches_path,cleanMatchesPath)
     atpRank     = ATPRank( ranksFolder )
-    atpRankings = ATPRankings( ranksFolder, matches_path, rankingsSave )
+    atpRankings = ATPRankings( ranksFolder, matches_path, rankingsSave, cleanMatchesPath )
     chrono      = Chrono()
     clock       = Clock()
     clock.clock()
@@ -186,15 +186,19 @@ def mainBody():
         matchMerger.clean()
         debug("Done. " + clock.strClock())
     
-    
-    atpRankings.setNumberOfPlayers( players.ID )
-    atpRankings.setTournaments = tournaments.tournaments
-    atpRankings.load()
+    atpRankings.playersNb = players.ID
+    atpRankings.tournaments = tournaments.tournaments
+    atpRankings.loadPlayedTournaments()
     if AddRankings:
-        debug("Computing rankings...")
+        debug("Computing played tournaments...")
         atpRankings.startFeedingMatches()
+        atpRankings.savePlayedTournaments()
         # do stuff here
-        atpRankings.save()
+        debug("Computing rankings...")
+        atpRankings.startComputingRanks()
+        
+#        atpRankings.saveRanks()
+        atpRankings.clean()
         debug("Done. " + clock.strClock())
     
     return True
