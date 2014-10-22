@@ -26,7 +26,7 @@ MergeMatches        = True
 CleaningTournaments = True
 CleaningPlayers     = True
 CleaningMatches     = True
-
+debugMode           = False
 
 folder = ''
 matches_folder = ''
@@ -190,17 +190,19 @@ def mainBody():
 
 
 
-keepOn = True
-while keepOn:
-    keepOn = False
+if debugMode:
     mainBody()
-    try :
-        mainBody()
-    except:
-        printError("Network error expected: " + str( sys.exc_info()[0] ) )
-        time.sleep( sleepingTime )
-        debug("Waking up !")
-        keepOn = True
+else:
+    keepOn = True
+    while keepOn:
+        keepOn = False
+        try :
+            mainBody()
+        except:
+            printError("Network error expected: " + str( sys.exc_info()[0] ) )
+            time.sleep( sleepingTime )
+            debug("Waking up !")
+            keepOn = True
         
 
 debug("C'est fini !!!")

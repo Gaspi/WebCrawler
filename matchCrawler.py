@@ -54,7 +54,7 @@ class Matches:
         if self.isTreated(tourPath):
             return False
         else:
-            print str(e) + " / " + str(y)
+            #print str(e) + " / " + str(y)
             matches = getMatchesOfTournament( e, y, {
                 'IDTournament'      : t['IDTournament'],
                 'Indoor'            : t['Indoor'],
@@ -101,16 +101,18 @@ def getInfoRows(t,y,r,p):
     if len(a) != 20:
         printError("Mauvaise longueur : " + str(len(a)) + " != 20")
         return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
-    elif parseSimple(a[0], 'a') == '':
-        printError("Empty match...")
+    elif not a[0].find('a').contents:
+        printError("Match with no tournament field...")
+        return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
+    elif not a[1].find('td').contents:
+        printError("Match with no round field...")
         return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
     else:
         return a
 
 def getMatchInfos(t,y,r,p):
     a = getInfoRows(t,y,r,p)
-    if not a:
-        return []
+    if not a: return []
     result = [ dict(), dict() ]
     
     for k,v in mc_fields.iteritems():
@@ -154,6 +156,7 @@ def getMatchInfos(t,y,r,p):
 
 def addMatchInfos(match, dicoPlayers):
     m = getMatchInfos( match['t'], match['y'], match['r'], match['p'] )
+    if not m: return []
     for field in match:
         m[0][field] = match[field]
         m[1][field] = match[field]
@@ -233,8 +236,8 @@ def getMatchesOfTournament(e, y, infos, dicoPlayers, verbose=None, sleep=None):
     for m in tournament:
         index += 1
         tab = addMatchInfos(m, dicoPlayers)
-        result.append( tab[0] )
-        result.append( tab[1] )
+        for e in tab:
+            result.append(e)
         if sleep  : time.sleep( sleep )
         if verbose: debug( str(index) + " / " + str(l) )
     return result
