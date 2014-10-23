@@ -10,6 +10,38 @@ Created on Fri Oct 10 14:28:49 2014
 import csv
 
 
+
+
+def getWriter(csvFile, fields):
+    w = csv.DictWriter(csvFile, fields,
+                       restval='?', extrasaction='raise', delimiter='|')
+    w.writeheader()
+    return w
+
+def getMatchWriter(csvFile):
+    return getWriter(csvFile, match_field_names)
+
+
+def writeMatch(writer, match):
+    writer.writerow(match)
+
+def writeTournament(writer, tournament):
+    writer.writerows(tournament)
+
+
+def getDictReader(csvFile):
+    return csv.DictReader(csvFile, restval='?', delimiter='|')
+
+def getReader(csvFile):
+    return [ e for e in getDictReader(csvFile) ]
+
+
+
+
+
+
+
+
 match_field_names = [
     'IDTournament',
     'Year',
@@ -62,28 +94,93 @@ match_field_names = [
 ]
 
 
-def getWriter(csvFile, fields):
-    w = csv.DictWriter(csvFile, fields,
-                       restval='?', extrasaction='raise', delimiter='|')
-    w.writeheader()
-    return w
+match_field_names_clean = [
+    'IDMatch',
+    'IDTournament',
+    'Year',
+    'Duration',
+    'Timestamp',
+    'Draw',
+    'Indoor',
+    'Surface',
+    'TournamentPrize',
+    'TournamentCurrency',
+    'IDPlayer',
+    'IDOpponent',
+    'Win',
+    'RoundNumber',
+    'TournamentStart',
+    'TournamentEnd',
+    'TournamentCategory',
+    'Scores',
+    'WinnerScores',
+    'LoserScores',
+    'TieBreakScores',
+    'Retirement',
+    'Aces',
+    'BreakPointsConverted',
+    'BreakPointsConvertedTotal',
+    'BreakPointsSaved',
+    'BreakPointsSavedTotal',
+    'DoubleFaults',
+    'FirstServe',
+    'FirstServePointsWon',
+    'FirstServePointsWonTotal',
+    'FirstServeReturnPointsWon',
+    'FirstServeReturnPointsWonTotal',
+    'FirstServeTotal',
+    'ReturnGamesPlayed',
+    'SecondServePointsWon',
+    'SecondServePointsWonTotal',
+    'SecondServeReturnPointsWon',
+    'SecondServeReturnPointsWonTotal',
+    'ServiceGamesPlayed',
+    'TotalPointsWon',
+    'TotalPointsWonTotal',
+    'TotalReturnPointsWon',
+    'TotalReturnPointsWonTotal',
+    'TotalServicePointsWon',
+    'TotalServicePointsWonTotal',
+    'p',
+    'r',
+    't',
+    'y'
+]
 
-def getMatchWriter(csvFile):
-    return getWriter(csvFile, match_field_names)
 
 
-def writeMatch(writer, match):
-    writer.writerow(match)
+tournaments_codes_fields = ['IDTournament',
+                            'Indoor',
+                            'TournamentType',
+                            'TournamentCategory', 'e', 'y' ]  # Field de Sylvain
 
-def writeTournament(writer, tournament):
-    writer.writerows(tournament)
 
+tournaments_infos_fields = [
+    'IDTournament',
+    'Tournament',
+    'Indoor',
+    'TournamentType',   # Field du site [1,2,4]
+    'TournamentCategory',   # Field de Sylvain
+    'Surface',
+    'Country',
+    'TournamentPrize',
+    'Draw',
+    'TournamentStart',
+    'TournamentEnd', 'e', 'y' ]
 
-def getDictReader(csvFile):
-    return csv.DictReader(csvFile, restval='?', delimiter='|')
-
-def getReader(csvFile):
-    return [ e for e in getDictReader(csvFile) ]
+tournaments_infos_fields_clean = [
+    'IDTournament',
+    'Tournament',
+    'Indoor',
+    'TournamentType',   # Field du site [1,2,4]
+    'TournamentCategory',   # Field de Sylvain
+    'Surface',
+    'Country',
+    'TournamentPrize',
+    'TournamentCurrency',
+    'Draw',
+    'TournamentStart',
+    'TournamentEnd', 'e', 'y' ]
 
 
 

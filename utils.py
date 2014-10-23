@@ -5,7 +5,7 @@ Created on Mon Oct 13 16:03:13 2014
 @author: Gaspard, Thomas, Arnaud
 """
 
-import time, datetime, urllib
+import time, datetime, urllib, sys
 from bs4 import BeautifulSoup
 
 
@@ -24,10 +24,11 @@ def createChronology(date, round_):
 
 class Chrono:
     def __init__(self):
-        pass
+        self.sizeBar = 18
     
-    def start(self, nbIterations):
-        self.total = nbIterations
+    def start(self, nbIterations = 0, periodTime=0.6):
+        self.periodTime = float(periodTime)
+        self.total = int( nbIterations )
         self.absoluteTotal = self.total
         self.strTotal = str( self.absoluteTotal )
         self.i = 0
@@ -35,35 +36,41 @@ class Chrono:
         self.startTime = time.time()
         self.previousTime = self.startTime
     
+    def needPrint(self):
+        return time.time()-self.previousTime > self.periodTime
+    
     def tick(self, iterations = 1):
         self.i += iterations
     
     def decTotal(self, iterations = 1):
         self.total -= 1
-    
-    def elapsed(self):
-        return time.time() - self.startTime
-    
-    def remaining(self, wholeSegment = True):
-        t = time.time()
-        remaining = 0
-        if wholeSegment:
-            remaining = (self.total - self.i) * self.elapsed() / self.i
-        else:
-            remaining = (self.total - self.i) * (t - self.previousTime) / (self.i - self.previous)
+        
+    def remainingTime(self):
+        remaining = (self.total - self.i) * self.elapsedTime() / self.i
         self.previous = self.i
-        self.previousTime = t
         return remaining
+    def remaining(self):
+        return prettyPrintTime( self.remainingTime() )
     
-    def printRemaining(self, wholeSegment = True):
-        r = self.remaining(wholeSegment)
+    def elapsedTime(self):
+        self.previousTime = time.time()
+        return self.previousTime - self.startTime
+    def elapsed(self):
+        return prettyPrintTime( self.elapsedTime() )
+    
+    
+    def getBar(self):
+        return loadingBar(self.sizeBar, self.i,self.total)
+    
+    def printRemaining(self):
+        r = self.remaining()
         if self.absoluteTotal == self.total:
             debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal +
-                  '  Remaining: ' + prettyPrintTime(r) )
+                  '  Remaining: ' + r )
         else:
             debug('Chrono: ' + str( self.i ) + ' / ' + str( self.total ) +
                   ' (Total: '+ self.strTotal +
-                  ')  Remaining: ' + prettyPrintTime(r) )
+                  ')  Remaining: ' + r )
 
 
 class Clock:
@@ -79,14 +86,24 @@ class Clock:
     def strClock(self):
         return "Time: " + prettyPrintTime(self.clock())
         
+    def done(self):
+        debug("Done. " + self.strClock())
+
+
+currencyName = {'\xe2\x82\xac'  :'E',
+                '$'             :'D',
+                '\xc2\xa3'      :'P',
+                '\xc3\x87'      :'E',
+                '\xc3\xba'      :'P',
+                'A$'            :'A'}        
 
 def debug(msg):
     if debug_mode:
-        print "Debug : " + msg;
+        print "D: " + msg;
     
 
 def printError(msg):
-    print "Erreur : " + msg + " !!!";
+    print "Error: " + msg + " !!!";
 
 
 
@@ -150,33 +167,28 @@ def getBool(s):
         raise Exception("Wrong boolean indicator")
 
 
-class InfoReader:
-    
-    def __init__(self, path):
-        with open(path, 'rb') as f:
-            self.lines = f.readlines()
-        self.i = 0
-    
-    def readLine(self):
-        res = self.lines[ self.i ]
-        self.i += 1
-        return cleanLine(res)
-    
-    def readInt(self):
-        self.readLine()
-        return int( self.readLine() )
-    def readBool(self):
-        self.readLine()
-        return getBool( self.readLine() )
-    def readIntList(self):
-        self.readLine()
-        return [ int(e) for e in  self.readLine().split(',') ]
-    
-    def start(self, nbIterations):
-        self.total = nbIterations
-        self.absoluteTotal = self.total
-        self.strTotal = str( self.absoluteTotal )
-        self.i = 0
-        self.previous = 0
-        self.startTime = time.time()
-        self.previousTime = self.startTime
+
+
+
+
+def restartLine():
+    sys.stdout.write('\b\r')
+    sys.stdout.flush()
+
+def printLine(l):
+    restartLine()
+    sys.stdout.write(l)
+
+def loadingBar(length, progress, total=1):
+    progress = float(length * progress) / total
+    n = int( progress )
+    p = int( 10 * (progress - n) )
+    return " |" + ('#' * n) + str(p) + ('_'*(length-n-1)) + "| "
+
+
+
+
+
+
+
+

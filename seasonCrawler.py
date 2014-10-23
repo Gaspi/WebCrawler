@@ -13,11 +13,6 @@ from tournamentCrawler import *
 
 url_tournament = 'http://www.atpworldtour.com/Scores/Archive-Event-Calendar.aspx'
 
-tournaments_codes_fields = ['IDTournament',
-                            'Indoor',
-                            'TournamentType',
-                            'TournamentCategory', 'e', 'y' ]  # Field de Sylvain
-
 
 class Seasons:
     

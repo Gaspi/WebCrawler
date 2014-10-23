@@ -33,8 +33,6 @@ mc_fields = {
     'TotalPointsWon'            : [ 19, 'td', 'stat']
     }
 
-
-
 class Matches:
     
     def __init__(self,matchesPath=''):

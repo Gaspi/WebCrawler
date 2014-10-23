@@ -4,7 +4,7 @@ Created on Mon Oct 06 09:16:48 2014
 @authors: Gaspard, Thomas
 """
 
-import os, sys
+import sys
 from utils                  import *
 from tournamentCrawler      import *
 from matchCrawler           import *
@@ -15,14 +15,17 @@ from seasonCrawler          import *
 from matchMerger            import *
 from ATPRankCrawler         import *
 from ATPRankings            import *
-
+from FileSystem             import *
 
 infoReader = InfoReader('localurl.txt')
 
-folder              = infoReader.readLine()
-matches_folder      = infoReader.readLine()
-ranksFolder         = infoReader.readLine()
-cleanFolder         = infoReader.readLine()
+fs = FileSystem(infoReader)  # reads 4 lines
+
+folder              = fs.folder
+matches_folder      = fs.matches_folder
+ranksFolder         = fs.ranksFolder
+cleanFolder         = fs.cleanFolder
+
 yearStart           = infoReader.readInt()
 yearEnd             = infoReader.readInt()
 tournamentTypes     = infoReader.readIntList()
@@ -39,35 +42,27 @@ CleaningMatches     = infoReader.readBool()
 AddRankings         = infoReader.readBool()
 debugMode           = infoReader.readBool()
 
-try:    os.stat( folder)
-except: os.mkdir(folder)
-try:    os.stat( matches_folder)
-except: os.mkdir(matches_folder)
-try:    os.stat( ranksFolder)
-except: os.mkdir(ranksFolder)
-try:    os.stat( cleanFolder)
-except: os.mkdir(cleanFolder)
 
-tournaments_codes = folder + "tournamentCodes.csv"
-tournaments_save  = folder + "tournaments.csv"
-player_codes      = folder + "playerCodes.csv"
-player_save       = folder + "players.csv"
-treated_path      = folder + "treated.csv"
-matches_path      = folder + "matches.csv"
-rankingsSave      = folder + "rankingsSave.csv"
+tournaments_codes = fs.tournaments_codes 
+tournaments_save  = fs.tournaments_save
+player_codes      = fs.player_codes
+player_save       = fs.player_save
+treated_path      = fs.treated_path
+matches_path      = fs.matches_path
+rankingsSave      = fs.rankingsSave
 
-cleanPlayerPath     = cleanFolder + "players.csv"
-cleanTournamentsPath= cleanFolder + "tournaments.csv"
-cleanMatchesPath    = cleanFolder + "matches.csv"
+cleanPlayerPath     = fs.cleanPlayerPath
+cleanTournamentsPath= fs.cleanTournamentsPath
+cleanMatchesPath    = fs.cleanMatchesPath
 
 debug("Done.")
-
-
 
 
 def mainBody():
     
     debug("Initialisation...")
+    clock       = Clock()
+    clock.clock()
     
     seasons     = Seasons(    tournaments_codes )
     tournaments = Tournaments(tournaments_save, player_codes, cleanTournamentsPath)
@@ -76,10 +71,10 @@ def mainBody():
     matchMerger = MatchMerger(matches_folder, matches_path,cleanMatchesPath)
     atpRank     = ATPRank( ranksFolder )
     atpRankings = ATPRankings( ranksFolder, matches_path, rankingsSave, cleanMatchesPath )
+
     chrono      = Chrono()
-    clock       = Clock()
-    clock.clock()
-    debug("Done. ")
+
+    clock.done()
     
     
     if CrawlingSeasons:
@@ -94,7 +89,7 @@ def mainBody():
         seasons.loadCodes()
     
     lengthTour = str( len(seasons.codes) )
-    debug("Done. " + clock.strClock())
+    clock.done()
     debug("Found: " + lengthTour + " tournaments")
     
     
@@ -109,13 +104,15 @@ def mainBody():
         for code in seasons.codes:
             tournaments.addTournamentFromCode(code)
             chrono.tick()
-            if chrono.i % 20 == 0:
-                debug("Tournaments " + str(chrono.i) + " / " + lengthTour +
-                      " treated. Players found: " + str(len(tournaments.playerCodes)))
-                chrono.printRemaining()
+            if chrono.needPrint():
+                printLine("Tournaments " + str(chrono.i) + " / " + lengthTour +
+                      " treated. Players found: " + str(len(tournaments.playerCodes)) +
+                      " Remaining: " + chrono.remaining() )
+#                chrono.printRemaining()
         tournaments.save()
+        print
     
-    debug("Done. " + clock.strClock())
+    clock.done()
     numberPlayers = str( len(tournaments.playerCodes) )
     debug("Found: " + numberPlayers + " players" )
     
@@ -131,12 +128,12 @@ def mainBody():
         for code in tournaments.playerCodes:
             if players.addInfoPlayer(code):
                 chrono.tick()
-                if chrono.i % 20 == 0: chrono.printRemaining()
+                if chrono.needPrint(): chrono.printRemaining()
             else:
                 chrono.decTotal()
         players.save()
     matchCrawler.dicoPlayers = players.dic
-    debug("Done. " + clock.strClock())
+    clock.done()
     
     
     
@@ -146,7 +143,7 @@ def mainBody():
         for t in tournaments.tournaments:
             if matchCrawler.treatTournament( t ):
                 chrono.tick()
-                if chrono.i % 5 == 0: chrono.printRemaining()
+                if chrono.needPrint(): chrono.printRemaining()
             else:
                 chrono.decTotal()
         debug("All tournaments: Done. " + clock.strClock())
@@ -154,10 +151,9 @@ def mainBody():
     
     
     if MergeMatches:
-        debug("Merging all matches...")
+        debug("Merging all tournaments...")
         matchMerger.startMerging( tournaments.tournaments )
-        debug("Done. " + clock.strClock())
-    
+        clock.done()
     
     if CrawlATPRanks:
         debug("Crawling all " + numberPlayers + " ranking histories...")
@@ -165,26 +161,27 @@ def mainBody():
         for i in players.dic:
             if atpRank.addATPRank( players.dic[i] ):
                 chrono.tick()
-                if chrono.i % 20 == 0: chrono.printRemaining()
+                if chrono.needPrint(): chrono.printRemaining()
             else:
                 chrono.decTotal()
-        debug("Done. " + clock.strClock())
+        clock.done()
     
     
     if CleaningTournaments:
         debug("Cleaning tournaments...")
         tournaments.clean()
-        debug("Done. " + clock.strClock())
+        clock.done()
     
     if CleaningPlayers:
         debug("Cleaning players...")
         players.clean()
-        debug("Done. " + clock.strClock())
+        clock.done()
     
     if CleaningMatches:
         debug("Cleaning matches...")
-        matchMerger.clean()
-        debug("Done. " + clock.strClock())
+        chrono.start(0)
+        matchMerger.clean( chrono )
+        clock.done()
     
     atpRankings.playersNb = players.ID
     atpRankings.tournaments = tournaments.tournaments
@@ -193,17 +190,21 @@ def mainBody():
         debug("Computing played tournaments...")
         atpRankings.startFeedingMatches()
         atpRankings.savePlayedTournaments()
-        # do stuff here
+        clock.done()
+        
         debug("Computing rankings...")
         atpRankings.startComputingRanks()
+        clock.done()
         
-#        atpRankings.saveRanks()
+        debug("Cleaning rankings...")
         atpRankings.clean()
-        debug("Done. " + clock.strClock())
+        clock.done()
     
     return True
 
 
+clock       = Clock()
+clock.clock()
 
 if debugMode:
     mainBody()
@@ -222,7 +223,7 @@ else:
         
 
 debug("C'est fini !!!")
-
+debug("Duration: " + clock.strClock())
 
 
 

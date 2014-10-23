@@ -59,6 +59,8 @@ class ATPRankings:
     
     def startComputingRanks(self):
         self.ranks = [ sets.Set() for i in range(self.playersNb)]
+        chrono = Chrono()
+        chrono.start( self.playersNb )
         for IDplayer in range(self.playersNb):
             tournamentsP = self.playedTourn[IDplayer]
             rankings = self.loadRankings(IDplayer)
@@ -66,6 +68,10 @@ class ATPRankings:
                 tStart = self.tournaments[tID]['TournamentStart']
                 rank = findRankingFromDate(tStart, rankings)
                 self.ranks[IDplayer].add( (tID,rank) )
+            chrono.tick()
+            if chrono.needPrint():
+                printLine("Matches " + str(chrono.i) + chrono.getBar() + " Remains " + chrono.remaining() )
+        print #new line for loading bar
     
     
     def loadRankings(self, ID):
@@ -89,7 +95,11 @@ class ATPRankings:
                 r = csv.reader(f, delimiter='|',quotechar='|')
                 self.playedTourn = []
                 for p in r:
-                    l = [ int(e) for e in p[0][1:-1].split(',') ]
+                    aux = p[0][1:-1]
+                    if len(aux) == 0:
+                        l = []
+                    else:
+                        l = [ int(e) for e in aux.split(',') ]
                     self.playedTourn.append( sets.Set(l) )
             self.playersNb = len(self.playedTourn)
 
@@ -108,14 +118,21 @@ class ATPRankings:
         raise Exception('Player ' + idPlayer + 'has not played in tournament ' + idTournament + '!!')
         
     def clean(self):
+        chrono = Chrono()
+        chrono.start()
         self.ID = 0
         with open( self.cleanMatchesPath, 'wb') as f:
-            w = getWriter(f, ['IDMatch'] + match_field_names + ['Rank'] )
+            w = getWriter(f, match_field_names_clean + ['Rank', 'RankOpponent'] )
             with open(self.cleanMatchesPath + "id", 'rb') as f2:
                 for e in csv.DictReader(f2, restval='?', delimiter='|'):
                     w.writerow( self.defaultMatchCleanFunction(e) )
+                    chrono.tick()
+                    if chrono.needPrint():
+                        printLine("Matches " + str(chrono.i) + " Elapsed: " + chrono.elapsed() )
+        print # new line after loading bar
     
     def defaultMatchCleanFunction(self, entry):
-        entry['Rank'] = self.getRank( int( entry['IDPlayer'] ), int( entry['IDTournament']) )
+        entry['Rank']         = self.getRank( int( entry['IDPlayer'] ), int( entry['IDTournament']) )
+        entry['RankOpponent'] = self.getRank( int( entry['IDOpponent'] ), int( entry['IDTournament']) )
         return entry
         
