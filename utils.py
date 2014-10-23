@@ -25,9 +25,9 @@ def createChronology(date, round_):
 class Chrono:
     def __init__(self):
         self.sizeBar = 18
+        self.periodTime = 1.0
     
-    def start(self, nbIterations = 0, periodTime=0.6):
-        self.periodTime = float(periodTime)
+    def start(self, nbIterations = 0):
         self.total = int( nbIterations )
         self.absoluteTotal = self.total
         self.strTotal = str( self.absoluteTotal )

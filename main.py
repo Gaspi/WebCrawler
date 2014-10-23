@@ -41,7 +41,7 @@ CleaningPlayers     = infoReader.readBool()
 CleaningMatches     = infoReader.readBool()
 AddRankings         = infoReader.readBool()
 debugMode           = infoReader.readBool()
-
+refreshTime         = infoReader.readInt()
 
 tournaments_codes = fs.tournaments_codes 
 tournaments_save  = fs.tournaments_save
@@ -73,7 +73,7 @@ def mainBody():
     atpRankings = ATPRankings( ranksFolder, matches_path, rankingsSave, cleanMatchesPath )
 
     chrono      = Chrono()
-
+    chrono.periodTime = refreshTime
     clock.done()
     
     
