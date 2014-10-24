@@ -6,6 +6,7 @@ Created on Mon Oct 13 16:03:13 2014
 """
 
 import time, datetime, urllib, sys
+from math import ceil, log
 from bs4 import BeautifulSoup
 
 
@@ -17,9 +18,16 @@ debug_mode = True
 def timestamp(date):
     return int(time.mktime(datetime.datetime.strptime(date,"%d.%m.%Y").timetuple()))
 
-def createChronology(date, round_):
+def createChronology_old(date, round_):
     return timestamp(date)*10 + int(round_)
 
+
+def createChronology(startDate, endDate, round_, draw ):
+    nRounds = float( ceil( log(int(draw)) / log(2)) )
+    start = timestamp(startDate)
+    end = 86400 + timestamp(endDate)
+    interv = float(end - start)
+    return start + int(interv/(2.0*nRounds) + float(int(round_)-8+nRounds)*interv/nRounds)
 
 
 class Chrono:
@@ -95,7 +103,7 @@ currencyName = {'\xe2\x82\xac'  :'E',
                 '\xc2\xa3'      :'P',
                 '\xc3\x87'      :'E',
                 '\xc3\xba'      :'P',
-                'A$'            :'A'}        
+                'A$'            :'A'}
 
 def debug(msg):
     if debug_mode:
@@ -189,6 +197,23 @@ def loadingBar(length, progress, total=1):
 
 
 
-
+def updateCategory(e, cat):
+    if   cat==4: return 5   # ATP Challenger Tour
+    elif cat==3: return 4   # ATP World Tour 250
+    elif cat==2: return 3   # ATP World Tour 500
+    elif cat==1: return 2   # ATP World Tour Masters 1000
+    elif cat ==-1:
+        if   e == 96:   # Olympics
+            return 1
+        elif e in {352,403,404,410,416,421,422,1536,357}:
+            return 2            # ATP World Tour Masters 1000
+        elif e in {328,329,402,407,414,418,425,495,573,747,807,408}:
+            return 3            # ATP World Tour 500
+        elif e in { 301,306,308,311,314,315,316,321,337,338,339,341,360,375,
+                    419,423,424,429,438,439,440,451,468,496,499,500,505,506,
+                    533,568,717,741,773,891,1720,2276,3348,317,409,309,359,
+                    620,481,615,890,336,433,441,3465,475,325,73,327,319 }:
+            return 4            # ATP World Tour 250
+    return cat
 
 

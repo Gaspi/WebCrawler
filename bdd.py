@@ -105,6 +105,7 @@ match_field_names_clean = [
     'Surface',
     'TournamentPrize',
     'TournamentCurrency',
+    'TournamentPrizeUSD',
     'IDPlayer',
     'IDOpponent',
     'Win',
@@ -178,13 +179,39 @@ tournaments_infos_fields_clean = [
     'Country',
     'TournamentPrize',
     'TournamentCurrency',
+    'TournamentPrizeUSD',
     'Draw',
     'TournamentStart',
     'TournamentEnd', 'e', 'y' ]
 
 
 
-
+players_fields = [
+    'ID',
+    'Code',
+    'IDPlayer',
+    'DayBirth',
+    'MonthBirth',
+    'YearBirth',
+    'Height',
+    'Weight',
+    'RightHanded',
+    'TurnedPro',
+    'Country'  ]
+    
+clean_players_fields = [
+    'ID',
+    'Code',
+    'IDPlayer',
+    'RealName',
+    'DayBirth',
+    'MonthBirth',
+    'YearBirth',
+    'Height',
+    'Weight',
+    'RightHanded',
+    'TurnedPro',
+    'Country'  ]
 
 
 

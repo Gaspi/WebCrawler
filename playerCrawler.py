@@ -12,30 +12,33 @@ from bdd    import *
 
 url_players = 'http://www.atpworldtour.com/tennis/players/'
 
-players_fields = [
-    'ID',
-    'Code',
-    'IDPlayer',
-    'DayBirth',
-    'MonthBirth',
-    'YearBirth',
-    'Height',
-    'Weight',
-    'RightHanded',
-    'TurnedPro',
-    'Country'  ]
+
 
 def defaultPlayerCleanFunction(entry):
+#    entry['RealName'] = getName(entry['IDPlayer']).encode("utf-8")
+    entry['RealName'] = getName(entry['IDPlayer'])
     return entry
 
 
+def getName(ch):
+    y =  ch[ch.rfind('/')+1:]
+    auxName = y.replace("-","_")
+    html = getHTML("http://en.wikipedia.org/w/index.php?title="+auxName+"&action=edit")
+    y = re.findall("\#.*DIRECT[\s\t]*\[\[[\s\t]*(.*)[\s\t]*\]\]", html)
+    if len(y) == 0 or y == ['']:
+        return auxName.replace('_',' ')
+    else:
+        return y[0]
+
+    
+
 class Players:
     
-    def __init__(self, playerPath='', cleanPlayerPath=''):
+    def __init__(self, fs):
         self.dic = dict()
         self.ID  = 0
-        self.playersPath = playerPath
-        self.cleanPlayerPath = cleanPlayerPath
+        self.playersPath = fs.playerPath
+        self.cleanPlayerPath = fs.cleanPlayerPath
         self.i = 0
         self.savePeriod = 20
     
@@ -88,11 +91,17 @@ class Players:
     
     
     def clean(self, cleanFunction=defaultPlayerCleanFunction):
+        chrono = Chrono()
+        chrono.start( self.ID )
         with open( self.cleanPlayerPath , 'wb') as f:
-            w = getWriter(f, players_fields)
+            w = getWriter(f, clean_players_fields)
             with open( self.playersPath, 'rb' ) as f2:
                 for e in csv.DictReader(f2, restval='?', delimiter='|'):
                     w.writerow( cleanFunction(e) )
+                    chrono.tick()
+                    if chrono.needPrint():
+                        printLine("Player " + str(chrono.i) + chrono.getBar() + " Remains " + chrono.remaining() )
+        print #new line for loading bar
     
     
 

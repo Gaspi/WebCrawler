@@ -18,8 +18,8 @@ def intFromRank(r):
 
 class ATPRank:
     
-    def __init__(self, rankPath=''):
-        self.rankPath = rankPath
+    def __init__(self, fs):
+        self.rankPath = fs.ranksFolder
     
     def addATPRank(self, dico):
         code = dico['IDPlayer']

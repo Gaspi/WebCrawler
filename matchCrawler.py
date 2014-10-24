@@ -35,12 +35,12 @@ mc_fields = {
 
 class Matches:
     
-    def __init__(self,matchesPath=''):
-        self.matchesPath = matchesPath
+    def __init__(self,fs):
+        self.matchesFolder = fs.matchesFolder
         self.dicoPlayers = dict()
     
     def getPath(self, e, y):
-        return self.matchesPath + "y" + str(y) + "e" + str(e)
+        return self.matchesFolder + "y" + str(y) + "e" + str(e)
     
     def isTreated(self, path):
         return os.path.isfile(path+".csv")
@@ -218,7 +218,10 @@ def getTournament(e, y, infos):
             'LoserScores'       : loserScores,
             'TieBreakScores'    : tieBreakScores,
             'Retirement'        : int( retirement ),
-            'Timestamp'         : createChronology( matchInfo['TournamentStart'], int(occurence[2]) )
+            'Timestamp'         : createChronology( matchInfo['TournamentStart'],
+                                                    matchInfo['TournamentStart'],
+                                                    int(occurence[2]),
+                                                    matchInfo['Draw']  )
         })
         result.append( matchInfo )
     return result

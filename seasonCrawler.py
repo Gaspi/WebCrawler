@@ -16,10 +16,10 @@ url_tournament = 'http://www.atpworldtour.com/Scores/Archive-Event-Calendar.aspx
 
 class Seasons:
     
-    def __init__(self, tournamentCodes=''):
+    def __init__(self, fs):
         self.codes = []
         self.ID = 0
-        self.tournamentsCodes = tournamentCodes
+        self.tournamentsCodes = fs.tournaments_codes
     
     def addTournamentsFromTY(self, t, y):
         dom = getDOM( url_tournament + '?t='+str(t)+'&y='+str(y) )

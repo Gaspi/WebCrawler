@@ -20,12 +20,6 @@ from FileSystem             import *
 infoReader = InfoReader('localurl.txt')
 
 fs = FileSystem(infoReader)  # reads 4 lines
-
-folder              = fs.folder
-matches_folder      = fs.matches_folder
-ranksFolder         = fs.ranksFolder
-cleanFolder         = fs.cleanFolder
-
 yearStart           = infoReader.readInt()
 yearEnd             = infoReader.readInt()
 tournamentTypes     = infoReader.readIntList()
@@ -43,18 +37,6 @@ AddRankings         = infoReader.readBool()
 debugMode           = infoReader.readBool()
 refreshTime         = infoReader.readInt()
 
-tournaments_codes = fs.tournaments_codes 
-tournaments_save  = fs.tournaments_save
-player_codes      = fs.player_codes
-player_save       = fs.player_save
-treated_path      = fs.treated_path
-matches_path      = fs.matches_path
-rankingsSave      = fs.rankingsSave
-
-cleanPlayerPath     = fs.cleanPlayerPath
-cleanTournamentsPath= fs.cleanTournamentsPath
-cleanMatchesPath    = fs.cleanMatchesPath
-
 debug("Done.")
 
 
@@ -64,16 +46,16 @@ def mainBody():
     clock       = Clock()
     clock.clock()
     
-    seasons     = Seasons(    tournaments_codes )
-    tournaments = Tournaments(tournaments_save, player_codes, cleanTournamentsPath)
-    players     = Players(    player_save, cleanPlayerPath  )
-    matchCrawler= Matches(    matches_folder    )
-    matchMerger = MatchMerger(matches_folder, matches_path,cleanMatchesPath)
-    atpRank     = ATPRank( ranksFolder )
-    atpRankings = ATPRankings( ranksFolder, matches_path, rankingsSave, cleanMatchesPath )
+    seasons     = Seasons(     fs )
+    tournaments = Tournaments( fs )
+    players     = Players(     fs )
+    matchCrawler= Matches(     fs )
+    matchMerger = MatchMerger( fs )
+    atpRank     = ATPRank(     fs )
+    atpRankings = ATPRankings( fs )
 
     chrono      = Chrono()
-    chrono.periodTime = refreshTime
+    chrono.periodTime = refreshTime * 0.001
     clock.done()
     
     
@@ -177,6 +159,7 @@ def mainBody():
         players.clean()
         clock.done()
     
+    matchMerger.tournaments = tournaments.tournaments
     if CleaningMatches:
         debug("Cleaning matches...")
         chrono.start(0)

@@ -7,18 +7,15 @@ Created on Mon Oct 20 15:03:09 2014
 import re
 from bdd    import *
 from utils  import *
-
-
-
-
-
+from ForexCrawler import *
 
 class MatchMerger:
     
-    def __init__(self,matchesFolder = '',targetPath  = '',cleanMatchesPath=''):
-        self.matchesFolder = matchesFolder
-        self.targetPath    = targetPath
-        self.cleanMatchesPath=cleanMatchesPath
+    def __init__(self,fs):
+        self.matchesFolder   = fs.matchesFolder
+        self.targetPath      = fs.matchesPath
+        self.cleanMatchesPath= fs.cleanMatchesPath
+        self.tournaments = None
         self.ID = 0
     
     def startMerging(self, tournaments):
@@ -63,10 +60,16 @@ class MatchMerger:
         print # new line after loading bar
     
     def defaultMatchCleanFunction(self, entry):
+        e = self.tournaments[ int(entry['IDTournament']) ]['e']
+        cat = int( entry['TournamentCategory'] )
+        entry['TournamentCategory'] = updateCategory(e,cat)
         entry['IDMatch'] = self.ID // 2
         a = re.findall('([^0-9]+)([0-9]*)', entry['TournamentPrize'] )
-        entry['TournamentPrize'] = currencyName[a[0][0]]
-        entry['TournamentCurrency'] = a[0][0]
+        currency = currencyName[a[0][0]]
+        entry['TournamentPrize'] = int( a[0][1] )
+        entry['TournamentCurrency'] = currency
+        conversion = forexDate( entry['TournamentStart'], currency)
+        entry['TournamentPrizeUSD'] = int( float(entry['TournamentPrize']) / conversion )
         self.ID += 1
         return entry
 

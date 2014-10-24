@@ -12,25 +12,25 @@ class FileSystem:
 
     def __init__(self,infoReader):
         self.folder              = infoReader.readLine()
-        self.matches_folder      = infoReader.readLine()
+        self.matchesFolder      = infoReader.readLine()
         self.ranksFolder         = infoReader.readLine()
         self.cleanFolder         = infoReader.readLine()
         
         try:    os.stat( self.folder)
         except: os.mkdir(self.folder)
-        try:    os.stat( self.matches_folder)
-        except: os.mkdir(self.matches_folder)
+        try:    os.stat( self.matchesFolder)
+        except: os.mkdir(self.matchesFolder)
         try:    os.stat( self.ranksFolder)
         except: os.mkdir(self.ranksFolder)
         try:    os.stat( self.cleanFolder)
         except: os.mkdir(self.cleanFolder)
         
         self.tournaments_codes = self.folder + "tournamentCodes.csv"
-        self.tournaments_save  = self.folder + "tournaments.csv"
-        self.player_codes      = self.folder + "playerCodes.csv"
-        self.player_save       = self.folder + "players.csv"
+        self.tournamentsPath   = self.folder + "tournaments.csv"
+        self.playerCodesPath   = self.folder + "playerCodes.csv"
+        self.playerPath        = self.folder + "players.csv"
         self.treated_path      = self.folder + "treated.csv"
-        self.matches_path      = self.folder + "matches.csv"
+        self.matchesPath       = self.folder + "matches.csv"
         self.rankingsSave      = self.folder + "rankingsSave.csv"
 
         self.cleanPlayerPath     = self.cleanFolder + "players.csv"

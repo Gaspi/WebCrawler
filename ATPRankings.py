@@ -37,11 +37,11 @@ def findIndexFromDate(time, rankTab, start, end):
 
 class ATPRankings:
     
-    def __init__(self, rankPath='', matchesPath='', savePath='', cleanMatchesPath=''):
-        self.rankPath = rankPath
-        self.matchesPath = matchesPath
-        self.savePath = savePath
-        self.cleanMatchesPath = cleanMatchesPath
+    def __init__(self, fs):
+        self.rankPath           = fs.ranksFolder
+        self.matchesPath        = fs.matchesPath
+        self.savePath           = fs.rankingsSave
+        self.cleanMatchesPath   = fs.cleanMatchesPath
         self.playersNb = 0
         self.playedTourn = []
         self.ranks = []
@@ -70,7 +70,7 @@ class ATPRankings:
                 self.ranks[IDplayer].add( (tID,rank) )
             chrono.tick()
             if chrono.needPrint():
-                printLine("Matches " + str(chrono.i) + chrono.getBar() + " Remains " + chrono.remaining() )
+                printLine("Player " + str(chrono.i) + chrono.getBar() + " Remains " + chrono.remaining() )
         print #new line for loading bar
     
     
