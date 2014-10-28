@@ -113,7 +113,6 @@ match_field_names_clean = [
     'TournamentStart',
     'TournamentEnd',
     'TournamentCategory',
-    'TournamentCategoryClean',
     'Scores',
     'WinnerScores',
     'LoserScores',

@@ -5,13 +5,15 @@ Created on Thu Oct 23 14:28:49 2014
 """
 
 from bs4 import BeautifulSoup
-import urllib
+import urllib, re
 from datetime import date
 
 start_year='2000'
 start_month='1'
-end_year='2014'
-end_month='10'
+end_year='2020'
+end_month='1'
+#end_year=str( time.localtime().tm_year )
+#end_month= str( time.localtime().tm_mon )
 
 url_forex_start = 'http://www.oanda.com/currency/average?amount=1&start_month='+start_month+'&start_year='+start_year+'&end_month='+end_month+'&end_year='+end_year+'&base=USD&avg_type=Week&Submit=1&exchange='
 url_forex_end   = '&interbank=0&format=CSV'
@@ -38,7 +40,7 @@ def codeOfDate(Y,M,D):
 def createForexDico():
     res = dict()
     for i in range(0,len(aux['EUR'])):
-        if len(aux['EUR'][i]) <> 0 and aux['EUR'][i][0] == 'W':        
+        if len(aux['EUR'][i]) <> 0 and re.findall('Week', aux['EUR'][i]):
             j_EUR=aux['EUR'][i].split(',')
             j_AUD=aux['AUD'][i].split(',')
             j_GBP=aux['GBP'][i].split(',')

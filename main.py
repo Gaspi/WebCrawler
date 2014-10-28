@@ -95,8 +95,8 @@ def mainBody():
         print
     
     clock.done()
-    numberPlayers = str( len(tournaments.playerCodes) )
-    debug("Found: " + numberPlayers + " players" )
+    numberPlayers = len(tournaments.playerCodes)
+    debug("Found: " + str(numberPlayers) + " players" )
     
     
     if players.canLoad():
@@ -104,9 +104,9 @@ def mainBody():
         players.load()
     
     if CrawlPlayers:
-        debug("Looking for all " + numberPlayers + " players...")
+        debug("Looking for all " + str(numberPlayers) + " players...")
     
-        chrono.start( int(numberPlayers) )
+        chrono.start( numberPlayers )
         for code in tournaments.playerCodes:
             if players.addInfoPlayer(code):
                 chrono.tick()
@@ -138,8 +138,8 @@ def mainBody():
         clock.done()
     
     if CrawlATPRanks:
-        debug("Crawling all " + numberPlayers + " ranking histories...")
-        chrono.start( int(numberPlayers) )
+        debug("Crawling all " + str(numberPlayers) + " ranking histories...")
+        chrono.start( numberPlayers )
         for i in players.dic:
             if atpRank.addATPRank( players.dic[i] ):
                 chrono.tick()
@@ -166,7 +166,8 @@ def mainBody():
         matchMerger.clean( chrono )
         clock.done()
     
-    atpRankings.playersNb = players.ID
+#    atpRankings.playersNb = players.ID
+    atpRankings.playersNb = numberPlayers
     atpRankings.tournaments = tournaments.tournaments
     atpRankings.loadPlayedTournaments()
     if AddRankings:

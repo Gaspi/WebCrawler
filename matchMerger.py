@@ -61,7 +61,7 @@ class MatchMerger:
     def defaultMatchCleanFunction(self, entry):
         e = self.tournaments[ int(entry['IDTournament']) ]['e']
         cat = int( entry['TournamentCategory'] )
-        entry['TournamentCategoryClean'] = updateCategory(e,cat)
+        entry['TournamentCategory'] = updateCategory(e,cat)
         a = re.findall('([^0-9]+)([0-9]*)', entry['TournamentPrize'] )
         currency = currencyName[a[0][0]]
         entry['TournamentPrize'] = int( a[0][1] )

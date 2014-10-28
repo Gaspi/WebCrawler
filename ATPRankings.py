@@ -49,7 +49,12 @@ class ATPRankings:
     
     
     def feedMatch(self, m):
-        self.playedTourn[ int(m['IDPlayer']) ].add( int(m['IDTournament']) )
+        try:
+            self.playedTourn[ int(m['IDPlayer']) ].add( int(m['IDTournament']) )
+            
+        except:
+            print str(len(self.playedTourn)), str(self.playersNb), str(m), str(self.playedTourn)
+            raise Exception("Index problem")
     
     def startFeedingMatches(self):
         self.playedTourn = [ sets.Set() for i in range(self.playersNb) ]
