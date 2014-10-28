@@ -1,0 +1,11 @@
+Versions de la base de données
+
+---------- deepthroat ----------
+Lancé le 28/10/2014  17:00
+Sur le cluster
+Années 2000-2014
+Catégories 1, 2 et 4
+Commentaires:
+Fin de journée de mardi.
+NullStats
+--------------------------------
