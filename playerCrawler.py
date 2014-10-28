@@ -100,8 +100,7 @@ class Players:
                     w.writerow( cleanFunction(e) )
                     chrono.tick()
                     if chrono.needPrint():
-                        printLine("Player " + str(chrono.i) + chrono.getBar() + " Remains " + chrono.remaining() )
-        print #new line for loading bar
+                        debugCL("Player " + str(chrono.i) + chrono.getBar() + " Remains " + chrono.remaining() )
     
     
 

@@ -37,7 +37,7 @@ class FileSystem:
         self.cleanTournamentsPath= self.cleanFolder + "tournaments.csv"
         self.cleanMatchesPath    = self.cleanFolder + "matches.csv"
     
-    
+        self.debugOut = self.folder + "debug.txt"
     
     
     

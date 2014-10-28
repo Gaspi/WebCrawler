@@ -73,10 +73,10 @@ class Chrono:
     def printRemaining(self):
         r = self.remaining()
         if self.absoluteTotal == self.total:
-            debug('Chrono: ' + str( self.i ) + ' / ' + self.strTotal +
+            debugCL('Chrono: ' + str( self.i ) + ' / ' + self.strTotal +
                   '  Remaining: ' + r )
         else:
-            debug('Chrono: ' + str( self.i ) + ' / ' + str( self.total ) +
+            debugCL('Chrono: ' + str( self.i ) + ' / ' + str( self.total ) +
                   ' (Total: '+ self.strTotal +
                   ')  Remaining: ' + r )
 
@@ -105,13 +105,6 @@ currencyName = {'\xe2\x82\xac'  :'E',
                 '\xc3\xba'      :'P',
                 'A$'            :'A'}
 
-def debug(msg):
-    if debug_mode:
-        print "D: " + msg;
-    
-
-def printError(msg):
-    print "Error: " + msg + " !!!";
 
 
 
@@ -179,19 +172,6 @@ def getBool(s):
 
 
 
-def restartLine():
-    sys.stdout.write('\b\r')
-    sys.stdout.flush()
-
-def printLine(l):
-    restartLine()
-    sys.stdout.write(l)
-
-def loadingBar(length, progress, total=1):
-    progress = float(length * progress) / total
-    n = int( progress )
-    p = int( 10 * (progress - n) )
-    return " |" + ('#' * n) + str(p) + ('_'*(length-n-1)) + "| "
 
 
 
@@ -220,40 +200,68 @@ def updateCategory(e, cat):
 
 
 
-class DebugOut:
-    
-    fileout = None
-    newline = True
-    
-    def __init__(self, fileOutName):
-        try:
-            self.fileout = open(fileOutName)
-        except:
-            raise Exception("Couldn't open debugging out file")
-    
-    def close(self):
-        self.fileout.close()
-        pass  # use a function like this
-    
-    def println(self, line = ''):
-        ln = str(line) + '\n'
-        if not self.newline:
-            ln = '\n' + ln
-        self.newline = True
-        sys.stdout.write(   ln )
-        self.fileout.write( ln )
+# -------------------------------------------------------------
+# ----------- DEBUGGING ---------------------------------------
+# -------------------------------------------------------------
 
-    def printlns(self, lines):
-        for l in lines:
-            self.println(l)
+debugFileOut = 'NoFile'
+debugNewline = True
+
+def setDebugFileOut(fileOut):
+    global debugFileOut
+    debugFileOut = fileOut
+    debugPrintTime("Starting:")
     
-    def printCurrentLine(self, line = ''):
-        ln = str(line)
-        if not self.newline:
-            sys.stdout.write('\b\r')
-            sys.stdout.flush()
-        self.newline = False
-        sys.stdout.write(   ln )
-        self.fileout.write( ln + '\n' )
+def debugPrintTime(prefix=''):
+    debugLines(["", "-"*(35 + len(prefix)),
+                "   {1}  {0.tm_mday} / {0.tm_mon} / {0.tm_year}   {0.tm_hour}:{0.tm_min}:{0.tm_sec}".format(time.localtime(), prefix),
+                "-"*(35 + len(prefix)), "" ] )
+
+def debug(line = ''):
+    global debugNewline
+    if not debugNewline:
+        print
+    debugNewline = True
+    ln = str(line) + '\n'
+    sys.stdout.write(   ln )
+    debugFileOut.write( ln )
+
+def debugLines(lines):
+    for l in lines:
+        debug(l)
     
-    
+def debugCL(line = ''):
+    global debugNewline
+    if not debugNewline:
+        sys.stdout.write('\b\r')
+        sys.stdout.flush()
+    debugNewline = False
+    ln = str(line)
+    sys.stdout.write(   ln )
+    debugFileOut.write( ln + '\n' )
+
+#
+#def debug(msg):
+#    if debug_mode:
+#        Debug.println("D: " + msg)
+#    
+def printError(msg):
+    debug( "Error: " + msg + " !!!" )
+
+
+
+def restartLine():
+    sys.stdout.write('\b\r')
+    sys.stdout.flush()
+
+def printLine(l):
+    debugCL(l)
+
+def loadingBar(length, progress, total=1):
+    progress = float(length * progress) / total
+    n = int( progress )
+    p = int( 10 * (progress - n) )
+    return " |" + ('#' * n) + str(p) + ('_'*(length-n-1)) + "| "
+
+
+

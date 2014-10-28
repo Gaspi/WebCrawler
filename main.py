@@ -37,7 +37,7 @@ AddRankings         = infoReader.readBool()
 debugMode           = infoReader.readBool()
 refreshTime         = infoReader.readInt()
 
-debug("Done.")
+print "Initialisation: Done."
 
 
 def mainBody():
@@ -87,7 +87,7 @@ def mainBody():
             tournaments.addTournamentFromCode(code)
             chrono.tick()
             if chrono.needPrint():
-                printLine("Tournaments " + str(chrono.i) + " / " + lengthTour +
+                debugCL("Tournaments " + str(chrono.i) + " / " + lengthTour +
                       " treated. Players found: " + str(len(tournaments.playerCodes)) +
                       " Remaining: " + chrono.remaining() )
 #                chrono.printRemaining()
@@ -189,25 +189,25 @@ def mainBody():
 clock       = Clock()
 clock.clock()
 
-if debugMode:
-    mainBody()
-else:
-    keepOn = True
-    while keepOn:
-        keepOn = False
-        try :
-            mainBody()
-        except:
-            printError("Network error expected: " + str( sys.exc_info()[0] ) )
-            debug("Going to sleep for " + str(sleepingTime) + " seconds...")
-            time.sleep( sleepingTime )
-            debug("Waking up !")
-            keepOn = True
-        
-
-debug("C'est fini !!!")
-debug("Duration: " + clock.strClock())
-
+with open(fs.debugOut, 'a') as debugout:
+    setDebugFileOut(debugout)
+    if debugMode:
+        mainBody()
+    else:
+        keepOn = True
+        while keepOn:
+            keepOn = False
+            try :
+                mainBody()
+            except:
+                printError("Network error expected: " + str( sys.exc_info()[0] ) )
+                debug("Going to sleep for " + str(sleepingTime) + " seconds...")
+                time.sleep( sleepingTime )
+                debug("Waking up !")
+                keepOn = True
+    debug("C'est fini !!!")
+    debug("Duration: " + clock.strClock())
+    debugPrintTime("End time:")
 
 
 

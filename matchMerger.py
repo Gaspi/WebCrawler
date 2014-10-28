@@ -56,8 +56,7 @@ class MatchMerger:
                     w.writerow( self.defaultMatchCleanFunction(e) )
                     chrono.tick()
                     if chrono.needPrint():
-                        printLine("Matches " + str(chrono.i) + " Elapsed: " + chrono.elapsed() )
-        print # new line after loading bar
+                        debugCL("Matches " + str(chrono.i) + " Elapsed: " + chrono.elapsed() )
     
     def defaultMatchCleanFunction(self, entry):
         e = self.tournaments[ int(entry['IDTournament']) ]['e']
@@ -72,7 +71,7 @@ class MatchMerger:
         
         nullStats = 0
         for s in match_stats_field_names:
-            nullStats[i] += sign(int(entry[s]))
+            nullStats += int( int(entry[s]) == 0 )
         entry['NullStats'] = nullStats
         
         entry['IDMatch'] = self.ID // 2
