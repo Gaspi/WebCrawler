@@ -4,93 +4,106 @@ Created on Fri Oct 10 14:28:49 2014
 @author: Gaspard, Thomas, Arnaud
 """
 
-
-import urllib
-import re
-import sets
-import csv
+import re, os
 from bs4 import BeautifulSoup
 
 from utils  import *
 from bdd    import *
 
-players_fields = [
-    'ID',
-    'Code',
-    'IDPlayer',
-    'DayBirth',
-    'MonthBirth',
-    'YearBirth',
-    'Height',
-    'Weight',
-    'RightHanded',
-    'TurnedPro' ]
+url_players = 'http://www.atpworldtour.com/tennis/players/'
+
+
+
+def defaultPlayerCleanFunction(entry):
+#    entry['RealName'] = getName(entry['IDPlayer']).encode("utf-8")
+    entry['RealName'] = getName(entry['IDPlayer'])
+    return entry
+
+
+def getName(ch):
+    y =  ch[ch.rfind('/')+1:]
+    auxName = y.replace("-","_")
+    html = getHTML("http://en.wikipedia.org/w/index.php?title="+auxName+"&action=edit")
+    y = re.findall("\#.*DIRECT[\s\t]*\[\[[\s\t]*(.*)[\s\t]*\]\]", html)
+    if len(y) == 0 or y == ['']:
+        return auxName.replace('_',' ')
+    else:
+        return y[0]
+
+    
 
 class Players:
     
-    def __init__(self):
+    def __init__(self, fs):
         self.dic = dict()
-        self.codes = sets.Set()
         self.ID  = 0
+        self.playersPath = fs.playerPath
+        self.cleanPlayerPath = fs.cleanPlayerPath
+        self.i = 0
+        self.savePeriod = 20
     
-    def addPlayer(self, code, verbose=True):
-        self.codes.add(code)
+    def isTreated(self, code):
+        for t in self.dic:
+            if self.dic[t]['Code'] == code:
+                return True
+        return False
+
+    def addInfoPlayer(self, code):
+        if self.isTreated(code):
+            return False
+        else:
+            url = urlOpen( url_players + code + '.aspx' )
+            dom = BeautifulSoup(url)
+            aux = infoFromDOM(dom)
+            playerURL = playersFromURL(url)
+            aux.update( {
+                "ID"        : self.ID,
+                "Code"      : code,
+                "IDPlayer"  : playerURL  } )
+            self.dic[playerURL] = aux
+            self.ID += 1
+            self.saveMaybe()
+            return True
     
-    def addPlayers(self, l):
-        for i in l:
-            self.addPlayer(i)
-    
-    def fetchInfoPlayers(self):
-        length = len( self.codes )
-        chrono = Chrono()
-        chrono.start( length )
-        length = str(length)
-        for code in self.codes:
-            try:
-                url = urllib.urlopen( 'http://www.atpworldtour.com/tennis/players/' + code + '.aspx' )
-                dom = BeautifulSoup(url)
-                aux = infoFromDOM(dom)
-                playerURL = playersFromURL(url)
-                aux.update( {
-                    "ID"        : self.ID,
-                    "Code"      : code,
-                    "IDPlayer"  : playerURL
-                    } )
-                self.dic[playerURL] = aux
-                chrono.tick()
-                if chrono.i % 20 == 0:
-                    chrono.printRemaining()
-                self.ID += 1
-            except:
-                debug("Error !!! Parameters: " + str(code) )
-    
-    
-    def addPlayersFromTournament(self, e, y):
-        url = 'http://www.atpworldtour.com/Share/Event-Draws.aspx?e='+str(e)+'&y='+str(y)
-        content = urllib.urlopen(url).read()
-        self.addPlayers( re.findall('players\/(.*)\.asp', content) )
-    
-    
-    def saveCodes(self, filename):
-        with open(filename, 'wb') as csvfile:
-            w = csv.writer(csvfile, delimiter=' ', quotechar='|')
-            w.writerow( list(self.codes) )
-    
-    def savePlayers(self, filename):
-        with open(filename, 'wb') as csvfile:
-            w = getWriter(csvfile, players_fields )
+    def save(self):
+        with open(self.playersPath, 'wb') as csvfile:
+            w = getWriter(csvfile, players_fields)
             w.writerows( sorted(self.dic.values(), key=lambda k: k['ID']) )
-            
-    def loadCodes(self, filename):
-        with open(filename, 'rb') as csvfile:
-            r = csv.reader(csvfile, delimiter=' ', quotechar='|')
-            self.codes = r.next()
-    
-    def loadPlayers(self, filename):
-        with open(filename, 'rb') as csvfile:
+    def load(self):
+        with open(self.playersPath, 'rb') as csvfile:
             self.dic = dict()
+            self.ID = 0
             for p in getReader( csvfile ):
-                self.dic[ p['IDPlayer'] ] = { 'ID':p['ID'] }
+                p['ID'] = int( p['ID'] )
+                if p['ID'] >= self.ID:
+                    self.ID = p['ID'] + 1
+                self.dic[ p['IDPlayer'] ] = p
+    
+    
+    def saveMaybe(self):
+        self.i += 1
+        if self.i % self.savePeriod == 0:
+            debug("Saving")
+            self.save()
+    
+    def canLoad(self):
+        return os.path.isfile(self.playersPath)
+    
+    
+    def clean(self, cleanFunction=defaultPlayerCleanFunction):
+        chrono = Chrono()
+        chrono.start( self.ID )
+        with open( self.cleanPlayerPath , 'wb') as f:
+            w = getWriter(f, clean_players_fields)
+            with open( self.playersPath, 'rb' ) as f2:
+                for e in csv.DictReader(f2, restval='?', delimiter='|'):
+                    w.writerow( cleanFunction(e) )
+                    chrono.tick()
+                    if chrono.needPrint():
+                        printLine("Player " + str(chrono.i) + chrono.getBar() + " Remains " + chrono.remaining() )
+        print #new line for loading bar
+    
+    
 
 
 def playersFromURL(url):
@@ -99,6 +112,11 @@ def playersFromURL(url):
 
 
 def infoFromDOM(dom):
+    country = "NotFound"
+    try :
+        country = dom.find('div', {'id':'playerBioInfoFlag'} ).find('p').contents[0]
+    except:
+        printError("No country found !")
     f = dom.find('ul', {'id':'playerBioInfoList'} ).find_all('li')
     birth       = ['-1','-1','-1']
     height      = -1
@@ -109,6 +127,8 @@ def infoFromDOM(dom):
         field = li.find('span').contents[0]
         if field == u'Age:':
             birth = re.findall('\(([0-9]*)\.([0-9]*)\.([0-9]*)\)', li.getText() )[0]
+        elif field == u'Birthdate:':
+            birth = re.findall('([0-9]*)\.([0-9]*)\.([0-9]*)', li.getText() )[0]
         elif field == u'Height:':
             height = int( re.findall('\(([0-9]*) cm\)', li.getText())[0] )
         elif field == u'Weight:':
@@ -127,9 +147,7 @@ def infoFromDOM(dom):
         'Height'        : height,
         'Weight'        : weight,
         'RightHanded'   : handed,
-        'TurnedPro'     : turnedPro
+        'TurnedPro'     : turnedPro,
+        'Country'       : country
     }
-
-
-
 

@@ -217,3 +217,43 @@ def updateCategory(e, cat):
     return cat
 
 
+
+
+
+class DebugOut:
+    
+    fileout = None
+    newline = True
+    
+    def __init__(self, fileOutName):
+        try:
+            self.fileout = open(fileOutName)
+        except:
+            raise Exception("Couldn't open debugging out file")
+    
+    def close(self):
+        self.fileout.close()
+        pass  # use a function like this
+    
+    def println(self, line = ''):
+        ln = str(line) + '\n'
+        if not self.newline:
+            ln = '\n' + ln
+        self.newline = True
+        sys.stdout.write(   ln )
+        self.fileout.write( ln )
+
+    def printlns(self, lines):
+        for l in lines:
+            self.println(l)
+    
+    def printCurrentLine(self, line = ''):
+        ln = str(line)
+        if not self.newline:
+            sys.stdout.write('\b\r')
+            sys.stdout.flush()
+        self.newline = False
+        sys.stdout.write(   ln )
+        self.fileout.write( ln + '\n' )
+    
+    

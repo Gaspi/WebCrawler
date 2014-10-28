@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Oct 13 16:56:45 2014
-
 @author: Gaspard, Thomas, Arnaud
 """
 
+import re, os
 from utils import *
-
-import urllib
-from bs4 import BeautifulSoup
-
-import re
+from bdd import *
+from tournamentCrawler import *
 
 
 mc_url_matches = "http://www.atpworldtour.com/Share/Match-Facts-Pop-Up.aspx"
@@ -36,8 +33,47 @@ mc_fields = {
     'TotalPointsWon'            : [ 19, 'td', 'stat']
     }
 
+class Matches:
+    
+    def __init__(self,fs):
+        self.matchesFolder = fs.matchesFolder
+        self.dicoPlayers = dict()
+    
+    def getPath(self, e, y):
+        return self.matchesFolder + "y" + str(y) + "e" + str(e)
+    
+    def isTreated(self, path):
+        return os.path.isfile(path+".csv")
+    
+    def treatTournament(self, t):
+        e = int( t['e'] )
+        y = int( t['y'] )
+        tourPath = self.getPath(e, y)
+        if self.isTreated(tourPath):
+            return False
+        else:
+            #print str(e) + " / " + str(y)
+            matches = getMatchesOfTournament( e, y, {
+                'IDTournament'      : t['IDTournament'],
+                'Indoor'            : t['Indoor'],
+                'TournamentCategory': t['TournamentCategory'] }, self.dicoPlayers )
+            self.save(tourPath, matches)
+            debug( "Tournament e = " + str( t['e'] ) + " & " + str( t['y'] ) + " Done.")
+            return True
+    
+    def save(self, path, matches):
+        with open(path+"u.csv", 'wb') as f:
+            w = getMatchWriter(f)
+            writeTournament(w, matches)
+        try:
+            os.rename( path+"u.csv", path+".csv" )
+        except:
+            debug("This should never happen")
+    
 
-# TODO time 68 minutes -> 68
+
+
+
 
 def parseSimple(line, balise):
     return line.find(balise).contents[0]
@@ -58,15 +94,23 @@ def parseStat(line, balise):
 
 
 def getInfoRows(t,y,r,p):
-    url_file = urllib.urlopen(mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p)
-    dom = BeautifulSoup(url_file)
+    dom = getDOM( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p)
     a = dom.find_all('tr', 'infoRow')
     if len(a) != 20:
-        return printError("Mauvaise longueur : " + str(len(a)) + " != 20")
-    return a
+        printError("Mauvaise longueur : " + str(len(a)) + " != 20")
+        return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
+    elif not a[0].find('a').contents:
+        printError("Match with no tournament field...")
+        return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
+    elif not a[1].find('td').contents:
+        printError("Match with no round field...")
+        return printError( mc_url_matches + "?t=" + t + "&y=" + y + "&r=" + r + "&p=" + p )
+    else:
+        return a
 
 def getMatchInfos(t,y,r,p):
     a = getInfoRows(t,y,r,p)
+    if not a: return []
     result = [ dict(), dict() ]
     
     for k,v in mc_fields.iteritems():
@@ -110,6 +154,7 @@ def getMatchInfos(t,y,r,p):
 
 def addMatchInfos(match, dicoPlayers):
     m = getMatchInfos( match['t'], match['y'], match['r'], match['p'] )
+    if not m: return []
     for field in match:
         m[0][field] = match[field]
         m[1][field] = match[field]
@@ -126,6 +171,78 @@ def addMatchInfos(match, dicoPlayers):
 
 
 
+
+
+def getTournament(e, y, infos):
+    content = getTournamentHTML(e,y)
+    
+    tournamentInfos = parseTournamentInfos(content, infos)
+    del tournamentInfos['Country']
+    del tournamentInfos['Tournament']
+    
+    occurences = re.findall("openWin\(\'\/Share\/Match\-Facts\-Pop\-Up\.aspx\?t\=([0-9]+)&y\=([0-9]+)&r\=([0-9]+)\&p=([A-Z0-9]+)\'.*\>([0-9].*)<\/a>", content)
+    result = []
+    
+    for i in range(len(occurences)):
+        occurence = occurences[i]
+        if re.findall('\) RET', occurence[4]) or re.findall('\) DEF', occurence[4]):
+            sets = []
+            winnerScores = ["RETWIN"]
+            loserScores = ["RETLOSE RET"]
+        else:
+            sets = occurence[4].split(", ")
+            winnerScores = [s.split("-")[0] for s in sets]
+            loserScores = [s.split("-")[1].split("(")[0] for s in sets]
+        
+        retirement = False
+        if loserScores[-1][-3:] == "RET":
+            loserScores[-1] = loserScores[-1][:-4]
+            retirement = True
+        tieBreakScores = []
+        for s in sets:
+            tmp = s.split("-")[1].split("(")
+            if (len(tmp) > 1):
+                tieBreakScores.append(tmp[1][:-1])
+            else:
+                tieBreakScores.append("-1")
+
+        matchInfo = tournamentInfos.copy()
+        matchInfo.update( {
+            't' : occurence[0],
+            'y' : occurence[1],
+            'r' : occurence[2],
+            'p' : occurence[3],
+            'Year'              : int(occurence[1]),
+            'RoundNumber'       : int(occurence[2]),
+            'WinnerScores'      : winnerScores,
+            'LoserScores'       : loserScores,
+            'TieBreakScores'    : tieBreakScores,
+            'Retirement'        : int( retirement ),
+            'Timestamp'         : createChronology( matchInfo['TournamentStart'],
+                                                    matchInfo['TournamentStart'],
+                                                    int(occurence[2]),
+                                                    matchInfo['Draw']  )
+        })
+        result.append( matchInfo )
+    return result
+
+
+
+
+def getMatchesOfTournament(e, y, infos, dicoPlayers, verbose=None, sleep=None):
+    tournament = getTournament( e, y, infos )
+    result = []
+    index = 0
+    l = len(tournament)
+    for m in tournament:
+        index += 1
+        tab = addMatchInfos(m, dicoPlayers)
+        for e in tab:
+            result.append(e)
+        if sleep  : time.sleep( sleep )
+        if verbose: debug( str(index) + " / " + str(l) )
+    return result
+    
 
 
 

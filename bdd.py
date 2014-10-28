@@ -113,10 +113,12 @@ match_field_names_clean = [
     'TournamentStart',
     'TournamentEnd',
     'TournamentCategory',
+    'TournamentCategoryClean',
     'Scores',
     'WinnerScores',
     'LoserScores',
     'TieBreakScores',
+    'NullStats',
     'Retirement',
     'Aces',
     'BreakPointsConverted',
@@ -148,6 +150,33 @@ match_field_names_clean = [
     'y'
 ]
 
+match_stats_field_names = [
+    'Duration',
+    'Aces',
+    'BreakPointsConverted',
+    'BreakPointsConvertedTotal',
+    'BreakPointsSaved',
+    'BreakPointsSavedTotal',
+    'DoubleFaults',
+    'FirstServe',
+    'FirstServePointsWon',
+    'FirstServePointsWonTotal',
+    'FirstServeReturnPointsWon',
+    'FirstServeReturnPointsWonTotal',
+    'FirstServeTotal',
+    'ReturnGamesPlayed',
+    'SecondServePointsWon',
+    'SecondServePointsWonTotal',
+    'SecondServeReturnPointsWon',
+    'SecondServeReturnPointsWonTotal',
+    'ServiceGamesPlayed',
+    'TotalPointsWon',
+    'TotalPointsWonTotal',
+    'TotalReturnPointsWon',
+    'TotalReturnPointsWonTotal',
+    'TotalServicePointsWon',
+    'TotalServicePointsWonTotal'
+]
 
 
 tournaments_codes_fields = ['IDTournament',

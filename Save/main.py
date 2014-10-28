@@ -1,169 +1,215 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Oct 06 09:16:48 2014
-@authors: Gaspard, Thomas, Arnaud
+@authors: Gaspard, Thomas
 """
 
+import sys
 from utils                  import *
 from tournamentCrawler      import *
 from matchCrawler           import *
 from bdd                    import *
-from searchCrawler          import *
 from playerCrawler          import *
 from tournamentInfoCrawler  import *
 from seasonCrawler          import *
-import time
+from matchMerger            import *
+from ATPRankCrawler         import *
+from ATPRankings            import *
+from FileSystem             import *
+
+infoReader = InfoReader('localurl.txt')
+
+fs = FileSystem(infoReader)  # reads 4 lines
+yearStart           = infoReader.readInt()
+yearEnd             = infoReader.readInt()
+tournamentTypes     = infoReader.readIntList()
+sleepingTime        = infoReader.readInt()
+CrawlingSeasons     = infoReader.readBool()
+CrawlingTournaments = infoReader.readBool()
+CrawlPlayers        = infoReader.readBool()
+CrawlATPRanks       = infoReader.readBool()
+CrawlMatches        = infoReader.readBool()
+MergeMatches        = infoReader.readBool()
+CleaningTournaments = infoReader.readBool()
+CleaningPlayers     = infoReader.readBool()
+CleaningMatches     = infoReader.readBool()
+AddRankings         = infoReader.readBool()
+debugMode           = infoReader.readBool()
+refreshTime         = infoReader.readInt()
+
+debug("Done.")
 
 
+def mainBody():
+    
+    debug("Initialisation...")
+    clock       = Clock()
+    clock.clock()
+    
+    seasons     = Seasons(     fs )
+    tournaments = Tournaments( fs )
+    players     = Players(     fs )
+    matchCrawler= Matches(     fs )
+    matchMerger = MatchMerger( fs )
+    atpRank     = ATPRank(     fs )
+    atpRankings = ATPRankings( fs )
+
+    chrono      = Chrono()
+    chrono.periodTime = refreshTime * 0.001
+    clock.done()
+    
+    
+    if CrawlingSeasons:
+        debug("Looking for all tournaments (types " + str(tournamentTypes) +
+              ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
+        seasons.addTournamentsFromAllTY( tournamentTypes, yearStart, yearEnd )
+        debug("Saving information...")
+        seasons.saveCodes( )
+    else:
+        debug("Loading all tournaments (types " + str(tournamentTypes) +
+              ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
+        seasons.loadCodes()
+    
+    lengthTour = str( len(seasons.codes) )
+    clock.done()
+    debug("Found: " + lengthTour + " tournaments")
+    
+    
+    if tournaments.canLoad():
+        debug("Loading...")
+        tournaments.load()
+    
+    if CrawlingTournaments:
+        debug("Crawling all tournaments (types " + str(tournamentTypes) +
+            ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
+        chrono.start( int(lengthTour) )
+        for code in seasons.codes:
+            tournaments.addTournamentFromCode(code)
+            chrono.tick()
+            if chrono.needPrint():
+                printLine("Tournaments " + str(chrono.i) + " / " + lengthTour +
+                      " treated. Players found: " + str(len(tournaments.playerCodes)) +
+                      " Remaining: " + chrono.remaining() )
+#                chrono.printRemaining()
+        tournaments.save()
+        print
+    
+    clock.done()
+    numberPlayers = str( len(tournaments.playerCodes) )
+    debug("Found: " + numberPlayers + " players" )
+    
+    
+    if players.canLoad():
+        debug("Loading players...")
+        players.load()
+    
+    if CrawlPlayers:
+        debug("Looking for all " + numberPlayers + " players...")
+    
+        chrono.start( int(numberPlayers) )
+        for code in tournaments.playerCodes:
+            if players.addInfoPlayer(code):
+                chrono.tick()
+                if chrono.needPrint(): chrono.printRemaining()
+            else:
+                chrono.decTotal()
+        players.save()
+    matchCrawler.dicoPlayers = players.dic
+    clock.done()
+    
+    
+    
+    if CrawlMatches:
+        debug("Fetching informations for all matches...")
+        chrono.start( int(lengthTour) )
+        for t in tournaments.tournaments:
+            if matchCrawler.treatTournament( t ):
+                chrono.tick()
+                if chrono.needPrint(): chrono.printRemaining()
+            else:
+                chrono.decTotal()
+        debug("All tournaments: Done. " + clock.strClock())
+    
+    
+    
+    if MergeMatches:
+        debug("Merging all tournaments...")
+        matchMerger.startMerging( tournaments.tournaments )
+        clock.done()
+    
+    if CrawlATPRanks:
+        debug("Crawling all " + numberPlayers + " ranking histories...")
+        chrono.start( int(numberPlayers) )
+        for i in players.dic:
+            if atpRank.addATPRank( players.dic[i] ):
+                chrono.tick()
+                if chrono.needPrint(): chrono.printRemaining()
+            else:
+                chrono.decTotal()
+        clock.done()
+    
+    
+    if CleaningTournaments:
+        debug("Cleaning tournaments...")
+        tournaments.clean()
+        clock.done()
+    
+    if CleaningPlayers:
+        debug("Cleaning players...")
+        players.clean()
+        clock.done()
+    
+    matchMerger.tournaments = tournaments.tournaments
+    if CleaningMatches:
+        debug("Cleaning matches...")
+        chrono.start(0)
+        matchMerger.clean( chrono )
+        clock.done()
+    
+    atpRankings.playersNb = players.ID
+    atpRankings.tournaments = tournaments.tournaments
+    atpRankings.loadPlayedTournaments()
+    if AddRankings:
+        debug("Computing played tournaments...")
+        atpRankings.startFeedingMatches()
+        atpRankings.savePlayedTournaments()
+        clock.done()
+        
+        debug("Computing rankings...")
+        atpRankings.startComputingRanks()
+        clock.done()
+        
+        debug("Cleaning rankings...")
+        atpRankings.clean()
+        clock.done()
+    
+    return True
 
 
-
-debug("Initialisation...")
-yearStart = 2013
-yearEnd = 2013
-tournamentTypes = [1,2, 4]
-folder = 'C:\\Users\\Gaspard\\Dropbox2\\Dropbox\\PESTOCrawling'
-try: os.stat(folder)
-except: os.mkdir(folder)
-tournaments_codes = folder + "tournamentCodes.csv"
-tournaments_save  = folder + "tournaments.csv"
-player_codes      = folder + "playerCodes.csv"
-player_save       = folder + "players.csv"
-
-chrono      = Chrono()
-seasons     = Seasons()
-tournaments = Tournaments()
-players     = Players()
 clock       = Clock()
 clock.clock()
-debug("Done. ")
 
-
-
-if True:
-    debug("Looking for all tournaments (types " + str(tournamentTypes) +
-        ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-    seasons.addTournamentsFromAllTY( tournamentTypes, yearStart, yearEnd )
-    debug("Saving information...")
-    seasons.saveCodes( tournaments_codes )
-lengthTour = str( len(seasons.codes) )
-debug("Done. " + clock.strClock())
-debug("Found: " + lengthTour + " tournaments")
-sys.exit()
-
-# Should run in a few minutes
-# TODO : decide the starting datas
-
-
-
-if True:
-    debug("Looking for all tournaments (types " + str(tournamentTypes) +
-        ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-    for t in tournamentTypes:
-        tournaments.addTournamentsFromYears( t, yearStart, yearEnd )
-    debug("Saving information...")
-    tournaments.saveCodes( tournaments_codes )
-    tournaments.saveTournaments(tournaments_save)
+if debugMode:
+    mainBody()
 else:
-    debug("Loading all tournaments (types " + str(tournamentTypes) +
-        ") from " + str(yearStart) + " to " + str(yearEnd) + "...")
-    tournaments.loadCodes(tournaments_codes)
-    tournaments.loadTournaments(tournaments_save)
+    keepOn = True
+    while keepOn:
+        keepOn = False
+        try :
+            mainBody()
+        except:
+            printError("Network error expected: " + str( sys.exc_info()[0] ) )
+            debug("Going to sleep for " + str(sleepingTime) + " seconds...")
+            time.sleep( sleepingTime )
+            debug("Waking up !")
+            keepOn = True
+        
 
-
-lengthTour = str( len(tournaments.codes) )
-debug("Done. " + clock.strClock())
-debug("Found: " + lengthTour + " tournaments")
-
-
-
-if True:
-    debug("Looking for all players in all the " + lengthTour + " tournaments.")
-    chrono.start( int(lengthTour) )
-    for tournament in tournaments.codes:
-        players.addPlayersFromTournament(tournament['e'], tournament['y'] )
-        chrono.tick()
-        if chrono.i % 10 == 0:
-            chrono.printRemaining()
-            debug("Found: " + str(len(players.codes)) )
-    players.saveCodes( player_codes )
-else:
-    debug("Loading all players in all the " + lengthTour + " tournaments.")
-    players.loadCodes(player_codes)
-debug("Done. " + clock.strClock())
-
-numberOfPlayers =  str( len( players.codes ) )
-debug("Found: " + numberOfPlayers + " players" )
+debug("C'est fini !!!")
+debug("Duration: " + clock.strClock())
 
 
 
-if True:
-    debug("Fetching informations for all " + numberOfPlayers + " players")
-    players.fetchInfoPlayers()
-    players.savePlayers( player_save )
-else:
-    debug("Loading informations for all " + numberOfPlayers + " players")
-    players.loadPlayers(player_save)
-debug("Done. " + clock.strClock())
-
-
-if True:
-    debug("Fetching informations for all matches...")
-    tournaments.fetchAllMatches('BDD/matches.csv', players.dic)
-else:
-    pass
-debug("Done. " + clock.strClock())
-
-
-
-
-
-
-
-
-
-
-
-if False:
-    tournament = getTournamentInfos("339", "2010")
-    printObject( tournament )
-
-
-if False:
-    matchInfos = getMatchInfos('0339', '2010', '3', 'R485')
-    printObject( matchInfos )
-
-
-if False:
-    matches = getMatchesOfTournament("339", "2010")
-    printObject( matches )
-
-
-if False:
-    saveMatchesOfYear("BDD/bdd.csv", "2", "2014", 20, True)
-#    mainCSV("bdd.csv", [ ["339", "2010"] ] )
-
-
-
-
-if False:
-    tournament = getTournamentInfos("339", "2010")
-    printObject( tournament )
-
-
-if False:
-    matchInfos = getMatchInfos('0339', '2010', '3', 'R485')
-    printObject( matchInfos )
-
-
-if False:
-    matches = getMatchesOfTournament("339", "2010")
-    printObject( matches )
-
-
-if False:
-    saveMatchesOfYear("BDD/bdd.csv", "2", "2014", 20, True)
-#    mainCSV("bdd.csv", [ ["339", "2010"] ] )
 
 
 
