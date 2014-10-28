@@ -187,7 +187,7 @@ def mainBody():
     return True
 
 
-clock       = Clock()
+clock = Clock()
 clock.clock()
 
 with open(fs.debugOut, 'a') as debugout:
@@ -201,7 +201,10 @@ with open(fs.debugOut, 'a') as debugout:
             try :
                 mainBody()
             except:
-                printError("Network error expected: " + str( sys.exc_info()[0] ) )
+                err = sys.exc_info()
+                printError("Error !!!  " + str( err[0] ) )
+                printError("Detail:   "  + str( err[1] ) )
+                printError("Network error expected.")
                 debug("Going to sleep for " + str(sleepingTime) + " seconds...")
                 time.sleep( sleepingTime )
                 debug("Waking up !")
