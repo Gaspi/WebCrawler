@@ -1,11 +1,28 @@
-Versions de la base de données
+Gestionnaire de versions de la base de données
 
----------- deepthroat ----------
+
+---------- deepthroat (DT) ----------
 Lancé le 28/10/2014  17:00
 Sur le cluster
 Années 2000-2014
 Catégories 1, 2 et 4
 Commentaires:
 Fin de journée de mardi.
-NullStats
---------------------------------
+NullStats ajoutés
+Catégories ancienne (beaucoup de -1) et nouvelles
+Rapatriée le 29/10/2014 à 14:28
+-----------------------------------
+
+
+
+----------  handjob (HJ) ----------
+Lancé le 29/10/2014  15:35
+Sur le cluster
+Années 2013
+Catégories 1,2 et 4
+Commentaires:
+Petit base pour que SYlvain puisse tester les nouvelles features
+-----------------------------------
+
+
+
