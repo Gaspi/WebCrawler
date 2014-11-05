@@ -149,6 +149,16 @@ match_field_names_clean = [
     'y'
 ]
 
+
+new_match_fields = ['Rank', 'Grad1Month', 'Grad3Months', 'Grad6Months',
+                    'Grad12Months', 'Interpol6MonthsDeg2', 'Interpol6MonthsDeg3',
+                    'Interpol12MonthsDeg2', 'Interpol12MonthsDeg3',
+                    'RankOpponent', 'Grad1MonthOpp', 'Grad3MonthsOpp',
+                    'Grad6MonthsOpp', 'Grad12MonthsOpp', 'Interpol6MonthsOppDeg2',
+                    'Interpol6MonthsOppDeg3', 'Interpol12MonthsOppDeg2','Interpol12MonthsOppDeg3' ]
+
+
+
 match_stats_field_names = [
     'Duration',
     'Aces',

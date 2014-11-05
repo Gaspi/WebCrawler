@@ -1,27 +1,54 @@
-Gestionnaire de versions de la base de donn�es
+Gestionnaire de versions de la base de données
 
 
----------- deepthroat (DT) ----------
-Lanc� le 28/10/2014  17:00
+---------- Cougar (CG) ----------
+Lancé le 24/10/2014  17:00
 Sur le cluster
-Ann�es 2000-2014
-Cat�gories 1, 2 et 4
+Années 2000-2014
+Catégories 1, 2 et 4
 Commentaires:
-Fin de journ�e de mardi.
-NullStats ajout�s
-Cat�gories ancienne (beaucoup de -1) et nouvelles
-Rapatri�e le 29/10/2014 � 14:28
+A tourné pendant le week-end sans problème.
+Utilisée pour générer deux bases plus lights
+Rapatriée le 27/10/2014 à 09:00   par Thomas
 -----------------------------------
 
-
-
-----------  handjob (HJ) ----------
-Lanc� le 29/10/2014  15:35
-Sur le cluster
-Ann�es 2013
-Cat�gories 1,2 et 4
+---------- MILF (MF) ----------
+Années 2000-2014
+Catégories 1, 2 et 4
 Commentaires:
-Petit base pour que SYlvain puisse tester les nouvelles features
+"Cougar" plus light
+Les lignes avec trop de 0 dans les stats sont virées
+Générée le 27/10/2014 à 09:00   par Thomas
+-----------------------------------
+
+---------- Chaudiere (CD) ----------
+Années 2000-2014
+Catégories 1, 2 et 4
+Commentaires:
+"MILF" encore plus light
+Les challengers sont virés
+Générée le 27/10/2014 à 09:00   par Thomas
+-----------------------------------
+
+---------- Deepthroat (DT) ----------
+Lancé le 28/10/2014  17:00
+Sur le cluster
+Années 2000-2014
+Catégories 1, 2 et 4
+Commentaires:
+Fin de journée de mardi.
+Champ NullStats ajoutés
+Catégories ancienne (beaucoup de -1) et nouvelles
+Rapatriée le 29/10/2014 à 14:28
+-----------------------------------
+
+----------  Handjob (HJ) ----------
+Lancé le 29/10/2014  15:35
+Sur le cluster
+Années 2013
+Catégories 1,2 et 4
+Commentaires:
+Petit base pour que Sylvain puisse tester les nouvelles features
 -----------------------------------
 
 

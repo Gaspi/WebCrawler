@@ -1,0 +1,20 @@
+C:\Users\Gaspard\Dropbox2\Dropbox\WebCrawling 2.0\WebCrawler\BDD\DTnew\
+C:\Users\Gaspard\Dropbox2\Dropbox\WebCrawling 2.0\WebCrawler\BDD\DTnew\tournaments\
+C:\Users\Gaspard\Dropbox2\Dropbox\WebCrawling 2.0\WebCrawler\BDD\DTnew\ranks\
+C:\Users\Gaspard\Dropbox2\Dropbox\WebCrawling 2.0\WebCrawler\BDD\DTnew\clean\
+Year:
+2014
+Month:
+11
+Day:
+4
+Sleeping time (sec):
+30
+CleaningMatches
+False
+AddRankings
+True
+debugMode
+True
+Refresh time (ms)
+4000

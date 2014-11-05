@@ -29,11 +29,19 @@ def createChronology(startDate, endDate, round_, draw ):
     interv = float(end - start)
     return start + int(interv/(2.0*nRounds) + float(int(round_)-8+nRounds)*interv/nRounds)
 
+def getNotNoneTime(day=None, month=None, year=None):
+    if not day or not month or not year:
+        lt = time.localtime()
+        return (lt.tm_mday, lt.tm_mon, lt.tm_year)
+    else:
+        return (day, month, year)
+
+
 
 class Chrono:
     def __init__(self):
         self.sizeBar = 18
-        self.periodTime = 1.0
+        self.periodTime = 2.0
     
     def start(self, nbIterations = 0):
         self.total = int( nbIterations )
@@ -171,12 +179,6 @@ def getBool(s):
 
 
 
-
-
-
-
-
-
 def updateCategory(e, cat):
     if   cat==4: return 5   # ATP Challenger Tour
     elif cat==3: return 4   # ATP World Tour 250
@@ -224,7 +226,8 @@ def debug(line = ''):
     debugNewline = True
     ln = str(line) + '\n'
     sys.stdout.write(   ln )
-    debugFileOut.write( ln )
+    if debugFileOut != 'NoFile':
+        debugFileOut.write( ln )
 
 def debugLines(lines):
     for l in lines:
@@ -238,7 +241,8 @@ def debugCL(line = ''):
     debugNewline = False
     ln = str(line)
     sys.stdout.write(   ln )
-    debugFileOut.write( ln + '\n' )
+    if debugFileOut != 'NoFile':
+        debugFileOut.write( ln + '\n' )
 
 #
 #def debug(msg):
@@ -264,4 +268,27 @@ def loadingBar(length, progress, total=1):
     return " |" + ('#' * n) + str(p) + ('_'*(length-n-1)) + "| "
 
 
+
+def deltaDays(date1, date2):
+    return (time.mktime( date1 ) - time.mktime( date2 )) / (3600 * 24)
+
+
+# -------------------------------------------------------------
+# ----------- PRETTY PRINTING  --------------------------------
+# -------------------------------------------------------------
+
+def printMatrix(matches):
+    l = len(matches[0])
+    lengths = [0] * l
+    for m in matches:
+        for i in range(l):
+            if len(str(m[i])) > lengths[i]:
+                lengths[i] = len( str(m[i]) )
+    s = "%" + ("s  %".join( [str(e) for e in lengths])) + "s"
+    for m in matches:
+        print s % tuple( [str(e) for e in m])
+def printDict(d):
+    printMatrix(  [ [ str(e[0]), " : ", str(e[1]) ] for e in d.items()  ] )
+def printDicts(dicts):
+    printMatrix( [ [ str(e[0]), " : ", str(e[1]) ] for d in dicts for e in d.items() ] )
 

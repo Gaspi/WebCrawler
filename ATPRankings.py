@@ -9,30 +9,98 @@ import csv, sets, os
 from bdd import *
 from utils import *
 
+import numpy as np
+import warnings
+warnings.simplefilter('ignore', np.RankWarning)
+
+hoursInMonth = 30.4375 *24
 
 
 
-def findRankingFromDate(date, rankTab):
-    if len(rankTab) == 0:
+
+def rankTimestamp(t):
+    return int( timestamp(t) / 3600 )
+
+def getGrads(timestamps, rankings):
+    t0 = timestamps[0]
+    (ind1 , ind3 , ind6 , ind12 ) = (0,0,0,0)
+    (grad1, grad3, grad6, grad12, interpol6d2, interpol6d3, interpol12d2, interpol12d3) = (0,) * 4 + (0,)*4
+    for i,t in enumerate(timestamps):
+        if t0 - t < hoursInMonth:
+            ind1 = i
+        if t0 - t < hoursInMonth * 3:
+            ind3 = i
+        if t0 - t < hoursInMonth * 6:
+            ind6 = i
+        if t0 - t < hoursInMonth * 12:
+            ind12 = i
+    grad1  = np.polyfit( timestamps[:ind1+1] , rankings[:ind1+1] , 1 )[0]*24*7
+    grad3  = np.polyfit( timestamps[:ind3+1] , rankings[:ind3+1] , 1 )[0]*24*7
+    grad6  = np.polyfit( timestamps[:ind6+1] , rankings[:ind6+1] , 1 )[0]*24*7
+    grad12 = np.polyfit( timestamps[:ind12+1], rankings[:ind12+1], 1 )[0]*24*7
+    
+    t6  = t0 + 6  * 30 * 24
+    
+    c = np.polyfit( timestamps[:ind6+1] , rankings[:ind6+1] , 2 )
+    interpol6d2 = c[0] * (t6 ** 2) + c[1] * t6 + c[2]
+    
+    c = np.polyfit( timestamps[:ind6+1] , rankings[:ind6+1] , 3 )
+    interpol6d3 = c[0] * (t6 ** 3) + c[1] * (t6 ** 2) + c[2] * t6 + c[3]
+    
+    c = np.polyfit( timestamps[:ind12+1], rankings[:ind12+1], 2 )
+    interpol12d2 = c[0] * (t6 ** 2) + c[1] * t6 + c[2]
+    
+    c = np.polyfit( timestamps[:ind12+1], rankings[:ind12+1], 3 )
+    interpol12d3 = c[0] * (t6 ** 3) + c[1] * (t6 ** 2) + c[2] * t6 + c[3]
+    
+    if False:
+        print t0
+        print hoursInMonth
+        print ind1
+        print str( timestamps[:ind1+1] )
+        print str( rankings[:ind1+1] )
+        print ind3
+        print str( timestamps[:ind3+1] )
+        print str( rankings[:ind3+1] )
+        print ind6
+        print str( timestamps[:ind6+1] )
+        print str( rankings[:ind6+1] )
+        
+    return ( grad1, grad3, grad6, grad12, interpol6d2, interpol6d3, interpol12d2, interpol12d3 )
+
+
+
+
+def getInterpol(timestamps, rankings):
+    return 0
+
+
+
+def findIndexFromDate(time, timestamps):
+    if len(timestamps) == 0:
         return -1
-    time = timestamp(date)
-    if time > timestamp(rankTab[0][0]):
-        return -1
-    index = findIndexFromDate(time, rankTab, 0, len(rankTab)-1 )
-    if index == len(rankTab)-1:
+    index = findIndexAuxFromDate(time, timestamps, 0, len(timestamps)-1 )
+    if index == len(timestamps) - 1:
         return -1
     else:
-        return rankTab[index][1]
+        return index
 
 
-def findIndexFromDate(time, rankTab, start, end):
+def findIndexAuxFromDate(time, timestamps, start, end):
     if end <= start + 1:
         return end
     middle = (start + end) // 2
-    if timestamp( rankTab[middle][0] ) > time:
-        return findIndexFromDate(time,rankTab, middle, end)
+    if timestamps[middle] > time:
+        return findIndexAuxFromDate(time,timestamps, middle, end)
     else:
-        return findIndexFromDate(time,rankTab, start, middle)
+        return findIndexAuxFromDate(time,timestamps, start, middle)
+
+def getTimestamps(rankings):
+    timestamps = [ rankTimestamp(r[0]) for r in rankings ]
+    for i in range(len(rankings) ):
+        rankings[i] = int( rankings[i][1] )
+    return timestamps
+    
 
 
 class ATPRankings:
@@ -66,17 +134,34 @@ class ATPRankings:
         self.ranks = [ sets.Set() for i in range(self.playersNb)]
         chrono = Chrono()
         chrono.start( self.playersNb )
+        dechet = 0
+        total = 0
         for IDplayer in range(self.playersNb):
             tournamentsP = self.playedTourn[IDplayer]
             rankings = self.loadRankings(IDplayer)
+            timestamps = getTimestamps(rankings)
             for tID in tournamentsP:
-                tStart = self.tournaments[tID]['TournamentStart']
-                rank = findRankingFromDate(tStart, rankings)
-                self.ranks[IDplayer].add( (tID,rank) )
+                tStart = rankTimestamp( self.tournaments[tID]['TournamentStart'] )
+                (rank, grad1, grad3, grad6, grad12, interpol6d2, interpol6d3, interpol12d2, interpol12d3) = (-1,) * 9
+                index = findIndexFromDate(tStart, timestamps)
+                if index >= 0:
+                    rank = rankings[index]
+                    timestampsAux = timestamps[index:]
+                    rankingsAux   = rankings[index:]
+                    grad1, grad3, grad6, grad12, interpol6d2, interpol6d3, interpol12d2, interpol12d3 = \
+                            getGrads( timestampsAux, rankingsAux)
+                else:
+                    dechet += 1
+                total += 1
+                self.ranks[IDplayer].add( (tID,rank, grad1, grad3, grad6, grad12, interpol6d2, interpol6d3, interpol12d2, interpol12d3) )
             chrono.tick()
             if chrono.needPrint():
                 printLine("Player " + str(chrono.i) + chrono.getBar() + " Remains " + chrono.remaining() )
-        print #new line for loading bar
+        print "Dechet : " + str(dechet) + " / " + str(total)
+    
+    
+
+    
     
     
     def loadRankings(self, ID):
@@ -97,9 +182,8 @@ class ATPRankings:
     def loadPlayedTournaments(self):
         if os.path.isfile( self.savePath ):
             with open(self.savePath, 'rb') as f:
-                r = csv.reader(f, delimiter='|',quotechar='|')
                 self.playedTourn = []
-                for p in r:
+                for p in csv.reader(f, delimiter='|',quotechar='|'):
                     aux = p[0][1:-1]
                     if len(aux) == 0:
                         l = []
@@ -116,28 +200,54 @@ class ATPRankings:
                 w.writerow( [ str( list(r) ) ] )
     
     
-    def getRank(self,idPlayer,idTournament):
+    def getRankInfos(self,idPlayer,idTournament):
         for r in self.ranks[idPlayer]:
             if int(r[0]) == idTournament:
-                return int( r[1] )
+                return r[1:]
         raise Exception('Player ' + idPlayer + 'has not played in tournament ' + idTournament + '!!')
-        
+    
+    
     def clean(self):
         chrono = Chrono()
         chrono.start()
         self.ID = 0
         with open( self.cleanMatchesPath, 'wb') as f:
-            w = getWriter(f, match_field_names_clean + ['Rank', 'RankOpponent'] )
+            w = getWriter(f, match_field_names_clean + new_match_fields )
             with open(self.cleanMatchesPath + "id", 'rb') as f2:
                 for e in csv.DictReader(f2, restval='?', delimiter='|'):
                     w.writerow( self.defaultMatchCleanFunction(e) )
                     chrono.tick()
                     if chrono.needPrint():
-                        printLine("Matches " + str(chrono.i) + " Elapsed: " + chrono.elapsed() )
-        print # new line after loading bar
+                        debugCL("Matches " + str(chrono.i) + " Elapsed: " + chrono.elapsed() )
     
     def defaultMatchCleanFunction(self, entry):
-        entry['Rank']         = self.getRank( int( entry['IDPlayer'] ), int( entry['IDTournament']) )
-        entry['RankOpponent'] = self.getRank( int( entry['IDOpponent'] ), int( entry['IDTournament']) )
+        t = self.getRankInfos( int( entry['IDPlayer'] )  , int( entry['IDTournament']) )
+        entry['Rank']           = t[0]
+        entry['Grad1Month']     = t[1]
+        entry['Grad3Months']    = t[2]
+        entry['Grad6Months']    = t[3]
+        entry['Grad12Months']   = t[4]
+        entry['Interpol6MonthsDeg2']= t[5]
+        entry['Interpol6MonthsDeg3']= t[6]
+        entry['Interpol12MonthsDeg2']= t[7]
+        entry['Interpol12MonthsDeg3']= t[8]
+        t = self.getRankInfos( int( entry['IDOpponent'] ), int( entry['IDTournament']) )
+        entry['RankOpponent']       = t[0]
+        entry['Grad1MonthOpp']      = t[1]
+        entry['Grad3MonthsOpp']     = t[2]
+        entry['Grad6MonthsOpp']     = t[3]
+        entry['Grad12MonthsOpp']    = t[4]
+        entry['Interpol6MonthsOppDeg2'] = t[5]
+        entry['Interpol6MonthsOppDeg3'] = t[6]
+        entry['Interpol12MonthsOppDeg2'] = t[7]
+        entry['Interpol12MonthsOppDeg3'] = t[8]
         return entry
-        
+
+
+
+
+
+
+
+
+

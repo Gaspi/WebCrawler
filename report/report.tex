@@ -1,0 +1,96 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+% \usepackage[left=1.5cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{graphicx}
+
+% --- Partie code
+\usepackage{listings}
+\lstset{language=Python,
+        showstringspaces=false,
+        basicstyle=\footnotesize\ttfamily,
+        captionpos=b,
+        stepnumber=1,
+        keywordstyle=\bfseries\color{green!40!black},
+        commentstyle=\itshape\color{purple!40!black},
+        identifierstyle=\color{blue},
+        stringstyle=\color{red}}
+
+
+
+
+% --- Parti math. (app.)
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{remark}[theorem]{Remark}
+
+% Mathematic abbreviations
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+
+
+\begin{document}
+
+Regarding the data mining, we focused on the information freely (??) available on the ATP official website \url{http://www.atpworldtour.com/}. We decided to consider only matches from tournaments of the categories "ATP Challenger Tour", "ATP World Tour 250", "ATP World Tour 500", "ATP World Tour Masters 1000" and "Grand Slams". Besides we ignored all tournaments that started before 2000.\\
+
+
+Main crawling steps:
+\begin{enumerate}
+\item Crawling Phase
+\begin{itemize}
+	\item Crawling all 45 seasons (2000 - 2014, category 1, 2 and 4)
+	\begin{itemize}
+		\item Gathering basic data on tournaments
+		\item Following links to more than 3250 tournaments found
+		\begin{itemize}
+			\item Gathering complete data on tournament
+			\item Creating tables of players hyperlinks
+			\begin{itemize}
+				\item Following links to more than 110.000 matches found
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\item Database generation
+\begin{itemize}
+	\item Merging the matches of all tournaments
+	\item Pre treatment of the player database
+	\item Following links to more than 3400 players found
+	\begin{itemize}
+		\item Gathering general data
+		\item Using ranking history to compute actualized rankings
+	\end{itemize}
+\end{itemize}
+\item Post treatment, cleaning all bases
+\end{enumerate}
+
+
+\begin{figure}[!b]
+\begin{lstlisting}
+
+\end{lstlisting}
+\caption{Python example}
+\label{fig:pythEx}
+\end{figure}
+
+
+Temps total de crawling : 20h30\\
+Nombre de pages visitées: 125.000\\
+Poids de la base nettoyée : 97.7 Mo\\
+Poids total des bases (dont auxiliaires) : 207 Mo
+
+\end{document}
